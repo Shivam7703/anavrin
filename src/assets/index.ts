@@ -106,154 +106,156 @@ import Career from "@/assets/home/career counselling.webp";
 
 
 // visas
-import atlanticImmigration from "@/assets/visa/Atlantic Immigration Program.webp";
-import alberta from "@/assets/visa/alberta.webp";
-import australiaPR from "@/assets/visa/auspr.webp";
-import australiaSpouseVisa from "@/assets/visa/Australia Spouse Visa.webp";
-import australiaPointSystem from "@/assets/visa/Australia Point System.jpg";
-import australiaSubclass491 from "@/assets/visa/Australia Subclass 491 Visa.jpg";
-import australiaSubclass600 from "@/assets/visa/Australia Subclass 600.jpg";
-import bcPnpProgram from "@/assets/visa/BC PNP Program.jpg";
+// import atlanticImmigration from "@/assets/visa/Atlantic Immigration Program.webp";
+// import alberta from "@/assets/visa/alberta.webp";
+// import australiaPR from "@/assets/visa/auspr.webp";
+// import australiaSpouseVisa from "@/assets/visa/Australia Spouse Visa.webp";
+// import australiaPointSystem from "@/assets/visa/Australia Point System.jpg";
+// import australiaSubclass491 from "@/assets/visa/Australia Subclass 491 Visa.jpg";
+// import australiaSubclass600 from "@/assets/visa/Australia Subclass 600.jpg";
+// import bcPnpProgram from "@/assets/visa/BC PNP Program.jpg";
 import canadaPR from "@/assets/visa/canadapr.webp";
-import canadaSpouseVisa from "@/assets/visa/Canadaspouse.jpg";
-import canadaSuperVisa from "@/assets/visa/Canadasuper.jpg";
-import canadianExperienceClass from "@/assets/visa/cec.jpg";
-import crsPointsCalculator from "@/assets/visa/CRS Points Calculator.webp";
-import germanyJobSeekerVisa from "@/assets/visa/Germany Job Seeker Visa.webp";
-import irelandWorkPermit from "@/assets/visa/Ireland Work Permit.webp";
-import manitoba from "@/assets/visa/manitoba.webp";
-import maltaWorkPermit from "@/assets/visa/Malta Work Permit.jpg";
+// import canadaSpouseVisa from "@/assets/visa/Canadaspouse.jpg";
+// import canadaSuperVisa from "@/assets/visa/Canadasuper.jpg";
+// import canadianExperienceClass from "@/assets/visa/cec.jpg";
+// import crsPointsCalculator from "@/assets/visa/CRS Points Calculator.webp";
+// import germanyJobSeekerVisa from "@/assets/visa/Germany Job Seeker Visa.webp";
+// import irelandWorkPermit from "@/assets/visa/Ireland Work Permit.webp";
+// import manitoba from "@/assets/visa/manitoba.webp";
+// import maltaWorkPermit from "@/assets/visa/Malta Work Permit.jpg";
 
-import nlPnp from "@/assets/visa/nlpnp.webp";
-import novaScotia from "@/assets/visa/nova.webp";
-import newBrunswickPnp from "@/assets/visa/New Brunswick PNP Program.webp";
-import ontario from "@/assets/visa/ontario.webp";
-import omanWorkVisa from "@/assets/visa/Oman Work Visa.webp";
-import peiPnpProgram from "@/assets/visa/PEI PNP Program.jpeg";
-import polandWorkPermit from "@/assets/visa/Poland Work Permit.jpg";
-import qatarWorkVisa from "@/assets/visa/Qatar Work Visa.webp";
-import saskatchewanPnp from "@/assets/visa/Saskatchewan PNP.jpg";
-import saudiArabiaWorkVisa from "@/assets/visa/Saudi Arabia Work Visa.jpg";
-import swedenWorkPermit from "@/assets/visa/Sweden Work Permit Visa.jpeg";
-import uaeWorkVisa from "@/assets/visa/UAE Work Visa.jpg";
-import yukonPnp from "@/assets/visa/yukon.webp";
+// import nlPnp from "@/assets/visa/nlpnp.webp";
+// import novaScotia from "@/assets/visa/nova.webp";
+// import newBrunswickPnp from "@/assets/visa/New Brunswick PNP Program.webp";
+// import ontario from "@/assets/visa/ontario.webp";
+// import omanWorkVisa from "@/assets/visa/Oman Work Visa.webp";
+// import peiPnpProgram from "@/assets/visa/PEI PNP Program.jpeg";
+// import polandWorkPermit from "@/assets/visa/Poland Work Permit.jpg";
+// import qatarWorkVisa from "@/assets/visa/Qatar Work Visa.webp";
+// import saskatchewanPnp from "@/assets/visa/Saskatchewan PNP.jpg";
+// import saudiArabiaWorkVisa from "@/assets/visa/Saudi Arabia Work Visa.jpg";
+// import swedenWorkPermit from "@/assets/visa/Sweden Work Permit Visa.jpeg";
+// import uaeWorkVisa from "@/assets/visa/UAE Work Visa.jpg";
+// import yukonPnp from "@/assets/visa/yukon.webp";
 
 
 
-import australiaTouristVisa from "@/assets/visa2/Australia Tourist Visa.webp";
-import austriaWorkPermit from "@/assets/visa2/Austria Work Permit.webp";
-import canadaTouristVisa from "@/assets/visa2/Canada Tourist Visa.webp";
-import germanyTouristVisa from "@/assets/visa2/Germany Tourist Visa.webp";
-import portugalWorkPermit from "@/assets/visa2/Portugal Work Permit.webp";
-import ukTouristVisa from "@/assets/visa2/UK Tourist Visa.jpg";
+// import australiaTouristVisa from "@/assets/visa2/Australia Tourist Visa.webp";
+// import austriaWorkPermit from "@/assets/visa2/Austria Work Permit.webp";
+// import canadaTouristVisa from "@/assets/visa2/Canada Tourist Visa.webp";
+// import germanyTouristVisa from "@/assets/visa2/Germany Tourist Visa.webp";
+// import portugalWorkPermit from "@/assets/visa2/Portugal Work Permit.webp";
+// import ukTouristVisa from "@/assets/visa2/UK Tourist Visa.jpg";
 
 // visa3
-import andhraPradesh from "@/assets/visa3/Andhra Pradesh.webp";
-import australiaStudyVisa from "@/assets/visa3/Australia Study Visa.webp";
-import canadaStartupVisa from "@/assets/visa3/Canada Startup Visa.webp";
-import canadaStudyVisa from "@/assets/visa3/Canada Study Visa.webp";
-import canadaWorkVisa from "@/assets/visa3/Canada Work Visa.webp";
-import denmarkWorkVisa from "@/assets/visa3/Denmark Work Visa.webp";
-import dubaiGoldenVisa from "@/assets/visa3/Dubai Golden Visa.webp";
-import finlandWorkVisa from "@/assets/visa3/Finland Work Visa.webp";
-import franceTouristVisa from "@/assets/visa3/France Tourist Visa.webp";
-import hyderabad from "@/assets/visa3/Hyderabad.webp";
-import italyTouristVisa from "@/assets/visa3/Italy Tourist Visa.webp";
-import italyWorkVisa from "@/assets/visa3/Italy Work Visa.webp";
-import karnataka from "@/assets/visa3/Karnataka.webp";
-import kerala from "@/assets/visa3/Kerala.webp";
-import kuwaitWorkVisa from "@/assets/visa3/Kuwait Work Visa.webp";
-import luxembourgTouristVisa from "@/assets/visa3/Luxembourg Tourist Visa.webp";
-import luxembourgWorkVisa from "@/assets/visa3/Luxembourg Work Visa.webp";
-import netherlandsTouristVisa from "@/assets/visa3/Netherlands Tourist Visa.webp";
-import nwtnp from "@/assets/visa3/NWTNP.webp";
-import netherlandsWorkVisa from "@/assets/visa3/Netherlands Work Visa.webp";
-import newZealandPermanentResidency from "@/assets/visa3/New Zealand Permanent Residency.webp";
-import newZealandPointsCalculator from "@/assets/visa3/New Zealand Points Calculator.webp";
-import newZealandStudyVisa from "@/assets/visa3/New Zealand Study Visa.webp";
-import newZealandTouristVisa from "@/assets/visa3/New Zealand Tourist Visa.webp";
-import newZealandWorkVisa from "@/assets/visa3/New Zealand Work Visa.webp";
-import tamilNadu from "@/assets/visa3/Tamil Nadu.webp";
-import polandTouristVisa from "@/assets/visa3/Poland Tourist Visa.webp";
-import schengenVisa from "@/assets/visa3/Schengen Visa.webp";
-import spainTouristVisa from "@/assets/visa3/Spain Tourist Visa.webp";
-import swedenTouristVisa from "@/assets/visa3/Sweden Tourist Visa.webp";
-import usaInvestorVisa from "@/assets/visa3/USA Investor Visa.webp";
-import usaVisitVisa from "@/assets/visa3/USA Visit Visa.webp";
+// import andhraPradesh from "@/assets/visa3/Andhra Pradesh.webp";
+// import australiaStudyVisa from "@/assets/visa3/Australia Study Visa.webp";
+// import canadaStartupVisa from "@/assets/visa3/Canada Startup Visa.webp";
+// import canadaStudyVisa from "@/assets/visa3/Canada Study Visa.webp";
+// import canadaWorkVisa from "@/assets/visa3/Canada Work Visa.webp";
+// import denmarkWorkVisa from "@/assets/visa3/Denmark Work Visa.webp";
+// import dubaiGoldenVisa from "@/assets/visa3/Dubai Golden Visa.webp";
+// import finlandWorkVisa from "@/assets/visa3/Finland Work Visa.webp";
+// import franceTouristVisa from "@/assets/visa3/France Tourist Visa.webp";
+// import hyderabad from "@/assets/visa3/Hyderabad.webp";
+// import italyTouristVisa from "@/assets/visa3/Italy Tourist Visa.webp";
+// import italyWorkVisa from "@/assets/visa3/Italy Work Visa.webp";
+// import karnataka from "@/assets/visa3/Karnataka.webp";
+// import kerala from "@/assets/visa3/Kerala.webp";
+// import kuwaitWorkVisa from "@/assets/visa3/Kuwait Work Visa.webp";
+// import luxembourgTouristVisa from "@/assets/visa3/Luxembourg Tourist Visa.webp";
+// import luxembourgWorkVisa from "@/assets/visa3/Luxembourg Work Visa.webp";
+// import netherlandsTouristVisa from "@/assets/visa3/Netherlands Tourist Visa.webp";
+// import nwtnp from "@/assets/visa3/NWTNP.webp";
+// import netherlandsWorkVisa from "@/assets/visa3/Netherlands Work Visa.webp";
+// import newZealandPermanentResidency from "@/assets/visa3/New Zealand Permanent Residency.webp";
+// import newZealandPointsCalculator from "@/assets/visa3/New Zealand Points Calculator.webp";
+// import newZealandStudyVisa from "@/assets/visa3/New Zealand Study Visa.webp";
+// import newZealandTouristVisa from "@/assets/visa3/New Zealand Tourist Visa.webp";
+// import newZealandWorkVisa from "@/assets/visa3/New Zealand Work Visa.webp";
+// import tamilNadu from "@/assets/visa3/Tamil Nadu.webp";
+// import polandTouristVisa from "@/assets/visa3/Poland Tourist Visa.webp";
+// import schengenVisa from "@/assets/visa3/Schengen Visa.webp";
+// import spainTouristVisa from "@/assets/visa3/Spain Tourist Visa.webp";
+// import swedenTouristVisa from "@/assets/visa3/Sweden Tourist Visa.webp";
+// import usaInvestorVisa from "@/assets/visa3/USA Investor Visa.webp";
+// import usaVisitVisa from "@/assets/visa3/USA Visit Visa.webp";
 
 
 
 export {p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12,
 shape1,mission, vision,  pro1,  logo , logo2, banner,banner2,banner3 ,back,blog_bg, box1, box2, box3,visa1,process1,usflag, ukflag,canadaflag,  bene2,bene3, bene4,contactb, susbanner,prob,aboutb,careerb, bann, about,about2,contat,cl1,cl2,cl3,cl4,cl5,cl6,cl7,cl8,cl9, com,env ,social,heade, count, famvisa, prvisa, business,touristvisa
- , sus1,sus2, sus3, sus4, choose1, blog1, blog2, blog3, footerImage, plane, patta, kangaroo, atlanticImmigration, 
+ , sus1,sus2, sus3, sus4, choose1, blog1, blog2, blog3, footerImage, plane, patta, kangaroo,  
   faq,ceo,
-  alberta, immigration, Career, ielts, jobAssist, PostLanding ,profile, pte ,visaDocument,
-  australiaPR,
-  australiaSpouseVisa,
-  australiaPointSystem,
-  australiaSubclass491,
-  australiaSubclass600,
-  bcPnpProgram,
+  immigration, Career, ielts, jobAssist, PostLanding ,profile, pte ,visaDocument,
+//   atlanticImmigration,
+//   alberta, australiaPR,
+//   australiaSpouseVisa,
+//   australiaPointSystem,
+//   australiaSubclass491,
+//   australiaSubclass600,
+//   bcPnpProgram,
   canadaPR,
-  canadaSpouseVisa,
-  canadaSuperVisa,
-  canadianExperienceClass,
-  crsPointsCalculator,
-  germanyJobSeekerVisa,
-  irelandWorkPermit,
-  manitoba,
-  maltaWorkPermit,
-  nlPnp,
-  novaScotia,
-  newBrunswickPnp,
-  ontario,
-  omanWorkVisa,
-  peiPnpProgram,
-  polandWorkPermit,
-  qatarWorkVisa,
-  saskatchewanPnp,
-  saudiArabiaWorkVisa,
-  swedenWorkPermit,
-  uaeWorkVisa,
-  yukonPnp,
-   australiaTouristVisa,
-  austriaWorkPermit,
-  canadaTouristVisa,
-  germanyTouristVisa,
-  portugalWorkPermit,
-  ukTouristVisa,para,
+//   canadaSpouseVisa,
+//   canadaSuperVisa,
+//   canadianExperienceClass,
+//   crsPointsCalculator,
+//   germanyJobSeekerVisa,
+//   irelandWorkPermit,
+//   manitoba,
+//   maltaWorkPermit,
+//   nlPnp,
+//   novaScotia,
+//   newBrunswickPnp,
+//   ontario,
+//   omanWorkVisa,
+//   peiPnpProgram,
+//   polandWorkPermit,
+//   qatarWorkVisa,
+//   saskatchewanPnp,
+//   saudiArabiaWorkVisa,
+//   swedenWorkPermit,
+//   uaeWorkVisa,
+//   yukonPnp,
+//    australiaTouristVisa,
+//   austriaWorkPermit,
+//   canadaTouristVisa,
+//   germanyTouristVisa,
+//   portugalWorkPermit,
+//   ukTouristVisa,
+  para,
   
-   andhraPradesh,
-  australiaStudyVisa,
-  canadaStartupVisa,
-  canadaStudyVisa,
-  canadaWorkVisa,
-  denmarkWorkVisa,
-  dubaiGoldenVisa,
-  finlandWorkVisa,
-  franceTouristVisa,
-  hyderabad,
-  italyTouristVisa,
-  italyWorkVisa,
-  karnataka,
-  kerala,
-  kuwaitWorkVisa,
-  luxembourgTouristVisa,
-  luxembourgWorkVisa,
-  netherlandsTouristVisa,
-  nwtnp,
-  netherlandsWorkVisa,
-  newZealandPermanentResidency,
-  newZealandPointsCalculator,
-  newZealandStudyVisa,
-  newZealandTouristVisa,
-  newZealandWorkVisa,
-  tamilNadu,
-  polandTouristVisa,
-  schengenVisa,
-  spainTouristVisa,
-  swedenTouristVisa,
-  usaInvestorVisa,
-  usaVisitVisa,
+//    andhraPradesh,
+//   australiaStudyVisa,
+//   canadaStartupVisa,
+//   canadaStudyVisa,
+//   canadaWorkVisa,
+//   denmarkWorkVisa,
+//   dubaiGoldenVisa,
+//   finlandWorkVisa,
+//   franceTouristVisa,
+//   hyderabad,
+//   italyTouristVisa,
+//   italyWorkVisa,
+//   karnataka,
+//   kerala,
+//   kuwaitWorkVisa,
+//   luxembourgTouristVisa,
+//   luxembourgWorkVisa,
+//   netherlandsTouristVisa,
+//   nwtnp,
+//   netherlandsWorkVisa,
+//   newZealandPermanentResidency,
+//   newZealandPointsCalculator,
+//   newZealandStudyVisa,
+//   newZealandTouristVisa,
+//   newZealandWorkVisa,
+//   tamilNadu,
+//   polandTouristVisa,
+//   schengenVisa,
+//   spainTouristVisa,
+//   swedenTouristVisa,
+//   usaInvestorVisa,
+//   usaVisitVisa,
  }
 

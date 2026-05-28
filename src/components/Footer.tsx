@@ -7,8 +7,7 @@ import { AiFillInstagram } from "react-icons/ai";
 import { FaXTwitter } from "react-icons/fa6";
 import { TbBrandYoutubeFilled } from "react-icons/tb";
 import { navigationMenu } from "@/data/homeData";
-import Marquee from "react-fast-marquee";
-import { footerImage, logo, plane } from "@/assets";
+import {  logo } from "@/assets";
 import { FormatHref } from "./header/Menu";
 
 export default function Footer({ footer }: any) {
