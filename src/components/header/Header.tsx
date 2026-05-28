@@ -278,7 +278,7 @@ function PaymentButton() {
 
       {/* ── CALL ANYTIME (matches image: red circle icon + text) ── */}
       <a
-        href="tel:+919311936564 z-10"
+        href="tel:+911234567890 z-10"
         className="group flex items-center gap-3 flex-shrink-0"
       >
         {/* Red circle phone icon */}
@@ -297,7 +297,7 @@ function PaymentButton() {
             Support 24 X 7
           </p>
           <p className="text-base text-white font-bold tracking-wide">
-          +91 9311936564
+          +91 1234567890
           </p>
         </div>
       </a>

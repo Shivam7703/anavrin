@@ -1255,8 +1255,8 @@ export const contactdetail = [
   {
     icon: <MdWifiCalling3 />,
     title: "Call Us",
-    text: "+919311936564",
-    slug: "tel:+919311936564",
+    text: "+911234567890",
+    slug: "tel:+911234567890",
   },
   {
     icon: <MdAttachEmail />,
