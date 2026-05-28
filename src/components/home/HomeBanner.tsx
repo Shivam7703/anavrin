@@ -76,7 +76,7 @@ export default function HomeBanner() {
                         className="inline-flex items-center gap-2 mb-5"
                       >
                         <span className="w-8 h-[2px] bg-color4" />
-                        <span className="text-color4 text-[13px] font-bold tracking-[0.2em] uppercase">
+                        <span className="text-color1 text-[13px] font-bold tracking-[0.2em] uppercase">
                           {item.welcome}
                         </span>
                       </motion.div>
