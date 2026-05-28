@@ -742,7 +742,7 @@ export const Whychoose = {
   title2: "We provide trusted guidance with",
   title3: "a clear process",
   para:
-    "Anavrin Advisor, the best immigration consultants in Delhi, offers reliable and result-driven immigration solutions backed by experienced professionals and transparent processes. We focus on profile-based guidance, accurate documentation, and legal compliance to ensure smooth visa applications. With a client-first approach and personalized support, we help individuals and families achieve their global immigration goals with confidence and clarity.",
+    "Anavrin Adviser, the best immigration consultants in Delhi, offers reliable and result-driven immigration solutions backed by experienced professionals and transparent processes. We focus on profile-based guidance, accurate documentation, and legal compliance to ensure smooth visa applications. With a client-first approach and personalized support, we help individuals and families achieve their global immigration goals with confidence and clarity.",
 
   success: [
     { id: 1, value: "100%", text: "Visa Success Rate" },
@@ -757,25 +757,25 @@ export const testimonialData = {
     {
       title: "Suresh Dixit",
       text:
-        "I had a very smooth experience with Anavrin Advisor Immigration. From the initial consultation to the final submission, they guided me at every step and ensured my documents were accurate. The entire visa process felt well-managed and stress-free.",
+        "I had a very smooth experience with Anavrin Adviser Immigration. From the initial consultation to the final submission, they guided me at every step and ensured my documents were accurate. The entire visa process felt well-managed and stress-free.",
       img: cl1,
     },
     {
       title: "Mohan Rane",
       text:
-        "The team at Anavrin Advisor Immigration is very supportive and easy to communicate with. They explained each step clearly and kept me informed throughout the process. Their guidance helped me avoid mistakes and complete my application without confusion. They are the best visa consultants in Delhi.",
+        "The team at Anavrin Adviser Immigration is very supportive and easy to communicate with. They explained each step clearly and kept me informed throughout the process. Their guidance helped me avoid mistakes and complete my application without confusion. They are the best visa consultants in Delhi.",
       img: cl1,
     },
     {
       title: "Manoj Saini",
       text:
-        "I was quite confused in the beginning, but Anavrin Advisor Immigration provided clear and practical guidance. They helped me choose the right visa option and handled my documentation carefully. The entire experience was smooth, and I felt confident throughout the process.",
+        "I was quite confused in the beginning, but Anavrin Adviser Immigration provided clear and practical guidance. They helped me choose the right visa option and handled my documentation carefully. The entire experience was smooth, and I felt confident throughout the process.",
       img: cl1,
     },
     {
       title: "Sam Goyal",
       text:
-        "Anavrin Advisor Immigration has a very professional and reliable team. They managed my application from start to finish with proper attention to detail. Everything was done on time, and I am fully satisfied with their service and overall support.",
+        "Anavrin Adviser Immigration has a very professional and reliable team. They managed my application from start to finish with proper attention to detail. Everything was done on time, and I am fully satisfied with their service and overall support.",
       img: cl1,
     },
   ],
@@ -1089,7 +1089,7 @@ export const HomefaqData = {
 export const footer = {
   logo: logo2,
   text:
-    "anavrinadvisorcore is a trusted consulting firm delivering reliable immigration and visa solutions through expert guidance, transparent processes, and personalized support, helping individuals and families achieve their global aspirations with confidence.",
+    "anavrinadvisercore is a trusted consulting firm delivering reliable immigration and visa solutions through expert guidance, transparent processes, and personalized support, helping individuals and families achieve their global aspirations with confidence.",
 
   socials: {
     facebook: "https://www.facebook.com/",
@@ -1246,7 +1246,7 @@ export const whychooseus = {
 export const contactBanner = {
   title: "Contact Us",
   para:
-    "Connect With anavrinadvisor For Reliable Crop Protection & Farming Support. We're Here to Help Your Agriculture Thrive With Expert Solutions.",
+    "Connect With anavrinadviser For Reliable Crop Protection & Farming Support. We're Here to Help Your Agriculture Thrive With Expert Solutions.",
   slug: "contact-us",
   img: contactb,
 };
@@ -1261,8 +1261,8 @@ export const contactdetail = [
   {
     icon: <MdAttachEmail />,
     title: "Email Us",
-    text: "info@anavrinadvisor.com",
-    slug: "mailto:info@anavrinadvisor.com",
+    text: "info@anavrinadviser.com",
+    slug: "mailto:info@anavrinadviser.com",
   },
   {
     icon: <FaMapLocationDot />,
@@ -1277,7 +1277,7 @@ export const contactdetail = [
 export const servicechoose = {
   img: box1,
   title1: "Why Choose Us",
-  title2: "Why Choose Anavrin Advisor For Your ",
+  title2: "Why Choose Anavrin Adviser For Your ",
   title3: "Immigration Pathway?",
   para:
     "We provide structured, transparent immigration solutions designed to help individuals and families move abroad confidently through expert guidance, ethical practices, and end-to-end professional support.",

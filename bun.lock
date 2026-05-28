@@ -2,7 +2,7 @@
   "lockfileVersion": 1,
   "workspaces": {
     "": {
-      "name": "anavrinadvisor",
+      "name": "anavrinadviser",
       "dependencies": {
         "motion": "^11.15.0",
         "next": "14.0.4",

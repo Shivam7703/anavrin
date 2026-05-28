@@ -116,7 +116,7 @@ export default function Footer({ footer }: any) {
               <strong>Phone: </strong>&nbsp;0679513203,0677066361
             </p>
             <p className=" transition:all text-base text-zinc-600 duration-300 hover: hover:text-main ">
-              <strong>E-mail: </strong>&nbsp;info@anavrinadvisor.com
+              <strong>E-mail: </strong>&nbsp;info@anavrinadviser.com
             </p>
             <p className=" transition:all text-base text-zinc-600 duration-300 hover: hover:text-main ">
               <strong>Address: </strong>&nbsp;Lorem ipsum dolor, sit amet
