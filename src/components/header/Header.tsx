@@ -274,24 +274,21 @@ export default Header;
 
 function PaymentButton() {
   return (
-    <div className="flex items-center gap-4 flex-shrink-0">
+    <div className="flex items-end gap-4 flex-shrink-0">
 
       {/* ── CALL ANYTIME (matches image: red circle icon + text) ── */}
-      <a
+      {/* <a
         href="tel:+911234567890 z-10"
         className="group flex items-center gap-3 flex-shrink-0"
       >
-        {/* Red circle phone icon */}
         <div className="relative flex-shrink-0 w-11 h-11 rounded-full bg-red-600 flex items-center justify-center
           
           group-hover:shadow-[0_0_0_8px_rgba(203,0,0,0.2)]
           transition-all duration-300">
-          {/* Ping ring animation */}
           <span className="absolute inset-0 rounded-full bg-red-500 animate-ping opacity-30" />
           <FaPhone className="text-white text-base relative z-10" />
         </div>
 
-        {/* Text */}
         <div className="leading-tight z-10 sticky">
           <p className="text-xs text-white/80 font-medium tracking-wide uppercase">
             Support 24 X 7
@@ -300,7 +297,7 @@ function PaymentButton() {
           +91 1234567890
           </p>
         </div>
-      </a>
+      </a> */}
 
 
 
