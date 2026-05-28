@@ -7,7 +7,7 @@ import { AiFillInstagram } from "react-icons/ai";
 import { FaXTwitter } from "react-icons/fa6";
 import { TbBrandYoutubeFilled } from "react-icons/tb";
 import { navigationMenu } from "@/data/homeData";
-import {  logo } from "@/assets";
+import { logo } from "@/assets";
 import { FormatHref } from "./header/Menu";
 
 export default function Footer({ footer }: any) {
@@ -116,7 +116,7 @@ export default function Footer({ footer }: any) {
               <strong>Phone: </strong>&nbsp;0679513203,0677066361
             </p>
             <p className=" transition:all text-base text-zinc-600 duration-300 hover: hover:text-main ">
-              <strong>E-mail: </strong>&nbsp;info@WiderWorldcoreoverseas.com
+              <strong>E-mail: </strong>&nbsp;info@anavrinadvisor.com
             </p>
             <p className=" transition:all text-base text-zinc-600 duration-300 hover: hover:text-main ">
               <strong>Address: </strong>&nbsp;Lorem ipsum dolor, sit amet

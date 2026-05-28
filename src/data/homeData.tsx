@@ -7,7 +7,7 @@ import {
   box2,
   box3,
   cl1,
- 
+
   famvisa,
   prvisa,
   business,
@@ -413,7 +413,7 @@ export const navigationMenu = {
 };
 
 export const sliderContent = [
- 
+
   {
     id: 1, // Fix duplicate id issue by using unique ids
     img: banner2,
@@ -440,7 +440,7 @@ export const sliderContent = [
 
 export const aboutdata = {
   img1: about2,
-  img2:about,
+  img2: about,
   title1: "ABOUT US",
   title2: "Professional & Trusted Visa",
   title3: "Consultants in Delhi",
@@ -458,7 +458,7 @@ export const aboutdata = {
       heading: "Client Satisfaction",
       text: "Focused on trust, real results, and delivering a smooth experience for every client.",
       icon: <RiUserFollowLine />,
-    },     {
+    }, {
       id: 3,
       heading: "Expert Guidance",
       text: "Professional support from experienced consultants to help you make informed and confident immigration decisions.",
@@ -635,7 +635,7 @@ export const workingprocess = {
 };
 
 export const canadapnp = {
-  bgImg:back,
+  bgImg: back,
   title1: "Countries We Serve",
   title2:
     "Connecting You to Global Opportunities",
@@ -742,7 +742,7 @@ export const Whychoose = {
   title2: "We provide trusted guidance with",
   title3: "a clear process",
   para:
-    "Wider World, the best immigration consultants in Delhi, offers reliable and result-driven immigration solutions backed by experienced professionals and transparent processes. We focus on profile-based guidance, accurate documentation, and legal compliance to ensure smooth visa applications. With a client-first approach and personalized support, we help individuals and families achieve their global immigration goals with confidence and clarity.",
+    "Anavrin Advisor, the best immigration consultants in Delhi, offers reliable and result-driven immigration solutions backed by experienced professionals and transparent processes. We focus on profile-based guidance, accurate documentation, and legal compliance to ensure smooth visa applications. With a client-first approach and personalized support, we help individuals and families achieve their global immigration goals with confidence and clarity.",
 
   success: [
     { id: 1, value: "100%", text: "Visa Success Rate" },
@@ -752,30 +752,30 @@ export const Whychoose = {
 };
 
 export const testimonialData = {
- 
+
   testimonials: [
     {
       title: "Suresh Dixit",
       text:
-        "I had a very smooth experience with Wider World Immigration. From the initial consultation to the final submission, they guided me at every step and ensured my documents were accurate. The entire visa process felt well-managed and stress-free.",
+        "I had a very smooth experience with Anavrin Advisor Immigration. From the initial consultation to the final submission, they guided me at every step and ensured my documents were accurate. The entire visa process felt well-managed and stress-free.",
       img: cl1,
     },
     {
       title: "Mohan Rane",
       text:
-        "The team at Wider World Immigration is very supportive and easy to communicate with. They explained each step clearly and kept me informed throughout the process. Their guidance helped me avoid mistakes and complete my application without confusion. They are the best visa consultants in Delhi.",
+        "The team at Anavrin Advisor Immigration is very supportive and easy to communicate with. They explained each step clearly and kept me informed throughout the process. Their guidance helped me avoid mistakes and complete my application without confusion. They are the best visa consultants in Delhi.",
       img: cl1,
     },
     {
       title: "Manoj Saini",
       text:
-        "I was quite confused in the beginning, but Wider World Immigration provided clear and practical guidance. They helped me choose the right visa option and handled my documentation carefully. The entire experience was smooth, and I felt confident throughout the process.",
+        "I was quite confused in the beginning, but Anavrin Advisor Immigration provided clear and practical guidance. They helped me choose the right visa option and handled my documentation carefully. The entire experience was smooth, and I felt confident throughout the process.",
       img: cl1,
     },
     {
       title: "Sam Goyal",
       text:
-        "Wider World Immigration has a very professional and reliable team. They managed my application from start to finish with proper attention to detail. Everything was done on time, and I am fully satisfied with their service and overall support.",
+        "Anavrin Advisor Immigration has a very professional and reliable team. They managed my application from start to finish with proper attention to detail. Everything was done on time, and I am fully satisfied with their service and overall support.",
       img: cl1,
     },
   ],
@@ -1057,7 +1057,7 @@ export const HomefaqData = {
 
   para1:
     "Find clear answers to your most common queries about visas, eligibility, processing time, and required documents—all in one place.",
-faqs: [
+  faqs: [
     {
       que: "Which country is best for PR in 2026?",
       ans:
@@ -1089,7 +1089,7 @@ faqs: [
 export const footer = {
   logo: logo2,
   text:
-    "WiderWorldcore is a trusted consulting firm delivering reliable immigration and visa solutions through expert guidance, transparent processes, and personalized support, helping individuals and families achieve their global aspirations with confidence.",
+    "anavrinadvisorcore is a trusted consulting firm delivering reliable immigration and visa solutions through expert guidance, transparent processes, and personalized support, helping individuals and families achieve their global aspirations with confidence.",
 
   socials: {
     facebook: "https://www.facebook.com/",
@@ -1246,7 +1246,7 @@ export const whychooseus = {
 export const contactBanner = {
   title: "Contact Us",
   para:
-    "Connect With WiderWorld For Reliable Crop Protection & Farming Support. We're Here to Help Your Agriculture Thrive With Expert Solutions.",
+    "Connect With anavrinadvisor For Reliable Crop Protection & Farming Support. We're Here to Help Your Agriculture Thrive With Expert Solutions.",
   slug: "contact-us",
   img: contactb,
 };
@@ -1261,8 +1261,8 @@ export const contactdetail = [
   {
     icon: <MdAttachEmail />,
     title: "Email Us",
-    text: "info@WiderWorldcoreoverseas.com",
-    slug: "mailto:info@WiderWorldcoreoverseas.com",
+    text: "info@anavrinadvisor.com",
+    slug: "mailto:info@anavrinadvisor.com",
   },
   {
     icon: <FaMapLocationDot />,
@@ -1277,7 +1277,7 @@ export const contactdetail = [
 export const servicechoose = {
   img: box1,
   title1: "Why Choose Us",
-  title2: "Why Choose Wider World For Your ",
+  title2: "Why Choose Anavrin Advisor For Your ",
   title3: "Immigration Pathway?",
   para:
     "We provide structured, transparent immigration solutions designed to help individuals and families move abroad confidently through expert guidance, ethical practices, and end-to-end professional support.",

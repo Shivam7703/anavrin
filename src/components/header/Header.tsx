@@ -7,7 +7,7 @@ import Menu from "./Menu";
 import MenuMobile from "./MenuMobile";
 
 import { VscChromeClose } from "react-icons/vsc";
-import { IoMenu } from "react-icons/io5";
+import { IoMail, IoMenu } from "react-icons/io5";
 import {
   FaCreditCard,
   FaFacebook,
@@ -62,7 +62,7 @@ const Header = ({ header }: any) => {
           } ${isAtTop ? " top-0" : "md:-top-0 -top-1"}`}
       >
         {/* ================= DESKTOP HEADER ================= */}
-        <div className="max-md:hidden w-full">
+        <div className="max-md:hidden shadow-md w-full">
           <div className="w-full flex relative items-stretch">
             {/* decorative gradient shapes */}
 
@@ -198,16 +198,29 @@ const Header = ({ header }: any) => {
                 Isprimary={false}
                 onTop={isAtTop}
               />
-               <div className="max-w-[400px] flex justify-around -mt-1">
-{[usflag, ukflag, canadaflag, usflag, ukflag,].map((flag, index) => (
-        <Image
-          key={index}
-          src={flag}
-          alt="flag"
-          className="w-10 h-10 object-cover mx-3 rounded-full border-2 border-white"
-        />
-      ))}
-                </div>
+
+<div className="flex items-center  gap-6 max-lg:hidden">
+  {/* Phone Link */}
+  <a 
+    href="tel:+1234567890" 
+    className="group flex items-center gap-2.5 text-sm font-bold text-zinc-600 transition-colors duration-200 hover:text-color1"
+  >
+    <FaPhone className="text-lg text-color1 transition-colors duration-200 group-hover:text-color3" />
+    <span>+91 123 456 7890</span>
+  </a>
+
+  {/* Divider Line */}
+  <span className="h-4 w-px bg-zinc-200" />
+
+  {/* Email Link */}
+  <a 
+    href="mailto:info@anavrinadvisor.com" 
+    className="group flex items-center gap-2.5 text-sm font-bold text-zinc-600 transition-colors duration-200 hover:text-color1"
+  >
+    <IoMail className="text-xl text-color1 transition-colors duration-200 group-hover:text-color3" />
+    <span>info@anavrinadvisor.com</span>
+  </a>
+</div>
             </div>
           </div>
         </div>
@@ -308,8 +321,7 @@ function PaymentButton() {
   {/* Content */}
   <span className="relative z-10 overflow-hidden h-[1.3em] flex items-center">
     <span className="block transition-transform duration-300 group-hover:-translate-y-full whitespace-nowrap">
-      Make Payment
-    </span>
+Pay Now    </span>
 
     <span className="absolute left-0 top-0 block translate-y-full transition-transform duration-300 group-hover:translate-y-0 whitespace-nowrap">
       Pay Now

@@ -13,7 +13,7 @@ import Image from "next/image";
  */
 
 export const metadata: Metadata = {
-  title: "Wider World",
+  title: "Anavrin Advisor",
   description: "Premium Immigration & Visa Consultancy Services",
 };
 
