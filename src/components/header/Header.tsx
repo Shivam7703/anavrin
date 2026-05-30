@@ -205,7 +205,7 @@ const Header = ({ header }: any) => {
                     href="tel:+1234567890"
                     className="group flex items-center gap-2.5 text-sm font-bold text-zinc-600 transition-colors duration-200 hover:text-color1"
                   >
-                    <FaPhone className="text-lg text-color1 transition-colors duration-200 group-hover:text-color3" />
+                    <FaPhone className="text-lg text-color1 transition-colors duration-200 group-hover:text-zinc-600" />
                     <span>+91 123 456 7890</span>
                   </a>
 
@@ -217,7 +217,7 @@ const Header = ({ header }: any) => {
                     href="mailto:info@anavrinadviser.com"
                     className="group flex items-center gap-2.5 text-sm font-bold text-zinc-600 transition-colors duration-200 hover:text-color1"
                   >
-                    <IoMail className="text-xl text-color1 transition-colors duration-200 group-hover:text-color3" />
+                    <IoMail className="text-xl text-color1 transition-colors duration-200 group-hover:text-zinc-600" />
                     <span>info@anavrinadviser.com</span>
                   </a>
                 </div>

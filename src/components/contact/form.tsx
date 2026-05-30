@@ -1,18 +1,7 @@
-"use client";
 import React from "react";
-import { FaLocationArrow, FaRegUserCircle } from "react-icons/fa";
-import { FiMail, FiPhone } from "react-icons/fi";
-import { IoChatboxEllipsesOutline } from "react-icons/io5";
-import { MdOutlineChat } from "react-icons/md";
-import { BiRightArrowAlt } from "react-icons/bi";
-
-const inputFields = [
-  { name: "name",     label: "Full Name", type: "text",  icon: FaRegUserCircle,        placeholder: "John Doe"           },
-  { name: "phone",    label: "Phone",     type: "tel",   icon: FiPhone,                placeholder: "+1 (555) 000-0000"  },
-  { name: "email",    label: "Email",     type: "email", icon: FiMail,                 placeholder: "john@example.com"   },
-  { name: "location", label: "Location",  type: "text",  icon: FaLocationArrow,        placeholder: "City, Country"      },
-  { name: "subject",  label: "Subject",   type: "text",  icon: IoChatboxEllipsesOutline, placeholder: "How can we help?" },
-];
+import Image from "next/image";
+import { FaCheckCircle } from "react-icons/fa";
+import { contat } from "@/assets"; // सुनिश्चित करें कि यह इम्पोर्ट सही है
 
 const pointers = [
   "20+ years of experience as leading Immigration Consultants in India",
@@ -25,189 +14,69 @@ const pointers = [
 
 function Form() {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-[#f0f4fb] via-[#e8eef8] to-[#f5f0e8] lg:px-20 md:px-14 sm:px-10 px-4 py-16 md:py-24">
+    <section className="relative overflow-hidden bg-zinc-100 lg:px-24 !pt-16 md:p-16 sm:px-10 p-6 ">
+      
+      {/* Ambient Premium Background Lights */}
+      <div className="absolute top-0 left-1/4 w-[500px] h-[500px] bg-color1/5 rounded-full blur-[160px] pointer-events-none" />
+      <div className="absolute bottom-0 right-1/4 w-[400px] h-[400px] bg-color2/5 rounded-full blur-[140px] pointer-events-none" />
 
-      {/* Background pattern */}
-      <div
-        className="absolute inset-0 opacity-[0.04] pointer-events-none"
-        style={{
-          backgroundImage:
-            "linear-gradient(rgba(0,64,148,1) 1px,transparent 1px),linear-gradient(90deg,rgba(0,64,148,1) 1px,transparent 1px)",
-          backgroundSize: "60px 60px",
-        }}
-      />
-      <div className="absolute top-0 left-0 w-full h-[3px] bg-gradient-to-r from-transparent via-color2 to-color1" />
-      <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-color2/10 rounded-full blur-[120px] pointer-events-none" />
-      <div className="absolute bottom-0 left-0 w-[360px] h-[360px] bg-color1/7 rounded-full blur-[100px] pointer-events-none" />
-
-      <div className="max-w-[1200px] mx-auto relative z-10">
-        <div className="flex flex-wrap items-stretch rounded-3xl overflow-hidden
-          shadow-[0_20px_60px_rgba(26,47,74,0.14)]">
-
-          {/* ── LEFT: Info Panel ── */}
-          <div className="md:w-[46%] w-full bg-color3 relative overflow-hidden p-10 md:p-12 flex flex-col justify-between">
-
-            {/* Pattern overlay */}
-            <div
-              className="absolute inset-0 opacity-[0.04] pointer-events-none"
-              style={{
-                backgroundImage:
-                  "linear-gradient(rgba(255,255,255,1) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,1) 1px,transparent 1px)",
-                backgroundSize: "60px 60px",
-              }}
-            />
-            {/* Blobs */}
-            <div className="absolute top-0 right-0 w-64 h-64 bg-color2/15 rounded-full blur-[80px] pointer-events-none" />
-            <div className="absolute bottom-0 left-0 w-52 h-52 bg-color1/10 rounded-full blur-[80px] pointer-events-none" />
-
-            <div className="relative z-10">
-              {/* Label */}
-              <h4 className="text-white font-bold uppercase text-sm tracking-[0.22em] mb-4 sm:mb-6">
-                Contact Us
-              </h4>
-
-              {/* Heading */}
-              <h2
-                className="text-white font-black text-3xl md:text-4xl !leading-tight mb-5"
-              >
-               Simplifying Your Visa Journey with Trusted Experts
-              </h2>
-
-              <p className="text-white/80 leading-relaxed mb-10">
-Get personalized assistance from experienced Immigration Consultants in India who guide you at every step. From profile evaluation to final approval, we make your immigration process smooth, transparent, and stress-free.
-              </p>
-
-              {/* Divider */}
-              <div className="w-12 h-[2px] bg-gradient-to-r from-color2 to-color1 rounded-full mb-8" />
-
-              {/* Pointers */}
-              <ul className="flex flex-col gap-4">
-                {pointers.map((pt, i) => (
-                  <li key={i} className="flex items-start gap-3">
-                    <span className="mt-0.5 flex-shrink-0 w-5 h-5 rounded-full bg-gradient-to-br from-color2 to-color1 flex items-center justify-center">
-                      <svg className="w-2.5 h-2.5 text-white" fill="none" stroke="currentColor" strokeWidth="3" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-                      </svg>
-                    </span>
-                    <span className="text-white text-base leading-relaxed">{pt}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {/* Bottom stat strip */}
+      <div className="max-w-[1280px] mx-auto relative z-10">
+        <div className="grid lg:grid-cols-12 gap-10 items-center">
           
+          {/* ── LEFT SIDE: IMAGE (FIXED HEIGHT FOR GUARANTEED VISIBILITY) ── */}
+          <div className="lg:col-span-5 w-full ">
+            <div className="w-full max-w-[650px]">
+              
+              {/* यहाँ fill हटाकर width/height या standard responsive layout यूज़ किया है */}
+              {contat ? (
+                <Image
+                  src={contat}
+                  alt="Contact Illustration"
+                  width={400}
+                  height={400}
+                  className="w-full h-auto object-contain drop-shadow-[0_20px_40px_rgba(0,0,0,0.44)] transition-transform duration-700 hover:scale-[1.02]"
+                />
+              ) : (
+                <span className="text-xs text-gray-400">Image Asset Missing</span>
+              )}
+
+            </div>
           </div>
 
-          {/* ── RIGHT: Form Panel ── */}
-          <div className="md:w-[54%] w-full bg-white p-8 md:p-12">
-
-            <h3
-              className="text-color3 font-black text-2xl mb-1"
-            >
-              Send Us a Message
-            </h3>
-            <p className="text-gray-600 text-sm mb-8">Fill in the form and our team will get back to you within 24 hours.</p>
-
-            <form className="space-y-5">
-
-              {/* First 4 — 2 col grid */}
-              <div className="grid sm:grid-cols-2 gap-5">
-                {inputFields.slice(0, 4).map((field) => {
-                  const Icon = field.icon;
-                  return (
-                    <div key={field.name}>
-                      <label className="block text-color3 font-semibold text-xs uppercase tracking-[0.12em] mb-2">
-                        {field.label}
-                      </label>
-                      <div className="relative">
-                        <div className="absolute left-4 top-1/2 -translate-y-1/2 text-color2/80 z-10">
-                          <Icon size={16} />
-                        </div>
-                        <input
-                          type={field.type}
-                          name={field.name}
-                          placeholder={field.placeholder}
-                          className="w-full pl-10 pr-4 py-3 bg-zinc-100 rounded-xl text-color3
-                            placeholder-gray-600 text-sm
-                            border border-color2/50
-                            focus:outline-none focus:border-color2/35 focus:bg-white
-                            transition-all duration-200"
-                          required
-                        />
-                      </div>
-                    </div>
-                  );
-                })}
-              </div>
-
-              {/* Subject — full width */}
-              {inputFields.slice(4).map((field) => {
-                const Icon = field.icon;
-                return (
-                  <div key={field.name}>
-                    <label className="block text-color3 font-semibold text-xs uppercase tracking-[0.12em] mb-2">
-                      {field.label}
-                    </label>
-                    <div className="relative">
-                      <div className="absolute left-4 top-1/2 -translate-y-1/2 text-color2/80 z-10">
-                        <Icon size={16} />
-                      </div>
-                      <input
-                        type={field.type}
-                        name={field.name}
-                        placeholder={field.placeholder}
-                        className="w-full pl-10 pr-4 py-3 bg-zinc-100 rounded-xl text-color3
-                          placeholder-gray-600 text-sm
-                          border border-color2/50
-                          focus:outline-none focus:border-color2/35 focus:bg-white
-                          transition-all duration-200"
-                        required
-                      />
-                    </div>
-                  </div>
-                );
-              })}
-
-              {/* Message */}
-              <div>
-                <label className="block text-color3 font-semibold text-xs uppercase tracking-[0.12em] mb-2">
-                  Message
-                </label>
-                <div className="relative">
-                  <div className="absolute left-4 top-4 text-color2/80 z-10">
-                    <MdOutlineChat size={16} />
-                  </div>
-                  <textarea
-                    name="message"
-                    rows={4}
-                    placeholder="Tell us more about your visa inquiry..."
-                    className="w-full pl-10 pr-4 py-3 bg-zinc-100 rounded-xl text-color3
-                      placeholder-gray-600 text-sm
-                      border border-color2/50
-                      focus:outline-none focus:border-color2/35 focus:bg-white
-                      transition-all duration-200 resize-none"
-                    required
-                  />
-                </div>
-              </div>
-
-              {/* Submit */}
-              <button
-                type="submit"
-                className="group inline-flex items-center gap-0 border-2 border-color3 rounded-full overflow-hidden
-                  hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300"
-              >
-                <span className="px-8 py-3 text-sm font-bold uppercase tracking-[0.12em] text-color3">
-                  Submit Now
+          {/* ── RIGHT SIDE: POINTERS PANEL WITH BORDER & PADDING ── */}
+          <div className="lg:col-span-7 w-full bg-white border border-gray-100/80 rounded-[32px] p-6 sm:p-10 md:p-12 shadow-[0_25px_60px_rgba(0,40,100,0.03)]">
+            
+            <div className="mb-8">
+              <div className="flex items-center gap-2 mb-3">
+                <span className="w-6 h-[1.5px] bg-color1" />
+                <span className="text-color1 font-semibold text-xs uppercase tracking-[0.2em]">
+                  Need Any Help?
                 </span>
-                <span className="w-11 h-11 flex items-center justify-center bg-color1 text-white
-                  group-hover:bg-color2 transition-colors duration-300 rounded-full">
-                  <BiRightArrowAlt size={20} />
-                </span>
-              </button>
+              </div>
+              <h3 className="text-gray-950 font-bold text-2xl md:text-3xl lg:text-4xl tracking-tight leading-tight mb-4">
+                Simplifying Your Visa Journey <br />
+                <span className=" text-color1">With Trusted Experts</span>
+              </h3>
+              <p className="text-gray-400 text-sm md:text-base font-light leading-relaxed">
+                Get personalized assistance from experienced Immigration Consultants in India who guide you at every step. From profile evaluation to final approval, we make your process smooth and stress-free.
+              </p>
+            </div>
 
-            </form>
+            <div className="w-16 h-[1px] bg-gray-100 mb-4" />
+
+            <ul className="flex flex-col gap-5">
+              {pointers.map((pt, i) => (
+                <li key={i} className="group flex items-start gap-4">
+                  <span className="mt-1 flex-shrink-0 text-color3 group-hover:text-color2 transition-colors duration-300">
+                    <FaCheckCircle size={18} className="opacity-90 drop-shadow-sm" />
+                  </span>
+                  <span className="text-gray-700 text-base md:text-lg font-light leading-relaxed tracking-wide">
+                    {pt}
+                  </span>
+                </li>
+              ))}
+            </ul>
+
           </div>
 
         </div>

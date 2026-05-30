@@ -9,6 +9,8 @@ export default function AboutSection({ data }: any) {
 
   const skillBars = data?.skillBars || [
     { label: "Visa Consulting", percent: 85 },
+        { label: "Immigration Consultancy", percent: 90 },
+
   ];
 
   const checklist = data?.checklist || [

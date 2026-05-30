@@ -222,7 +222,7 @@ export default function WhychooseSection() {
 
                   {/* Text Content */}
                   <div className="flex-1 pt-1">
-                    <h3 className="text-gray-800 font-bold text-lg sm:text-xl
+                    <h3 className="text-gray-800 font-bold text-base sm:text-lg
                       group-hover:text-color1 transition-colors duration-300">
                       {item.title}
                     </h3>

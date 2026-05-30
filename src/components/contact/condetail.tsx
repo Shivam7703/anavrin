@@ -1,82 +1,138 @@
+"use client";
 import React from "react";
-import { contat } from "@/assets";
-import Image from "next/image";
+import { FiPhone, FiMail } from "react-icons/fi";
+import { FaMapMarkerAlt } from "react-icons/fa";
 
-function ConDetail({ data }: any) {
+function ContactUsSection() {
   return (
-    <section className="relative overflow-hidden bg-[#f8fbff] lg:px-20 md:px-14 sm:px-10 px-6 py-16 md:py-20">
+    <section className="bg-white lg:px-20 md:p-14 sm:p-10 p-6 max-w-[1240px] mx-auto">
+      <div className="grid lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+        
+        {/* ── LEFT SIDE: FORM WITH BORDER & PADDING ── */}
+        <div className="lg:col-span-7 w-full rounded-[24px] bg-[#fcfdfe] p-6 sm:p-8 md:p-10 shadow-[0_8px_20px_rgba(0,0,0,0.32)]">
+          
+          {/* Form Header */}
+          <div className="mb-8">
+            <h2 className="text-gray-900 font-bold text-3xl md:text-4xl tracking-tight">
+              Feel free to write
+            </h2>
+          </div>
 
-      {/* Decorative blur lights */}
-      <div className="absolute top-0 left-0 w-[280px] h-[280px] bg-color1/10 rounded-full blur-[120px]" />
-      <div className="absolute bottom-0 right-0 w-[260px] h-[260px] bg-color2/10 rounded-full blur-[120px]" />
+          {/* Form Inputs */}
+          <form className="space-y-5" onSubmit={(e) => e.preventDefault()}>
+            <div className="grid sm:grid-cols-2 gap-5">
+              <input
+                type="text"
+                placeholder="Your Name"
+                className="w-full px-5 py-3.5 shadow-sm shadow-black/10 border rounded-xl text-gray-900 placeholder-gray-400 text-sm font-medium focus:outline-none focus:border-gray-200 focus:bg-white transition-all duration-300"
+                required
+              />
+              <input
+                type="email"
+                placeholder="Enter Email"
+                className="w-full px-5 py-3.5 shadow-sm shadow-black/10 border rounded-xl text-gray-900 placeholder-gray-400 text-sm font-medium focus:outline-none focus:border-gray-200 focus:bg-white transition-all duration-300"
+                required
+              />
+            </div>
 
-      <div className="max-w-[1300px] mx-auto relative z-10 flex flex-col md:flex-row items-center gap-12 lg:gap-16">
+            <div className="grid sm:grid-cols-2 gap-5">
+              <input
+                type="text"
+                placeholder="Subject"
+                className="w-full px-5 py-3.5 shadow-sm shadow-black/10 border rounded-xl text-gray-900 placeholder-gray-400 text-sm font-medium focus:outline-none focus:border-gray-200 focus:bg-white transition-all duration-300"
+                required
+              />
+              <input
+                type="tel"
+                placeholder="Phone"
+                className="w-full px-5 py-3.5 shadow-sm shadow-black/10 border rounded-xl text-gray-900 placeholder-gray-400 text-sm font-medium focus:outline-none focus:border-gray-200 focus:bg-white transition-all duration-300"
+              />
+            </div>
 
-        {/* LEFT IMAGE */}
-        <div className="md:w-[45%] w-full relative min-h-[420px] md:min-h-[500px] lg:min-h-[560px]">
-          <Image
-            src={contat}
-            alt="Contact Illustration"
-            fill
-            className="object-contain object-center"
-          />
+            <div>
+              <textarea
+                rows={5}
+                placeholder="Message"
+                className="w-full px-5 py-3.5 shadow-sm shadow-black/10 border rounded-xl text-gray-900 placeholder-gray-400 text-sm font-medium focus:outline-none focus:border-gray-200 focus:bg-white transition-all duration-300 resize-none"
+                required
+              />
+            </div>
+
+            <button
+              type="submit"
+              className="w-full sm:w-auto px-8 py-4 bg-color1 text-white font-bold text-xs uppercase tracking-widest rounded-xl hover:bg-color3 transition-colors duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-0.5 active:translate-y-0"
+            >
+              Send Message
+            </button>
+          </form>
         </div>
 
-        {/* RIGHT CONTACT CARDS */}
-        <div className="flex-1 flex flex-col gap-6">
+        {/* ── RIGHT SIDE: DETAILS PANEL ── */}
+        <div className="lg:col-span-5 w-full lg:pt-4">
+          
+          {/* Text Header */}
+          <div className="mb-6">
+            <div className="flex items-center gap-2 mb-2">
+              <span className="text-color1 font-bold text-xs uppercase tracking-widest">
+                Need Any Help?
+              </span>
+            </div>
+            <h2 className="text-gray-900 font-bold text-3xl md:text-4xl tracking-tight mb-4">
+              Get in touch with us
+            </h2>
+            <p className="text-gray-800 max-sm:text-sm leading-relaxed font-normal">
+              Our dedicated team is ready to assist with all your inquiries, from project discussions to support and feedback. Reach out via the methods below.
+            </p>
+          </div>
 
-          {data?.map((item: any, index: number) => (
-            <div
-              key={index}
-              className="group relative rounded-3xl bg-white/70 backdrop-blur-lg
-              border border-white/40
-              shadow-[0_10px_30px_rgba(0,0,0,0.05)]
-              hover:shadow-[0_25px_60px_rgba(0,64,148,0.18)]
-              hover:-translate-y-2 transition-all duration-500"
-            >
-              {/* Gradient border glow */}
-              <div className="absolute inset-0 rounded-3xl bg-gradient-to-r from-color1/5 via-color2/5 to-white opacity-0 group-hover:opacity-100 blur-xl transition duration-500" />
-
-              <div className="relative flex items-center gap-6 px-8 py-7">
-
-                {/* ICON */}
-                <div
-                  className="w-16 h-16 flex items-center justify-center rounded-2xl
-                  bg-gradient-to-br from-color1 to-color2 text-white text-2xl
-                  shadow-[0_10px_25px_rgba(0,64,148,0.25)]
-                  group-hover:scale-110 transition duration-300"
-                >
-                  {item?.icon}
-                </div>
-
-                {/* TEXT */}
-                <div className="flex flex-col">
-                  <h3 className="text-lg md:text-xl font-semibold text-color3 tracking-wide">
-                    {item?.title}
-                  </h3>
-
-                  <a
-                    href={item?.slug}
-                    className="text-gray-500 mt-1 text-base font-medium
-                    group-hover:text-color1 transition"
-                  >
-                    {item?.text}
-                  </a>
-                </div>
-
-                {/* Right arrow hover */}
-                <div className="ml-auto text-color1 opacity-0 group-hover:opacity-100 group-hover:translate-x-2 transition duration-300 text-xl">
-                  →
-                </div>
-
+          {/* Info Details List */}
+          <div className="space-y-6 mt-8">
+            
+            {/* Phone Card */}
+            <div className="flex items-center gap-5 group">
+              <div className="w-14 h-14 flex items-center justify-center rounded-xl bg-color1 text-white shadow-md shadow-zinc-700/40 group-hover:scale-105 transition duration-300 flex-shrink-0">
+                <FiPhone size={22} />
+              </div>
+              <div className="flex flex-col">
+                <span className="text-gray-900 font-bold text-base">Phone</span>
+                <a href="tel:+15550102345" className="text-gray-500 text-sm font-medium hover:text-color1 transition">
+                  +1 555-010-2345
+                </a>
               </div>
             </div>
-          ))}
 
+            {/* Email Card */}
+            <div className="flex items-center gap-5 group">
+              <div className="w-14 h-14 flex items-center justify-center rounded-xl bg-color1 text-white shadow-md shadow-zinc-700/40 group-hover:scale-105 transition duration-300 flex-shrink-0">
+                <FiMail size={22} />
+              </div>
+              <div className="flex flex-col">
+                <span className="text-gray-900 font-bold text-base">Email</span>
+                <a href="mailto:contact@designlab.studio" className="text-gray-500 text-sm font-medium hover:text-color1 transition">
+                  contact@designlab.studio
+                </a>
+              </div>
+            </div>
+
+            {/* Address Card */}
+            <div className="flex items-center gap-5 group">
+              <div className="w-14 h-14 flex items-center justify-center rounded-xl bg-color1 text-white shadow-md shadow-zinc-700/40 group-hover:scale-105 transition duration-300 flex-shrink-0">
+                <FaMapMarkerAlt size={22} />
+              </div>
+              <div className="flex flex-col">
+                <span className="text-gray-900 font-bold text-base">Address</span>
+                <span className="text-gray-500 text-sm font-medium">
+                  77 Sunset Boulevard, Los Angeles, CA
+                </span>
+              </div>
+            </div>
+
+          </div>
         </div>
+
       </div>
     </section>
   );
 }
 
-export default ConDetail;
+export default ContactUsSection;

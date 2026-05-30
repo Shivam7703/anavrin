@@ -52,7 +52,7 @@ function CountDown() {
   return (
     <section
       ref={ref}
-      className="w-full px-4 sm:px-6 md:px-10 lg:px-20 xl:px-24 pt-6 -mb-16 relative z-10"
+      className="w-full px-4 sm:px-6 md:px-10 lg:px-20 xl:px-24 pt-6 -mb-[4.25rem] relative z-10"
     >
       <motion.div
         initial={{ opacity: 0, y: 30 }}

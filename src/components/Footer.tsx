@@ -13,7 +13,7 @@ import { FormatHref } from "./header/Menu";
 export default function Footer({ footer }: any) {
   return (
     <>
-      <footer className="">
+      <footer className="border-t-2 border-gray-300">
         {/* Footer links section  */}
         <div className="grid sm:p-8 p-6 md:px-24  w-full text-black bg-color5  grid-cols-3 sm:grid-cols-6 gap-6 lg:gap-10 lg:grid-cols-12">
           <div className="col-span-3 flex flex-col gap-y-2">

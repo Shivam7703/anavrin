@@ -13,15 +13,11 @@ export default function Blogs({ isHome }: any) {
 
   return (
     <section
-      className={`relative w-full overflow-hidden bg-white max-w-[1450px] mx-auto ${
-        isHome
-          ? "px-4 py-12 sm:px-8 sm:py-14 md:px-12 md:py-16 lg:px-16 xl:px-20"
-          : "px-3 pb-5"
-      }`}
+      className={`relative w-full overflow-hidden bg-white max-w-[1450px] mx-auto px-4 py-12 sm:px-8 sm:py-14 md:px-12 md:py-16 lg:px-16 xl:px-20`}
     >
 
       {/* ── HEADER ── */}
-      {isHome && (
+    
         <div className="text-center mb-10 sm:mb-14">
 
           {/* Small label with red line */}
@@ -36,12 +32,11 @@ export default function Blogs({ isHome }: any) {
           </h2>
 
         </div>
-      )}
 
       {/* ── GRID ── */}
       <div
         className={`grid gap-6 sm:gap-7 mx-auto
-          sm:grid-cols-2 ${isHome ? "lg:grid-cols-3" : ""}`}
+          sm:grid-cols-2 lg:grid-cols-3`}
       >
         {(isHome ? data?.blog?.slice(0, 3) : data?.blog)?.map(
           (blog: any, index: number) => (
@@ -89,7 +84,7 @@ export default function Blogs({ isHome }: any) {
                 <div className="flex items-center gap-4 text-xs text-gray-400 mb-3">
                   <span className="flex items-center gap-1.5">
                     <BsFillPersonFill className="text-color1 text-xs" />
-                    By {blog?.author || "Shadhin"}
+                    By {blog?.author || "Shivam"}
                   </span>
                   <span className="flex items-center gap-1.5">
                     <BsChatDots className="text-color1 text-xs" />
