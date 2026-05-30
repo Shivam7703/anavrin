@@ -1,5 +1,5 @@
 import logo from "@/assets/logo.png";
-import logo2 from "@/assets/logo-white.png";
+import logo2 from "@/assets/logo.png";
 import box1 from "@/assets/home/box1.jpg";
 import box2 from "@/assets/home/box2.jpg";
 import box3 from "@/assets/home/box3.jpg";
