@@ -95,8 +95,8 @@ function ContactUsSection() {
               </div>
               <div className="flex flex-col">
                 <span className="text-gray-900 font-bold text-base">Phone</span>
-                <a href="tel:+15550102345" className="text-gray-500 text-sm font-medium hover:text-color1 transition">
-                  +1 555-010-2345
+                <a href="tel:+911234567890" className="text-gray-500 text-sm font-medium hover:text-color1 transition">
+                  +91 123 456 7890
                 </a>
               </div>
             </div>
@@ -108,8 +108,8 @@ function ContactUsSection() {
               </div>
               <div className="flex flex-col">
                 <span className="text-gray-900 font-bold text-base">Email</span>
-                <a href="mailto:contact@designlab.studio" className="text-gray-500 text-sm font-medium hover:text-color1 transition">
-                  contact@designlab.studio
+                <a href="mailto:contact@anavrinadviser.com" className="text-gray-500 text-sm font-medium hover:text-color1 transition">
+                  contact@anavrinadviser.com
                 </a>
               </div>
             </div>
@@ -122,7 +122,7 @@ function ContactUsSection() {
               <div className="flex flex-col">
                 <span className="text-gray-900 font-bold text-base">Address</span>
                 <span className="text-gray-500 text-sm font-medium">
-                  77 Sunset Boulevard, Los Angeles, CA
+                 lorem ipsum dolor sit amet, consectetur adipiscing elit, .
                 </span>
               </div>
             </div>
