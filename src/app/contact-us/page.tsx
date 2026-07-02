@@ -9,7 +9,7 @@ function page() {
        <Banner
    title={"Contact Us"}
    para={
-   "We offer a wide range of immigration services to help you achieve your global aspirations."}
+   "Get in touch with our experts for quick, reliable, and personalized immigration assistance today. "}
    slug={"contact-us"} />
    <Form/>
    <ContactUsSection/>

@@ -2,29 +2,7 @@ import React from "react";
 import Buttonmain from "../global/button";
 import { footerImage } from "@/assets";
 import Image from "next/image";
-
-const data = [
-  {
-    step: "01",
-    heading: "Complete Online Registrations",
-    text: "Understanding your profile and completing all registration formalities with proper guidance and support.",
-  },
-  {
-    step: "02",
-    heading: "Documents and Payments",
-    text: "Preparing documentation and handling payment procedures carefully to avoid delays or mistakes.",
-  },
-  {
-    step: "03",
-    heading: "Visa Processing & Approval",
-    text: "Final verification, application submission, and continuous tracking until successful visa approval.",
-  },
-  {
-    step: "04",
-    heading: "Visa Processing & Approval",
-    text: "Final verification, application submission, and continuous tracking until successful visa approval.",
-  },
-];
+import { workingprocess as data } from "@/data/homeData";
 
 export default function WorkProcessSlider() {
   return (
@@ -40,20 +18,18 @@ export default function WorkProcessSlider() {
           <div className="flex items-center gap-3 sm:mb-6 mb-4">
             <span className="w-10 h-[3px] bg-color1" />
             <p className="text-xs font-bold uppercase tracking-[0.22em] text-white">
-              Working Process
+              {data?.title1}
             </p>
           </div>
 
           {/* Main heading */}
           <h2 className="text-white font-bold  !leading-snug  text-2xl md:text-4xl lg:text-5xl max-w-[700px]">
-            4 Step that Can Get Your Visa Easily
+            {data?.title2}
           </h2>
 
           {/* Paragraph */}
           <p className="text-gray-400 text-sm sm:text-base leading-7 mt-5 sm:mt-8 max-w-[520px]">
-            These cases are perfectly simple and easy to distinguish. In a
-            free hour, when our power of choice is untrammelled and when
-            nothing prevents our being able to do what we like best.
+           {data?.para}
           </p>
 
           {/* Button */}
@@ -74,7 +50,7 @@ export default function WorkProcessSlider() {
         {/* RIGHT CARDS */}
         <div className="lg:w-[48%] w-full space-y-4  sm:space-y-8">
           
-          {data.map((item, index) => (
+          {data?.cards?.map((item, index) => (
             <div
               key={index}
               className="relative"

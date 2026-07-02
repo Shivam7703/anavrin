@@ -50,8 +50,7 @@ export default function VisaSlider() {
       <div className="relative z-10 text-center mb-12">
         {data?.title1 && (
           <p className="text-xs font-bold uppercase tracking-[0.22em] text-color1 mb-3">
-            Our Services
-          </p>
+{data?.title1}          </p>
         )}
         <h2 className="text-white font-bold md:text-4xl text-2xl lg:text-5xl !leading-tight mb-5 max-w-3xl mx-auto">
           {data?.title2} 

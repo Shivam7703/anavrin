@@ -90,7 +90,6 @@ export default function HomeBanner() {
                        
                       >
                         {item.title1}
-                        <span className="text-color4 "> {item.title2}</span>
                       </motion.h1>
 
                       {/* Para */}

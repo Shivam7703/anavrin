@@ -16,38 +16,9 @@ import { MdArrowRight } from "react-icons/md";
 import { footerImage, para } from "@/assets";
 import { FaUniversity, FaFileAlt } from "react-icons/fa";
 
-const data = [
-  {
-    title: "IELTS",
-    text: "Prepare for IELTS with expert guidance and regular practice sessions.",
-    href: "visa/ielts",
-    icon: <FaUniversity />,
-  },
-  {
-    title: "PTE",
-    text: "Score high in PTE with structured learning and practice sessions.",
-    href: "visa/pte",
-    icon: <FaFileAlt />,
-  },
-  {
-    title: "TOEFL",
-    text: "Master the TOEFL exam with smart strategies and consistent practice daily.",
-    href: "visa/toefl",
-    icon: <FaGlobe />,
-  },
-  {
-    title: "OET",
-    text: "Get specialized OET training for healthcare professionals with expert guidance.",
-    href: "visa/oet",
-    icon: <FaStethoscope />,
-  },
-  {
-    title: "CELPIP",
-    text: "Achieve CELPIP success with focused coaching and regular practice sessions.",
-    href: "visa/celpip",
-    icon: <FaLanguage />,
-  },
-];
+import {coachingData as data} from "@/data/homeData";
+
+
 
 export default function Coaching() {
   const uniqueId = "coaching123";
@@ -94,19 +65,17 @@ export default function Coaching() {
       {/* ── HEADER ── */}
       <div className="relative z-10 text-center mb-8 sm:mb-10 md:mb-12">
         <p className="text-xs font-bold uppercase tracking-[0.22em] text-color1 mb-2 sm:mb-3">
-          What We Offer
-        </p>
+{data?.title1}        </p>
         <h2 className="text-white font-bold leading-tight mx-auto
           text-2xl sm:text-3xl md:text-4xl lg:text-5xl
            md:max-w-3xl">
-          Professional Offer For Immigrate
-        </h2>
+{data?.title2}        </h2>
       </div>
 
       {/* ── SWIPER ── */}
       <div className="relative z-10 mx-auto max-w-[1450px]">
         <Swiper {...swiperOptions} className={uniqueId}>
-          {data.map((item, index) => {
+          {data?.cards?.map((item, index) => {
             // Last visible card gets red highlight (like screenshot)
             return (
               <SwiperSlide key={item.title} className="!h-auto mt-5">

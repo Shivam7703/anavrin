@@ -1,7 +1,7 @@
 // app/visa/[slug]/page.tsx
 import { notFound } from "next/navigation";
 import React from "react";
-import { Servicedata } from "@/data/serviceData";
+import { visadata } from "@/data/visadata";
 import { bann } from "@/assets";
 import Banner from "@/components/global/banner";
 import Visadetails from "@/components/visa/visa-detail";
@@ -22,14 +22,14 @@ const createSlug = (title: string): string => {
 };
 
 // export function generateStaticParams(){
-//     return Servicedata.map((visas:any) => ({
+//     return visadata.map((visas:any) => ({
 //         slug: createSlug(visas.title)
 //     }));
 // }
 
 export default function Visapage({ params }: Pageprops) {
     const decodedSlug = createSlug(params.slug);
-    const singlevisa = Servicedata.find((visa: any) => createSlug(visa.title) === decodedSlug);
+    const singlevisa = visadata.find((visa: any) => createSlug(visa.title) === decodedSlug);
 
     if (!singlevisa) {
         notFound();

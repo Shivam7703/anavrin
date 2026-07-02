@@ -58,19 +58,18 @@ export default function Testimonials() {
             <div className="flex items-center gap-3 mb-5">
               <span className="w-12 h-[3px] bg-color1 rounded-full" />
               <p className="uppercase tracking-[0.22em] text-color1 text-xs  font-bold">
-                Testimonials
+                {data.title1}
               </p>
             </div>
 
             {/* MAIN HEADING */}
             <h2 className="text-zinc-800 font-bold leading-snug text-2xl md:text-4xl lg:text-5xl">
-              Let’s Explore What People Say <span className="text-color1"> About Us</span>
+              {data.title2} <span className="text-color1"> {data.title3}</span>
             </h2>
 
             {/* PARAGRAPH */}
             <p className="text-zinc-700 text-base my-4 max-w-[450px]">
-              At vero eoset accusam etustodio dignissimos blanditiis
-              praesentium voluptatum deleniti atque corrupti.
+              {data.para}
             </p>
           </div>
 

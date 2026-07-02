@@ -2,7 +2,6 @@ import {
   about2,
   banner,
   banner2,
-  bene2,
   box1,
   box2,
   box3,
@@ -12,21 +11,25 @@ import {
   prvisa,
   business,
   touristvisa,
-  contactb,
   logo2,
   process1,
   ukflag,
   visa1,
   canadaflag,
-  about,
   back,
+  canadaPR,
 } from "@/assets";
-import { FaGlobeAmericas, FaPlaneDeparture } from "react-icons/fa";
+
+import { FiSettings } from "react-icons/fi";
+import { BsPassportFill } from "react-icons/bs";
+import { HiOutlineDocumentCheck } from "react-icons/hi2";
+import { FaChartLine, FaFileAlt, FaFileSignature, FaGlobe, FaGlobeAmericas, FaLanguage, FaPlaneDeparture, FaShieldAlt, FaStethoscope, FaUniversity, FaUserGraduate } from "react-icons/fa";
 import { FaMapLocationDot } from "react-icons/fa6";
 import { HiOutlineFlag, HiOutlineLightBulb } from "react-icons/hi";
 import { IoSearch, IoSettingsOutline } from "react-icons/io5";
 import { MdAttachEmail, MdWifiCalling3 } from "react-icons/md";
-import { RiUserFollowLine } from "react-icons/ri";
+import { RiSpeedMiniFill, RiUserCommunityFill, RiUserFollowLine } from "react-icons/ri";
+import { TbTarget, TbBulb, TbDiamond } from "react-icons/tb";
 
 export const navigationMenu = {
   primaryMenu: [
@@ -41,7 +44,7 @@ export const navigationMenu = {
       href: "/services",
       subNav: [
         { id: 1, label: "IELTS", href: "/services/ielts" },
-        { id: 2, label: "PTE", href: "/services/pte" },
+        { id: 2, label: "PTE", href: "/services/pte-preparation" },
         { id: 3, label: "TOEFL", href: "/services/toefl" },
         { id: 4, label: "Visa Documentation", href: "/services/visa-documentation" },
         { id: 5, label: "Pre/Post Landing", href: "/services/pre-post-landing" },
@@ -67,52 +70,52 @@ export const navigationMenu = {
             {
               id: 1,
               label: "Canada Express Entry",
-              href: "/migrate/canada-express-entry",
+              href: "/visas/canada-express-entry",
             },
             {
               id: 2,
               label: "Federal Skilled Worker Program",
-              href: "/migrate/federal-skilled-worker-program",
+              href: "/visas/federal-skilled-worker-program",
             },
             {
               id: 3,
               label: "Federal Skilled Traders Program",
-              href: "/migrate/federal-skilled-traders-program",
+              href: "/visas/federal-skilled-traders-program",
             },
             {
               id: 4,
               label: "Canada Experience Class",
-              href: "/migrate/canada-experience-class",
+              href: "/visas/canada-experience-class",
             },
             {
               id: 5,
               label: "Canada Permanent Residency Visa",
-              href: "/migrate/canada-permanent-residency-visa",
+              href: "/visas/canada-permanent-residency-visa",
             },
             {
               id: 6,
               label: "Occupation In Demand",
-              href: "/migrate/occupation-in-demand",
+              href: "/visas/Top In-Demand Occupations for Skilled Migration",
             },
             {
               id: 7,
               label: "Family Sponsorship Program",
-              href: "/migrate/family-sponsorship-program",
+              href: "/visas/Family Sponsorship Program (Canada)",
             },
             {
               id: 8,
               label: "Rural Community Immigration Pilot Program",
-              href: "/migrate/rural-community-immigration-pilot-program",
+              href: "/visas/rural-community-immigration-pilot-program",
             },
             {
               id: 9,
               label: "Canada Spouse Visa",
-              href: "/migrate/canada-spouse-visa",
+              href: "/visas/canada-spouse-visa",
             },
             {
               id: 10,
               label: "Self Employed Persons Program",
-              href: "/migrate/self-employed-persons-program",
+              href: "/visas/self-employed-persons-program",
             },
           ],
         },
@@ -125,32 +128,32 @@ export const navigationMenu = {
             {
               id: 1,
               label: "Australia Permanent Residency Visa",
-              href: "/migrate/australia-permanent-residency-visa",
+              href: "/visas/australia-permanent-residency-visa",
             },
             {
               id: 2,
               label: "Skilled Independent Visa Subclass 189",
-              href: "/migrate/skilled-independent-visa-subclass-189",
+              href: "/visas/skilled-independent-visa-subclass-189",
             },
             {
               id: 3,
               label: "Skilled Nominated Visa Subclass 190",
-              href: "/migrate/skilled-nominated-visa-subclass-190",
+              href: "/visas/skilled-nominated-visa-subclass-190",
             },
             {
               id: 4,
               label: "Subclass 489 (Skilled Regional Visa)",
-              href: "/migrate/subclass-489-skilled-regional-visa",
+              href: "/visas/subclass-489-skilled-regional-visa/",
             },
             {
               id: 5,
               label: "Subclass 476",
-              href: "/migrate/subclass-476",
+              href: "/visas/Subclass 476 (Skilled Recognised Graduate Visa)/",
             },
             {
               id: 6,
               label: "Subclass 491",
-              href: "/migrate/subclass-491",
+              href: "/visas/Subclass 491 (Skilled Work Regional Visa)/",
             },
           ],
         },
@@ -160,15 +163,15 @@ export const navigationMenu = {
           label: "European Countries",
           href: "#",
           subNav: [
-            { id: 1, label: "Poland", href: "/migrate/poland" },
-            { id: 2, label: "Luxembourg", href: "/migrate/luxembourg" },
-            { id: 3, label: "Ireland", href: "/migrate/ireland" },
-            { id: 4, label: "Malta", href: "/migrate/malta" },
-            { id: 5, label: "Sweden", href: "/migrate/sweden" },
-            { id: 6, label: "Norway", href: "/migrate/norway" },
-            { id: 7, label: "UK", href: "/migrate/uk" },
-            { id: 8, label: "Germany", href: "/migrate/germany" },
-            { id: 9, label: "Croatia", href: "/migrate/croatia" },
+            { id: 1, label: "Poland", href: "/visas/Poland Work Visa" },
+            { id: 2, label: "Luxembourg", href: "/visas/Luxembourg Work Visa" },
+            { id: 3, label: "Ireland", href: "/visas/Ireland Work Visa" },
+            { id: 4, label: "Malta", href: "/visas/Malta Work Visa" },
+            { id: 5, label: "Sweden", href: "/visas/Sweden Work Visa" },
+            // { id: 6, label: "Norway", href: "/visas/norway" },
+            { id: 7, label: "UK", href: "/visas/UK Work Visa" },
+            { id: 8, label: "Germany", href: "/visas/Germany Tourist Visa" },
+            { id: 9, label: "Croatia", href: "/visas/Croatia Work Visa" },
           ],
         },
 
@@ -177,9 +180,9 @@ export const navigationMenu = {
           label: "GCC Countries",
           href: "#",
           subNav: [
-            { id: 1, label: "Qatar", href: "/migrate/qatar" },
-            { id: 2, label: "Oman", href: "/migrate/oman" },
-            { id: 3, label: "Dubai", href: "/migrate/dubai" },
+            { id: 1, label: "Qatar", href: "/visas/Qatar Work Visa" },
+            { id: 2, label: "Oman", href: "/visas/Oman Work Visa" },
+            { id: 3, label: "Dubai", href: "/visas/Dubai Work Visa" },
           ],
         },
       ],
@@ -193,67 +196,67 @@ export const navigationMenu = {
         {
           id: 1,
           label: "Canada Work Permit Visa",
-          href: "/work-visa/canada-work-permit-visa",
+          href: "/visas/canada-work-permit-visa",
         },
         {
           id: 2,
           label: "Australia Work Permit Visa",
-          href: "/work-visa/australia-work-permit-visa",
+          href: "/visas/australia-work-permit-visa",
         },
         {
           id: 3,
           label: "Germany Job Seeker Visa",
-          href: "/work-visa/germany-job-seeker-visa",
+          href: "/visas/germany-job-seeker-visa",
         },
         {
           id: 4,
           label: "Luxembourg Work Visa",
-          href: "/work-visa/luxembourg-work-visa",
+          href: "/visas/luxembourg-work-visa",
         },
         {
           id: 5,
           label: "Ireland Work Visa",
-          href: "/work-visa/ireland-work-visa",
+          href: "/visas/ireland-work-visa",
         },
         {
           id: 6,
           label: "Sweden Work Visa",
-          href: "/work-visa/sweden-work-visa",
+          href: "/visas/sweden-work-visa",
         },
         {
           id: 7,
           label: "Portugal Work Visa",
-          href: "/work-visa/portugal-work-visa",
+          href: "/visas/portugal-work-visa",
         },
         {
           id: 8,
           label: "Croatia Work Visa",
-          href: "/work-visa/croatia-work-visa",
+          href: "/visas/croatia-work-visa",
         },
         {
           id: 9,
           label: "Slovakia Work Visa",
-          href: "/work-visa/slovakia-work-visa",
+          href: "/visas/slovakia-work-visa",
         },
         {
           id: 10,
           label: "UK Work Visa",
-          href: "/work-visa/uk-work-visa",
+          href: "/visas/uk-work-visa",
         },
         {
           id: 11,
           label: "Greece Work Visa",
-          href: "/work-visa/greece-work-visa",
+          href: "/visas/greece-work-visa",
         },
         {
           id: 12,
           label: "Malta Work Visa",
-          href: "/work-visa/malta-work-visa",
+          href: "/visas/malta-work-visa",
         },
         {
           id: 13,
           label: "Poland Work Visa",
-          href: "/work-visa/poland-work-visa",
+          href: "/visas/poland-work-visa",
         },
       ],
     },
@@ -272,42 +275,42 @@ export const navigationMenu = {
         {
           id: 1,
           label: "Canada Tourist Visa",
-          href: "/tourist-visa/canada-tourist-visa",
+          href: "/visas/canada-tourist-visa",
         },
         {
           id: 2,
           label: "Australia Tourist Visa",
-          href: "/tourist-visa/australia-tourist-visa",
+          href: "/visas/australia-tourist-visa",
         },
         {
           id: 3,
           label: "UK Tourist Visa",
-          href: "/tourist-visa/uk-tourist-visa",
+          href: "/visas/uk-tourist-visa",
         },
         {
           id: 4,
           label: "Germany Tourist Visa",
-          href: "/tourist-visa/germany-tourist-visa",
+          href: "/visas/germany-tourist-visa",
         },
         {
           id: 5,
           label: "Dubai Tourist Visa",
-          href: "/tourist-visa/dubai-tourist-visa",
+          href: "/visas/dubai-tourist-visa",
         },
         {
           id: 6,
           label: "Luxembourg Tourist Visa",
-          href: "/tourist-visa/luxembourg-tourist-visa",
+          href: "/visas/luxembourg-tourist-visa",
         },
         {
           id: 7,
           label: "Malta Tourist Visa",
-          href: "/tourist-visa/malta-tourist-visa",
+          href: "/visas/malta-tourist-visa",
         },
         {
           id: 8,
           label: "Ireland Tourist Visa",
-          href: "/tourist-visa/ireland-tourist-visa",
+          href: "/visas/ireland-tourist-visa",
         },
       ],
     },
@@ -317,46 +320,46 @@ export const navigationMenu = {
       label: "PNP Programs",
       href: "#",
       subNav: [
-        { id: 1, label: "Manitoba PNP", href: "/pnp/manitoba-pnp" },
+        { id: 1, label: "Manitoba PNP", href: "/visas/manitoba-pnp-draw" },
         {
           id: 2,
           label: "Yukon Nominee Program",
-          href: "/pnp/yukon-nominee-program",
+          href: "/visas/yukon-nominee-program",
         },
         {
           id: 3,
           label: "Ontario PNP Program",
-          href: "/pnp/ontario-pnp-program",
+          href: "/visas/ontario-pnp",
         },
         {
           id: 4,
           label: "Nova Scotia PNP",
-          href: "/pnp/nova-scotia-pnp",
+          href: "/visas/nova-scotia-pnp",
         },
         {
           id: 5,
           label: "Alberta PNP Program",
-          href: "/pnp/alberta-pnp-program",
+          href: "/visas/alberta-pnp",
         },
         {
           id: 6,
           label: "British Columbia PNP Program",
-          href: "/pnp/british-columbia-pnp-program",
+          href: "/visas/BC PNP",
         },
         {
           id: 7,
           label: "Quebec Skilled Worker Program",
-          href: "/pnp/quebec-skilled-worker-program",
+          href: "/visas/quebec-skilled-worker-program",
         },
         {
           id: 8,
           label: "Saskatchewan PNP Program",
-          href: "/pnp/saskatchewan-pnp-program",
+          href: "/visas/saskatchewan-pnp-program",
         },
         {
           id: 9,
           label: "New Brunswick PNP Program",
-          href: "/pnp/new-brunswick-pnp-program",
+          href: "/visas/new-brunswick-pnp-program",
         },
       ],
     },
@@ -366,46 +369,46 @@ export const navigationMenu = {
       label: "Points Calculator",
       href: "#",
       subNav: [
-        { id: 1, label: "CRS Calculator", href: "/calculator/crs-calculator" },
+        { id: 1, label: "CRS Calculator", href: "/visas/crs-calculator" },
         {
           id: 2,
           label: "Canada 67 Points Calculator",
-          href: "/calculator/canada-67-points-calculator",
+          href: "/visas/canada-67-points-calculator",
         },
         {
           id: 3,
           label: "SINP Points Calculator",
-          href: "/calculator/sinp-points-calculator",
+          href: "/visas/sinp-points-calculator",
         },
         {
           id: 4,
           label: "BC Points Calculator",
-          href: "/calculator/bc-points-calculator",
+          href: "/visas/bc-points-calculator",
         },
         {
           id: 5,
           label: "Manitoba Points Calculator",
-          href: "/calculator/manitoba-points-calculator",
+          href: "/visas/manitoba-points-calculator",
         },
         {
           id: 6,
           label: "Nova Scotia Points Calculator",
-          href: "/calculator/nova-scotia-points-calculator",
+          href: "/visas/nova-scotia-points-calculator",
         },
         {
           id: 7,
           label: "Alberta Points Calculator",
-          href: "/calculator/alberta-points-calculator",
+          href: "/visas/alberta-points-calculator",
         },
         {
           id: 8,
           label: "Quebec Points Calculator",
-          href: "/calculator/quebec-points-calculator",
+          href: "/visas/quebec-points-calculator",
         },
         {
           id: 9,
           label: "Ontario Points Calculator",
-          href: "/calculator/ontario-points-calculator",
+          href: "/visas/ontario-points-calculator",
         },
       ],
     },
@@ -413,246 +416,239 @@ export const navigationMenu = {
 };
 
 export const sliderContent = [
-
   {
-    id: 1, // Fix duplicate id issue by using unique ids
+    id: 1, 
     img: banner2,
-    welcome: "Best Immigration Consultants in Delhi",
-    title1: "Experts guiding your global career with ",
-    title2: "complete visa support",
-    para:
-      "Get step-by-step assistance, accurate documentation, and reliable guidance to make your visa process smooth, secure, and successful.",
+    welcome: "Your Trusted Partner For Global Opportunities",
+    title1: "Turn Your Overseas Dreams Into Reality ",
+    title2: "",
+    para: "Whether you want to work, study, visit, or settle abroad, our team provides reliable guidance at every step.",
     btntext: "Contact Us",
     href: "/contact-us",
   },
   {
-    id: 2, // Fix duplicate id issue by using unique ids
+    id: 2, 
     img: banner,
-    welcome: "Build Your Future Abroad with Confidence",
-    title1: "Secure your future abroad with trusted",
-    title2: "work and PR pathways",
-    para:
-      "We connect you with verified opportunities, strong profiles, and complete processing support to help you build a stable career and long-term settlement overseas.",
+    welcome: "Helping You Move Forward With Confidence",
+    title1: "Expert Immigration Solutions For Every Journey ",
+    title2: "",
+    para: "From visa applications to documentation support, we make the immigration process smooth, simple, and stress-free for you.",
     btntext: "Contact Us",
     href: "/contact-us",
   },
 ];
 
+
+export const boxdata = [
+  {
+    id: 1,
+    heading: "Visa Application Support",
+    para: "We help you complete your visa application with confidence. Our team guides you through every stage, ensuring the process is clear, accurate, and completed according to the latest immigration requirements.",
+    icon: <BsPassportFill />,
+  },
+  {
+    id: 2,
+    heading: "Documentation Assistance",
+    para: "Proper documentation is important for a successful application. We assist in preparing, reviewing, and organizing your documents to help reduce mistakes and improve application readiness.",
+    icon: <RiSpeedMiniFill />,
+  },
+  {
+    id: 3,
+    heading: "Personalized Immigration Guidance",
+    para: "Every immigration journey is different. We provide personalized guidance based on your goals, helping you understand your options and make informed decisions throughout the process.",
+    icon: <RiUserCommunityFill />,
+  },
+  {
+    id: 4,
+    heading: "Trusted Legal Compliance",
+    para: "Our team follows current immigration rules and regulations to help ensure your application meets all requirements. We focus on accuracy, transparency, and professional support at every step.",
+    icon: <HiOutlineDocumentCheck />,
+  },
+];
+
+
 export const aboutdata = {
   img1: about2,
-  img2: about,
+  img2: canadaPR,
   title1: "ABOUT US",
-  title2: "Professional & Trusted Visa",
-  title3: "Consultants in Delhi",
-  para:
-    "We offer reliable, result-focused immigration solutions backed by expert knowledge, ethical practices, and a structured approach. Known for delivering dependable services, we assist individuals and families from visa planning to final submission, ensuring clarity, accuracy, and complete professional support throughout the entire process.",
-  pointer: [
-    {
-      id: 1,
-      heading: "Transparency",
-      text: "Clear communication, honest advice, and straightforward processes with no hidden commitments.",
-      icon: <IoSearch />,
-    },
-    {
-      id: 2,
-      heading: "Client Satisfaction",
-      text: "Focused on trust, real results, and delivering a smooth experience for every client.",
-      icon: <RiUserFollowLine />,
-    }, {
-      id: 3,
-      heading: "Expert Guidance",
-      text: "Professional support from experienced consultants to help you make informed and confident immigration decisions.",
-      icon: <IoSearch />,
-    },
-    {
-      id: 4,
-      heading: "End-to-End Support",
-      text: "Complete assistance at every stage, from initial consultation to final approval, ensuring a seamless and stress-free process.",
-      icon: <RiUserFollowLine />,
-    },
+  title2: "Trusted Immigration Consultants For ",
+  title3: " Your Global Goals",
+  para: "We provide professional immigration and visa assistance to individuals, families, students, and skilled professionals looking to build opportunities abroad. With a client-focused approach, we guide you through every stage of the process, from profile assessment and documentation to application submission and follow-up support. Our team is committed to delivering transparent advice, reliable solutions, and personalized guidance that help make your immigration journey smoother, simpler, and more successful. We believe in building trust through honesty, expertise, and dedicated customer support.",
+  skillBars: [
+    { label: "Visa Assistance", percent: 95 },
+    { label: "Immigration Services", percent: 98 },
   ],
+  checklist: [
+    { id: 1, label: "Visa Assistance" },
+    { id: 2, label: "Immigration Services" },
+  ],
+  sideNote: "Professional guidance and reliable support for successful immigration journeys.",
 };
 
-export const aboutdata2 = {
-  img1: about2,
-  img2: box2,
-  title1: "ABOUT US",
-  title2: "Visa Consultants in ",
-  title3: "Delhi",
-  para:
-    "Focused on accuracy and transparency, we are among the leading immigration consultants in Delhi, offering profile-based immigration guidance and complete visa support. Our expert team follows ethical practices and structured processes to help individuals and families achieve global opportunities with confidence.",
 
-  pointer: [
-    {
-      id: 1,
-      heading: "Trusted Immigration Consultancy",
-      text:
-        "Expert guidance and reliable support for your immigration journey.",
-      icon: <FaPlaneDeparture />,
-    },
-    {
-      id: 2,
-      heading: "Immigration Solutions That Deliver",
-      text:
-        "Structured processes to help you move abroad with clarity and confidence.",
-      icon: <IoSettingsOutline />,
-    },
-  ],
-};
+// export const aboutdata2 = {
+//   img1: about2,
+//   img2: box2,
+//   title1: "ABOUT US",
+//   title2: "Visa Consultants in ",
+//   title3: "Delhi",
+//   para:
+//     "Focused on accuracy and transparency, we are among the leading immigration consultants in Delhi, offering profile-based immigration guidance and complete visa support. Our expert team follows ethical practices and structured processes to help individuals and families achieve global opportunities with confidence.",
+
+//   pointer: [
+//     {
+//       id: 1,
+//       heading: "Trusted Immigration Consultancy",
+//       text:
+//         "Expert guidance and reliable support for your immigration journey.",
+//       icon: <FaPlaneDeparture />,
+//     },
+//     {
+//       id: 2,
+//       heading: "Immigration Solutions That Deliver",
+//       text:
+//         "Structured processes to help you move abroad with clarity and confidence.",
+//       icon: <IoSettingsOutline />,
+//     },
+//   ],
+// };
+
 
 export const visaSliderdata = {
-  title1: "Diverse Range Of Visa Opportunities",
-  title2: "Well-Planned Services for PR & Citizenship",
+  title1: "OUR SERVICES",
+  title2: "Professional Immigration Support For A Brighter Future",
 
   cards: [
     {
       id: 1,
       img: visa1,
       heading: "Work Visa",
-      text:
-        " Opportunities to work abroad with proper visa support and complete process guidance",
+      text: "Helping professionals secure overseas employment opportunities through work visas.",
     },
     {
       id: 2,
       img: prvisa,
       heading: "PR Visa",
-      text:
-        " Secure permanent residency with structured application support and accurate documentation assistance throughout",
+      text: "Supporting your journey towards permanent residency and long-term settlement.",
     },
     {
       id: 3,
       img: famvisa,
       heading: "Family Sponsorship Visa",
-      text:
-        " Reunite with your family abroad through reliable sponsorship visa application assistance and support",
+      text: "Reuniting families through reliable family sponsorship and immigration assistance.",
     },
     {
       id: 4,
       img: business,
-      heading: "Business & Investor Visa",
-      text:
-        " Expand globally with business visa solutions and expert guidance for investment opportunities abroad",
+      heading: "Business/Investor Visa",
+      text: "Guiding entrepreneurs and investors towards global business expansion opportunities.",
     },
     {
       id: 5,
       img: touristvisa,
       heading: "Tourist/Visitor Visa",
-      text:
-        " Hassle-free travel visa assistance with proper documentation and smooth application processing support",
+      text: "Making international travel easier with smooth visitor visa assistance.",
     },
   ],
 };
 
-export const countrytomigrate = {
-  title1: "Countries We Offer",
-  title2: "We Provide Expert Immigration And Destinations.",
+// export const countrytomigrate = {
+//   title1: "Countries We Offer",
+//   title2: "We Provide Expert Immigration And Destinations.",
 
-  cards: [
-    {
-      id: 1,
-      img: canadaflag,
-      heading: "United States",
-      link: "country/us",
-      points: [
-        "4 Years Business Visa",
-        "Visa Apply Online",
-        "Student Admission Visa",
-        "24/7 Support",
-      ],
-    },
-    {
-      id: 2,
-      img: ukflag,
-      heading: "United Kingdom",
-      link: "country/uk",
-      points: [
-        "4 Years Business Visa",
-        "Visa Apply Online",
-        "Student Admission Visa",
-        "24/7 Support",
-      ],
-    },
-    {
-      id: 3,
-      img: canadaflag,
-      heading: "Canada",
-      link: "country/canada",
-      points: ["PR Pathways", "Express Entry", "Student Visa", "24/7 Support"],
-    },
-    {
-      id: 4,
-      img: ukflag,
-      heading: "Australia",
-      link: "country/australia",
-      points: [
-        "Skilled Migration",
-        "Work Visa",
-        "Student Visa",
-        "24/7 Support",
-      ],
-    },
-  ],
-};
-
-
-import { FiSettings } from "react-icons/fi";
+//   cards: [
+//     {
+//       id: 1,
+//       img: canadaflag,
+//       heading: "United States",
+//       link: "country/us",
+//       points: [
+//         "4 Years Business Visa",
+//         "Visa Apply Online",
+//         "Student Admission Visa",
+//         "24/7 Support",
+//       ],
+//     },
+//     {
+//       id: 2,
+//       img: ukflag,
+//       heading: "United Kingdom",
+//       link: "country/uk",
+//       points: [
+//         "4 Years Business Visa",
+//         "Visa Apply Online",
+//         "Student Admission Visa",
+//         "24/7 Support",
+//       ],
+//     },
+//     {
+//       id: 3,
+//       img: canadaflag,
+//       heading: "Canada",
+//       link: "country/canada",
+//       points: ["PR Pathways", "Express Entry", "Student Visa", "24/7 Support"],
+//     },
+//     {
+//       id: 4,
+//       img: ukflag,
+//       heading: "Australia",
+//       link: "country/australia",
+//       points: [
+//         "Skilled Migration",
+//         "Work Visa",
+//         "Student Visa",
+//         "24/7 Support",
+//       ],
+//     },
+//   ],
+// };
 
 
 export const workingprocess = {
-  title1: "Our Working Process",
-  title2: "Get Your Visa Approved in 4 Easy Steps.",
-
+  title1: "WORKING PROCESS",
+  title2: "4 Simple Steps To Start Your Immigration Journey",
+  para: "Our streamlined process makes immigration easier and more organized. From your initial consultation to final application submission, we provide expert guidance and support at every stage to help you move forward with confidence.",
   cards: [
     {
-      id: 1,
-      img: process1,
+      step: "01",
       heading: "Initial Consultation",
-      text:
-        "Discuss your goals and assess eligibility for the best visa option.",
+      text: "Discuss your goals with our experts and identify the most suitable immigration pathway.",
     },
     {
-      id: 2,
-      img: process1,
-      heading: "Document Preparation",
-      text:
-        "Gather and organize all required documents for a smooth application.",
+      step: "02",
+      heading: "Profile Assessment",
+      text: "We carefully evaluate your profile and explain available visa and immigration options.",
     },
     {
-      id: 3,
-      img: process1,
+      step: "03",
+      heading: "Documentation Support",
+      text: "Receive guidance in preparing, organizing, and verifying all required application documents.",
+    },
+    {
+      step: "04",
       heading: "Application Submission",
-      text:
-        "Submit your visa application accurately with expert guidance and follow-up.",
-    },
-    {
-      id: 4,
-      img: process1,
-      heading: "Approval & Support",
-      text:
-        "Receive visa approval and get assistance with post-landing formalities.",
+      text: "We assist with submission and provide support until your application process progresses.",
     },
   ],
 };
 
 export const canadapnp = {
   bgImg: back,
-  title1: "Countries We Serve",
-  title2:
-    "Connecting You to Global Opportunities",
+  title1: "COUNTRIES WE SERVE",
+  title2: "Connecting Aspirations With Opportunities Around The Globe",
   cards: [
     {
       id: 1,
       img: banner2,
       flag: canadaflag,
       cat: "abroad",
-      heading: "Canada",
+      heading: "USA",
       points: [
         "• Processing: 3–6 Months",
         "• High Nomination Quota",
-        "• Top destination for study, work, and permanent residency with strong opportunities",
+        "• Access opportunities for work, education, and long-term settlement goals",
       ],
-      text:
-        "Top destination for study, work, and permanent residency with strong opportunities",
+      text: "Access opportunities for work, education, and long-term settlement goals",
       link: "/canada-pnp",
     },
     {
@@ -660,14 +656,13 @@ export const canadapnp = {
       img: banner2,
       flag: canadaflag,
       cat: "mbbs",
-      heading: "Australia",
+      heading: "Canada",
       points: [
         "• Processing: 2–4 Months",
         "• Regular Invitation Rounds",
-        "• Quality education, work opportunities, and clear pathways to permanent residency options",
+        "• Achieve your immigration goals through Canada's trusted visa pathways",
       ],
-      text:
-        "Quality education, work opportunities, and clear pathways to permanent residency options",
+      text: "Achieve your immigration goals through Canada's trusted visa pathways",
       link: "/canada-pnp",
     },
     {
@@ -675,14 +670,13 @@ export const canadapnp = {
       img: banner2,
       flag: canadaflag,
       cat: "abroad",
-      heading: "New Zealand",
+      heading: "Australia",
       points: [
         "• Processing: 4–6 Months",
         "• Lower CRS Possibility",
-        "• Growing destination offering quality education, work visas, and a peaceful lifestyle benefits",
+        "• Build your future with Australia's skilled migration and visa programs",
       ],
-      text:
-        "Growing destination offering quality education, work visas, and a peaceful lifestyle benefits",
+      text: "Build your future with Australia's skilled migration and visa programs",
       link: "/canada-pnp",
     },
     {
@@ -690,14 +684,13 @@ export const canadapnp = {
       img: banner2,
       flag: canadaflag,
       cat: "abroad",
-      heading: "Europe",
+      heading: "New Zealand",
       points: [
         "• Processing: 2–5 Months",
         "• In-Demand Occupation Stream",
-        "• Multiple countries offering work opportunities, study options, and diverse cultural experiences",
+        "• Take the next step toward living and working in New Zealand",
       ],
-      text:
-        "Multiple countries offering work opportunities, study options, and diverse cultural experiences",
+      text: "Take the next step toward living and working in New Zealand",
       link: "/canada-pnp",
     },
     {
@@ -705,14 +698,13 @@ export const canadapnp = {
       img: banner2,
       flag: canadaflag,
       cat: "mbbs",
-      heading: "GCC",
+      heading: "Europe",
       points: [
         "• Processing: 3–5 Months",
         "• Strong Provincial Support",
-        "• Attractive work destinations with tax-free income and growing career opportunities",
+        "• Benefit from work, study, and residency opportunities across European countries",
       ],
-      text:
-        "Attractive work destinations with tax-free income and growing career opportunities",
+      text: "Benefit from work, study, and residency opportunities across European countries",
       link: "/canada-pnp",
     },
     {
@@ -720,62 +712,75 @@ export const canadapnp = {
       img: banner2,
       flag: canadaflag,
       cat: "mbbs",
-      heading: "USA",
+      heading: "GCC",
       points: [
         "• Processing: 3–6 Months",
         "• Express Entry Priority",
-        "• Global leader in education, innovation, and diverse career opportunities across industries",
+        "• Secure career opportunities in leading Gulf countries with professional support",
       ],
-      text:
-        "Global leader in education, innovation, and diverse career opportunities across industries",
+      text: "Secure career opportunities in leading Gulf countries with professional support",
       link: "/canada-pnp",
     },
-
   ],
-
 };
 
 export const Whychoose = {
   img: box1,
 
-  title1: "Why Choose Us",
-  title2: "We provide trusted guidance with",
-  title3: "a clear process",
-  para:
-    "Anavrin Adviser, the best immigration consultants in Delhi, offers reliable and result-driven immigration solutions backed by experienced professionals and transparent processes. We focus on profile-based guidance, accurate documentation, and legal compliance to ensure smooth visa applications. With a client-first approach and personalized support, we help individuals and families achieve their global immigration goals with confidence and clarity.",
+  title1: "WHY CHOOSE US",
+  title2: "Simple Solutions For Complex ",
+  title3: "Immigration Processes",
+  para: "We focus on providing reliable guidance, transparent communication, and personalized solutions to help clients achieve their immigration goals with confidence and peace of mind.",
 
-  success: [
-    { id: 1, value: "100%", text: "Visa Success Rate" },
-    { id: 2, value: "100%", text: "Clients Satisfaction" },
-    { id: 3, value: "100%", text: "Transparency" },
+  reasons: [
+    {
+      icon: <FaShieldAlt />,
+      title: "Personalized Immigration Guidance",
+      text: "Every client has unique goals. We provide tailored solutions and expert advice based on your profile and immigration requirements.",
+    },
+    {
+      icon: <FaFileSignature />,
+      title: "Transparent & Honest Process",
+      text: "We keep you informed at every stage with clear communication, accurate information, and no hidden surprises.",
+    },
+    {
+      icon: <FaUserGraduate />,
+      title: "Quick & Hassle-Free Process",
+      text: "Our experienced team helps simplify procedures, ensuring your application process remains smooth and well-organized.",
+    },
+    {
+      icon: <FaChartLine />,
+      title: "Strong Success Record",
+      text: "With careful documentation support and professional guidance, we help clients move forward with confidence toward their immigration goals.",
+    },
   ],
 };
 
 export const testimonialData = {
+  title1: "TESTIMONIALS",
+  title2: "What Our Clients Say About ",
+  title3: " Their Experience",
+  para: "We are proud to support individuals and families in achieving their immigration goals. Read how our professional guidance, transparent process, and dedicated assistance have helped clients move forward with confidence.",
 
   testimonials: [
     {
       title: "Suresh Dixit",
-      text:
-        "I had a very smooth experience with Anavrin Adviser Immigration. From the initial consultation to the final submission, they guided me at every step and ensured my documents were accurate. The entire visa process felt well-managed and stress-free.",
+      text: "I had a great experience with Anavrin Adviser while applying for my work visa. The team guided me through every step, explained the requirements clearly, and ensured my documents were properly prepared. Their professionalism and constant support made the entire process smooth and successful.",
       img: cl1,
     },
     {
       title: "Mohan Rane",
-      text:
-        "The team at Anavrin Adviser Immigration is very supportive and easy to communicate with. They explained each step clearly and kept me informed throughout the process. Their guidance helped me avoid mistakes and complete my application without confusion. They are the best visa consultants in Delhi.",
+      text: "Choosing Anavrin Adviser for my PR application was one of the best decisions I made. The consultants were knowledgeable, responsive, and always available to answer my questions. Their guidance helped me complete the process confidently, and I am extremely satisfied with their service.",
       img: cl1,
     },
     {
       title: "Manoj Saini",
-      text:
-        "I was quite confused in the beginning, but Anavrin Adviser Immigration provided clear and practical guidance. They helped me choose the right visa option and handled my documentation carefully. The entire experience was smooth, and I felt confident throughout the process.",
+      text: "Anavrin Adviser provided exceptional assistance for my family sponsorship application. The team carefully reviewed all documents and kept me informed throughout the process. Their dedication and attention to detail helped us achieve a positive outcome, and I highly recommend their services.",
       img: cl1,
     },
     {
       title: "Sam Goyal",
-      text:
-        "Anavrin Adviser Immigration has a very professional and reliable team. They managed my application from start to finish with proper attention to detail. Everything was done on time, and I am fully satisfied with their service and overall support.",
+      text: "I received excellent support from the Anavrin Adviser for my tourist visa application. The process was explained clearly, and the team helped me avoid common mistakes. Their prompt communication and a professional approach made everything simple, and my visa was approved without any issues.",
       img: cl1,
     },
   ],
@@ -1055,33 +1060,62 @@ export const HomefaqData = {
   title2: "Frequently Asked ",
   title3: " Questions",
 
-  para1:
-    "Find clear answers to your most common queries about visas, eligibility, processing time, and required documents—all in one place.",
+  para: "Find clear answers to your most common queries about visas, eligibility, processing time, and required documents—all in one place.",
+
   faqs: [
     {
-      que: "Which country is best for PR in 2026?",
-      ans:
-        "The best country for PR depends on your profile, skills, and goals. Countries like Canada, Australia, and Germany are popular due to strong job markets and clear PR pathways. Instead of following trends, it’s important to choose a country where your profile has higher chances of success.",
+      que: "How do I know which visa is right for me?",
+      ans: "Choosing the right visa depends on your purpose, qualifications, work experience, financial situation, and long-term goals. Our consultants assess your profile carefully and recommend the most suitable visa pathway based on current immigration requirements and eligibility criteria.",
     },
     {
-      que: "How long does the visa process usually take?",
-      ans:
-        "Visa processing time depends on the country, visa type, and your documentation. It can take anywhere from a few weeks to several months. Delays usually happen due to incomplete documents or high application volumes, so proper guidance and accurate submission can help speed up the process.",
+      que: "Can I apply for immigration without professional assistance?",
+      ans: "Yes, you can apply independently, but immigration procedures often involve complex documentation and changing regulations. Professional guidance helps reduce errors, improve application accuracy, and ensure you understand every step of the process before submission.",
     },
     {
-      que: "Can I apply without IELTS or English tests?",
-      ans:
-        "Yes, some countries and visa types allow applications without IELTS, depending on your profile and the program you choose. However, having an English proficiency score can improve your chances. It’s always better to check all available options based on your qualifications and career goals.",
+      que: "How long does the immigration process usually take?",
+      ans: "Processing times vary depending on the country, visa category, application volume, and individual circumstances. While some visas may be processed within weeks, others can take several months. We provide realistic timelines and regular updates throughout your application.",
     },
     {
-      que: "How much money is required to move abroad?",
-      ans:
-        "The cost depends on the country, visa type, and lifestyle. It usually includes visa fees, proof of funds, travel, and initial living expenses. Proper planning is important so you are financially prepared and avoid stress after moving. Guidance can help you estimate the exact cost.",
+      que: "What support will I receive during my application process?",
+      ans: "Our team provides end-to-end assistance, including profile evaluation, visa guidance, document review, application preparation, and ongoing support. We stay connected throughout the process to answer questions, provide updates, and help you move forward confidently.",
+    },
+  ],
+};
+
+export const coachingData = {
+  title1: "WHAT WE OFFER",
+  title2: "Language Test Preparation For Global Opportunities",
+  para: "Our IELTS and PTE coaching programs are designed to help you achieve your desired scores with confidence.",
+  cards: [
+    {
+      title: "IELTS",
+      text: "Comprehensive preparation support to improve English skills and achieve your desired IELTS score.",
+      href: "visa/ielts",
+      icon: <FaUniversity />,
     },
     {
-      que: "Can I get a job abroad before moving?",
-      ans:
-        "Yes, many countries allow you to apply for jobs before moving. Having a job offer can improve your visa chances. However, finding the right job requires proper profile building, resume preparation, and applying through the right platforms. Guidance can make this process easier and faster.",
+      title: "PTE",
+      text: "Structured training designed to enhance communication skills and maximize performance in PTE exams.",
+      href: "visa/pte",
+      icon: <FaFileAlt />,
+    },
+    {
+      title: "TOEFL",
+      text: "Expert guidance to strengthen English proficiency for academic and professional international requirements.",
+      href: "visa/toefl",
+      icon: <FaGlobe />,
+    },
+    {
+      title: "OET",
+      text: "Specialized preparation for healthcare professionals aiming to meet international English language standards.",
+      href: "visa/oet",
+      icon: <FaStethoscope />,
+    },
+    {
+      title: "CELPIP",
+      text: "Focused preparation to improve English proficiency and achieve strong results in CELPIP examinations.",
+      href: "visa/celpip",
+      icon: <FaLanguage />,
     },
   ],
 };
@@ -1190,30 +1224,39 @@ export let blogData = {
 };
 
 // about us
-export const mission = {
-  img: box1,
-  title1: "Mission & Vision",
-  title2: "Our Vision and ",
-  title3: "Mission Statement",
-  vision: [
-    {
-      icon: HiOutlineLightBulb,
-      heading: "Our Vision",
-      para:
-        "Our vision is to become a trusted global name in immigration consulting by guiding people with honesty, clarity, and confidence. We aim to simplify complex immigration processes and help individuals and families build secure futures abroad through ethical practices and informed decision-making.",
-    },
-    {
-      icon: HiOutlineFlag,
-      heading: "Our Mission",
-      para:
-        "Our mission is to provide transparent, profile-based immigration guidance tailored to every client’s goals. We focus on accuracy, compliance, and continuous support at every stage, ensuring our clients feel informed, supported, and confident as they pursue opportunities across international borders.",
-    },
-  ],
-};
+export const mission = [
+  {
+    number: "01",
+    title: "Mission",
+    icon: TbTarget,
+    body: "To provide reliable immigration solutions, professional guidance, and personalized support that help clients achieve their global goals with confidence and ease.",
+    bg: "bg-color1",
+    badge: "bg-color1 ",
+    iconColor: "#92400e",
+  },
+  {
+    number: "02",
+    title: "Vision",
+    icon: TbBulb,
+    body: "To become a preferred immigration partner known for trust, transparency, and successful outcomes for individuals and families worldwide.",
+    bg: "bg-color2",
+    badge: "bg-color2 ",
+    iconColor: "#1e40af",
+  },
+  {
+    number: "03",
+    title: "Values",
+    icon: TbDiamond,
+    body: "We believe in honesty, professionalism, accountability, and dedicated client service while maintaining the highest standards in every immigration process.",
+    bg: "bg-color3",
+    badge: "bg-color3 ",
+    iconColor: "#065f46",
+  },
+];
 
 export const whychooseus = {
   title1: "Why Choose Us",
-  img: bene2,
+  img: box3,
   points: [
     {
       icon: <FaGlobeAmericas />,
@@ -1248,7 +1291,7 @@ export const contactBanner = {
   para:
     "Connect With anavrinadviser For Reliable Crop Protection & Farming Support. We're Here to Help Your Agriculture Thrive With Expert Solutions.",
   slug: "contact-us",
-  img: contactb,
+  img: banner,
 };
 
 export const contactdetail = [

@@ -40,7 +40,7 @@ export default function Servicedetails({ data }: any) {
 
   {/* Title */}
   <div className="space-y-3">
-    <span className="text-2xl md:text-4xl font-bold uppercase tracking-[0.2em] text-color3">
+    <span className="text-2xl md:text-4xl font-bold uppercase tracking-[0.2em] text-blue-900">
       {data?.title}
     </span>
 
@@ -57,7 +57,7 @@ export default function Servicedetails({ data }: any) {
         {section?.heading && (
           <div className="space-y-3">
             <h2
-              className="text-xl sm:text-2xl font-bold text-color2 leading-snug"
+              className="text-xl sm:text-2xl font-bold text-zinc-800 leading-snug"
               dangerouslySetInnerHTML={{ __html: section.heading }}
             />
 

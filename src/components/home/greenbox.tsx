@@ -5,35 +5,12 @@ import { BsPassportFill } from "react-icons/bs";
 import { RiSpeedMiniFill, RiUserCommunityFill } from "react-icons/ri";
 import { MdArrowRightAlt } from "react-icons/md";
 import { HiOutlineDocumentCheck } from "react-icons/hi2";
+import {boxdata as data} from "@/data/homeData";
+
 
 export default function Greenbox() {
 
-  const data = [
-    {
-      id: 1,
-      heading: "Visa Process Responsibility",
-      para: "Complete assistance with visa filing, ensuring every step is handled accurately for better approval chances.",
-      icon: <BsPassportFill />,
-    },
-    {
-      id: 2,
-      heading: "Faster & Reliable Executant",
-      para: "Proper guidance for preparing and verifying all required documents to avoid errors and delays.",
-      icon: <RiSpeedMiniFill />,
-    },
-    {
-      id: 3,
-      heading: "Accurate & Expert Advice",
-      para: "Dedicated support for every client with clear communication and guidance throughout the entire process.",
-      icon: <RiUserCommunityFill />,
-    },
-    {
-      id: 4,
-      heading: "Legal Immigration Success",
-      para: "Trusted legal expertise to ensure your immigration journey meets all compliance and regulatory requirements.",
-      icon: <HiOutlineDocumentCheck />,
-    },
-  ];
+ 
 
   return (
     <section className="w-full md:py-10 p-4 md:-mt-16">

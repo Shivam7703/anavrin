@@ -37,7 +37,7 @@ export default function FaqItem({ data }: { data: { que: string; ans: string }[]
             >
               <h3
                 className={`text-sm sm:text-base font-semibold transition-colors duration-300 leading-snug pr-4
-                  ${isOpen ? "text-red-600" : "text-gray-800"}`}
+                  ${isOpen ? "text-blue-700" : "text-gray-800"}`}
               >
                 {item.que}
               </h3>

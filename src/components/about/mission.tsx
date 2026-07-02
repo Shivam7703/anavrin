@@ -1,34 +1,5 @@
-import { TbTarget, TbBulb, TbDiamond } from "react-icons/tb";
+import {mission as cards} from "@/data/homeData";
 
-const cards = [
-  {
-    number: "01",
-    title: "Mission",
-    icon: TbTarget,
-    body: "To deliver honest, expert-led immigration guidance that simplifies every step and gives every client a clear, confident path to their new life abroad.",
-    bg: "bg-color1",
-    badge: "bg-color1 ",
-    iconColor: "#92400e",
-  },
-  {
-    number: "02",
-    title: "Vision",
-    icon: TbBulb,
-    body: "To be the most trusted immigration consultancy — transforming lives through ethical practice and deep expertise across every destination we serve.",
-    bg: "bg-color2",
-    badge: "bg-color2 ",
-    iconColor: "#1e40af",
-  },
-  {
-    number: "03",
-    title: "Values",
-    icon: TbDiamond,
-    body: "Integrity, excellence, and a client-first commitment — delivering reliable, transparent support at every single step of the immigration journey.",
-    bg: "bg-color3",
-    badge: "bg-color3 ",
-    iconColor: "#065f46",
-  },
-];
 
 export default function MissionVisionValues() {
   return (

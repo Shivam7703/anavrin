@@ -14,7 +14,7 @@ function page() {
        <Banner
         title={"About Us"}
         para={
-          "Experienced visa consultants in Noida deliver clear guidance, professional support, and reliable immigration solutions for global opportunities."
+          "We provide trusted immigration guidance, personalized support, and reliable visa solutions to help clients achieve their work, study, travel, and settlement goals with confidence."
         }
         slug={"about-us"}
       />

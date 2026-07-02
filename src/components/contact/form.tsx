@@ -4,12 +4,12 @@ import { FaCheckCircle } from "react-icons/fa";
 import { contat } from "@/assets"; // सुनिश्चित करें कि यह इम्पोर्ट सही है
 
 const pointers = [
-  "20+ years of experience as leading Immigration Consultants in India",
-  "High visa success rate across multiple categories and countries",
-  "Expert consultation for 150+ global destinations",
-  "End-to-end support from application to final decision",
-  "Clear and transparent process with no hidden charges",
-  "Dedicated team available 6 days a week for continuous assistance",
+  "Over 20 years of experience in immigration consulting services",
+  "Strong success record across work, study, and PR visa categories",
+  "Expert guidance for 150+ global immigration destinations",
+  "Complete support from profile evaluation to final visa decision",
+  "Transparent process with clear communication at every step",
+  "Dedicated support team available 6 days a week for assistance",
 ];
 
 function Form() {
@@ -54,11 +54,13 @@ function Form() {
                 </span>
               </div>
               <h3 className="text-gray-950 font-bold text-2xl md:text-3xl lg:text-4xl tracking-tight leading-tight mb-4">
-                Simplifying Your Visa Journey <br />
-                <span className=" text-color1">With Trusted Experts</span>
+                Making Your Immigration Journey Simple And Clear
+ <br />
+                <span className=" text-color1">With Trusted Expert Guidance
+</span>
               </h3>
               <p className="text-gray-400 text-sm md:text-base font-light leading-relaxed">
-                Get personalized assistance from experienced Immigration Consultants in India who guide you at every step. From profile evaluation to final approval, we make your process smooth and stress-free.
+Get personalized immigration support from experienced consultants who understand your goals and guide you through every stage. From eligibility check to final submission, we ensure a smooth, clear, and well-managed process for better outcomes.
               </p>
             </div>
 

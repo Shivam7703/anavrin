@@ -14,7 +14,7 @@ function ContactUsSection() {
           {/* Form Header */}
           <div className="mb-8">
             <h2 className="text-gray-900 font-bold text-3xl md:text-4xl tracking-tight">
-              Feel free to write
+Reach Out To Us
             </h2>
           </div>
 
@@ -81,7 +81,7 @@ function ContactUsSection() {
               Get in touch with us
             </h2>
             <p className="text-gray-800 max-sm:text-sm leading-relaxed font-normal">
-              Our dedicated team is ready to assist with all your inquiries, from project discussions to support and feedback. Reach out via the methods below.
+Our team is here to provide clear guidance and prompt support for all your immigration queries. Whether you need consultation, service details, or application assistance, we’re ready to help you at every step of the way.
             </p>
           </div>
 

@@ -7,21 +7,7 @@ import Buttonmain from "../global/button";
 
 export default function AboutSection({ data }: any) {
 
-  const skillBars = data?.skillBars || [
-    { label: "Visa Consulting", percent: 85 },
-        { label: "Immigration Consultancy", percent: 90 },
-
-  ];
-
-  const checklist = data?.checklist || [
-    { id: 1, label: "Visa Consulting" },
-    { id: 2, label: "Immigration Consultancy" },
-  ];
-
-  const sideNote =
-    data?.sideNote ||
-    "At vero eoset accusam etusto odio dignissimos ducimus qui";
-
+ 
   return (
 <section className="w-full py-12 px-4 md:px-12 lg:px-20 xl:px-24 relative">
       {/* ───────── DYNAMIC SHAPES ───────── */}
@@ -88,7 +74,7 @@ export default function AboutSection({ data }: any) {
 
           {/* Skill Bars */}
           <div className="mb-8 space-y-4">
-            {skillBars.map((bar: any, i: number) => (
+            {data?.skillBars.map((bar: any, i: number) => (
               <motion.div
                 key={i}
                 whileHover={{ scale: 1.02 }}
@@ -119,7 +105,7 @@ export default function AboutSection({ data }: any) {
           <div className="flex flex-col sm:flex-row gap-6 mb-9">
 
             <div className="flex flex-col gap-3 sm:w-[45%]">
-              {checklist.map((item: any) => (
+              {data?.checklist.map((item: any) => (
                 <motion.div
                   key={item.id}
                   whileHover={{ x: 6 }}
@@ -140,7 +126,7 @@ export default function AboutSection({ data }: any) {
               className="sm:w-[50%] flex items-center bg-gray-50 p-4 rounded-xl border border-gray-100 shadow-sm hover:shadow-lg transition-all duration-300"
             >
               <p className="text-sm text-gray-600 leading-relaxed">
-                {sideNote}
+                {data?.sideNote}
               </p>
             </motion.div>
 

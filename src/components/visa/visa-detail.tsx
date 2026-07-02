@@ -39,7 +39,7 @@ export default function Visadetails({ data }: any) {
                 <div className="flex items-stretch gap-3">
                   <div className="w-1 rounded-full bg-color1 shrink-0" />
                   <h2
-                    className="text-2xl sm:text-3xl font-semibold text-color3 leading-snug font2"
+                    className="text-2xl sm:text-3xl font-semibold text-blue-800 leading-snug font2"
                     dangerouslySetInnerHTML={{ __html: section.heading }}
                   />
                 </div>
@@ -52,7 +52,7 @@ export default function Visadetails({ data }: any) {
                   {/* Subheading */}
                   {item?.subheading && (
                     <p
-                      className="text-xl sm:text-2xl font-semibold text-color2 mt-4"
+                      className="text-xl sm:text-2xl font-semibold text-zinc-700 mt-4"
                       dangerouslySetInnerHTML={{ __html: item.subheading }}
                     />
                   )}
@@ -89,7 +89,7 @@ export default function Visadetails({ data }: any) {
                             {item.table.theading?.map((th: string, thIndex: number) => (
                               <th
                                 key={thIndex}
-                                className="px-4 py-3 text-left bg-color2 text-white font-medium whitespace-nowrap first:rounded-tl-xl last:rounded-tr-xl"
+                                className="px-4 py-3 text-left bg-color1 text-white font-medium whitespace-nowrap first:rounded-tl-xl last:rounded-tr-xl"
                               >
                                 {th}
                               </th>

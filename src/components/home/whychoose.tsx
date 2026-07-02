@@ -10,23 +10,7 @@ import {
 } from "react-icons/fa";
 import { Whychoose as data } from "@/data/homeData";
 
-const reasons = [
-  {
-    icon: <FaShieldAlt />,
-    title: "Direct Online Interviews",
-    text: "Nam libero tempore cusoluta nobis est eligendi optio cumque nihil impedit quo minus maxime placeat.",
-  },
-  {
-    icon: <FaFileSignature />,
-    title: "Quick & Easy Process",
-    text: "Nam libero tempore cusoluta nobis est eligendi optio cumque nihil impedit quo minus maxime placeat.",
-  },
-  {
-    icon: <FaUserGraduate />,
-    title: "99% Visa Approvals",
-    text: "Nam libero tempore cusoluta nobis est eligendi optio cumque nihil impedit quo minus maxime placeat.",
-  },
-];
+
 
 export default function WhychooseSection() {
   return (
@@ -198,7 +182,7 @@ export default function WhychooseSection() {
 
             {/* Reasons List */}
             <div className="mt-10 space-y-6">
-              {reasons.map((item, index) => (
+              {data?.reasons?.map((item:any, index:number) => (
                 <motion.div
                   key={index}
                   initial={{ opacity: 0, y: 20 }}

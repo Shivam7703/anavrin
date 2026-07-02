@@ -6,7 +6,7 @@ import Image from "next/image";
 import { plane, } from "@/assets";
 import { FaPhone, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 import FaqItem from "../global/faqs";
-
+import {HomefaqData as data} from "@/data/homeData";
 
 
 // Main Component
@@ -32,25 +32,7 @@ export default function FaqSection() {
     // Add your form submission logic here
   };
 
-  const faqQuestions = [
-    {
-      que: "What Is Visa Immigration Services?",
-      ans: "Visa immigration services help individuals and families navigate the complex process of obtaining visas and immigration documentation for international travel and relocation.",
-    },
-    {
-      que: "Have Any Visa Consultant?",
-      ans: "Yes, we have certified visa consultants with over 10 years of experience in handling various visa categories and immigration cases.",
-    },
-    {
-      que: "Which country is good for residents?",
-      ans: "Countries like Canada, Australia, Germany, and New Zealand are popular for residents due to their quality of life, healthcare, and education systems.",
-    },
-    {
-      que: "How Many Cost For Visa Immigrations?",
-      ans: "Visa costs vary by country and visa type, typically ranging from $100 to $1000+. Contact us for a personalized quote.",
-    },
-  ];
-
+ 
   return (
     <motion.section
       variants={staggerContainer(0.1, 0)}
@@ -72,12 +54,12 @@ export default function FaqSection() {
               {/* Header */}
               <div className="mb-6">
                 <span className="text-color1 font-bold uppercase text-xs tracking-[0.22em]">
-                  HAVE ANY QUESTIONS?
+HAVE ANY QUESTIONS?
                 </span>
                
                 <p className="text-gray-800 text-xl sm:text-3xl font-bold mt-1">
-                  Feel Free to Contact Us
-                </p>
+               Feel Free to Contact Us
+ </p>
               </div>
 
               {/* Contact Form */}
@@ -209,7 +191,7 @@ export default function FaqSection() {
                               style={{ width: "2rem" }}
                             />
                             <p className="uppercase tracking-[0.22em] text-xs font-bold text-color1">
-faq                            </p>
+{data?.title1}                  </p>
                           </motion.div>
               
                           {/* Heading */}
@@ -221,20 +203,16 @@ faq                            </p>
                             className="text-zinc-800 mb-5 font-bold leading-tight
                               text-2xl sm:text-3xl md:text-4xl lg:text-5xl"
                           >
-                            Fraquently Asked{" "}
-                            <span className="text-color1 relative inline-block">
-                              Questions                             
-                            </span>
+{data?.title2}                            <span className="text-color1 relative inline-block">
+{data?.title3}                            </span>
                           </motion.h2>
 
               {/* FAQ List */}
-              <FaqItem data={faqQuestions} />
+              <FaqItem data={data?.faqs} />
 
               {/* Description */}
               <p className="text-gray-800 leading-relaxed mt-6 pt-4 border-t border-gray-200">
-                Sed perspiciatis unde omniste natus voluptatem accusantie doloremque 
-                laudantium totam aperiam eaque quae inventore veritatis et quasi 
-                architecto beatae vitae dicta.
+              {data?.para}
               </p>
             </div>
           </motion.div>
