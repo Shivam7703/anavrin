@@ -1,9 +1,8 @@
-import { ielts, pte, visaDocument, PostLanding, immigration, toefl } from "@/assets";
-import { profile } from "console";
+import { ielts, pte, visaDocument, PostLanding, immigration, toefl, profilemarketing } from "@/assets";
 
 export const Servicedata = [
  {
-  "img": ielts,
+  img: ielts,
   "title": "IELTS",
   "metatitle": "IELTS Preparation Classes | Expert Training & Support",
   "metakey": "ielts exam, ielts preparation, ielts online test",
@@ -174,7 +173,7 @@ export const Servicedata = [
 },
 
 {
-  "img": pte,
+  img: pte,
   "title": "PTE Preparation",
   "metatitle": "PTE Preparation Classes | Expert Training & Mock Tests",
   "metakey": "PTE, PTE Exam",
@@ -337,7 +336,7 @@ export const Servicedata = [
 },
 
 {
-  "img": toefl,
+  img: toefl,
   "title": "TOEFL",
   "metatitle": "TOEFL Preparation Guide for Exam Success & Coaching 202",
   "metakey": "toefl exam, toefl test, toefl test cost, toefl preparation guide",
@@ -495,7 +494,7 @@ export const Servicedata = [
 },
 
 {
-  "img": visaDocument,
+  img: visaDocument,
   "title": "Visa Documentation",
   "metatitle": "Visa Documentation Support Services for Visa Success 2026",
   "metakey": "Documentation, Visa Documentation",
@@ -649,7 +648,7 @@ export const Servicedata = [
 }, 
 
 {
-  "img": PostLanding,
+  img: PostLanding,
   "title": "Pre & Post Landing Services",
   "metatitle": "Pre & Post Landing Services for Smooth Immigration Help",
   "metakey": "Post Landing Services",
@@ -806,7 +805,7 @@ export const Servicedata = [
 },
 
 {
-  "img": profile,
+  img: profilemarketing,
   "title": "Profile Marketing",
   "metatitle": "Profile Marketing Services for Global Job Success",
   "metakey": "Profile Marketing, Profile Marketing Services",
@@ -969,7 +968,7 @@ export const Servicedata = [
 },
 
 {
-  "img": immigration,
+  img: immigration,
   "title": "Immigration Services",
   "metatitle": "Immigration Services for Global Visa Assistance Guide",
   "metakey": "Immigration Service, Immigration Process",

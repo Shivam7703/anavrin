@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import { servicedata } from "@/data/servicedata";
+import { Servicedata } from "@/data/serviceData";
 import { FiSettings } from "react-icons/fi";
 
 export default function ServiceSection() {
@@ -23,7 +23,7 @@ Smart solutions for{" "}<span className="text-color1">global immigration </span>
       {/* Grid */}
       <div className="grid grid-cols-2 sm:grid-cols-3  gap-4">
 
-        {servicedata.map((pro, index: number) => (
+        {Servicedata.map((pro, index: number) => (
           <div
             key={index}
             className="group relative h-[320px] sm:h-[380px] lg:h-[420px] rounded-2xl overflow-hidden"

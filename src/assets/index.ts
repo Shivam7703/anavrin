@@ -66,7 +66,7 @@ import toefl from "@/assets/home/toefl.jpg";
 import immigration from "@/assets/home/immigration.webp";
 import jobAssist from "@/assets/home/job assistance.jpg";
 import PostLanding from "@/assets/home/post-landing.webp";
-import profile from "@/assets/home/profile assistance.webp";
+import profilemarketing from "@/assets/home/profile assistance.webp";
 import pte from "@/assets/home/pte.jpg";
 import visaDocument from "@/assets/home/visa documentation.webp";
 import Career from "@/assets/home/career counselling.webp";
@@ -143,7 +143,7 @@ export { p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12,
   logo , logo2, banner,banner2,banner3 ,back, box1, box2, box3,visa1,process1,usflag, ukflag,canadaflag,  bann, about2,contat,cl1,cl2,cl3,cl4,cl5,cl6,cl7,cl8,cl9, famvisa, prvisa, business,touristvisa
  , footerImage, plane, patta, kangaroo,  
   ceo,
-  immigration, Career, ielts, jobAssist, PostLanding ,profile, pte ,visaDocument,toefl,
+  immigration, Career, ielts, jobAssist, PostLanding ,profilemarketing, pte ,visaDocument,toefl,
   alberta, australiaPR,
   australiaSubclass491,
   australiaSubclass600,

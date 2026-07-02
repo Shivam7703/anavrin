@@ -3,7 +3,7 @@ import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { MdOutlineChat, MdStickyNote2 } from "react-icons/md";
 import { FaChevronRight } from "react-icons/fa6";
-import { servicedata } from "@/data/servicedata";
+import { Servicedata } from "@/data/serviceData";
 import { FaDownload, FaLocationArrow, FaRegUserCircle } from "react-icons/fa";
 import { FiMail, FiPhone } from "react-icons/fi";
 import { IoChatboxEllipsesOutline, IoSettings } from "react-icons/io5";
@@ -139,7 +139,7 @@ export default function ServiceAside() {
 }
       >
         <div className="p-3 flex flex-col gap-1.5">
-          {servicedata.map((service: any, i: number) => {
+          {Servicedata.map((service: any, i: number) => {
             const active = isHref(service.title);
 
             return (
