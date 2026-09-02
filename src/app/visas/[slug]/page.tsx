@@ -4,7 +4,7 @@ import React from "react";
 import { visadata } from "@/data/visadata";
 import { bann } from "@/assets";
 import Banner from "@/components/global/banner";
-import Visadetails from "@/components/visa/visa-detail";
+import Visadetails from "@/components/visa/visadetail";
 
 
 interface Pageprops {
