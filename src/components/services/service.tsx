@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import { Servicedata } from "@/data/serviceData";
+import { Servicedata } from "@/data/servicedata";
 import { FiSettings } from "react-icons/fi";
 
 export default function ServiceSection() {

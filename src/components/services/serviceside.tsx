@@ -3,7 +3,7 @@ import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { MdOutlineChat, MdStickyNote2 } from "react-icons/md";
 import { FaChevronRight } from "react-icons/fa6";
-import { Servicedata } from "@/data/serviceData";
+import { Servicedata } from "@/data/servicedata";
 import { FaDownload, FaLocationArrow, FaRegUserCircle } from "react-icons/fa";
 import { FiMail, FiPhone } from "react-icons/fi";
 import { IoChatboxEllipsesOutline, IoSettings } from "react-icons/io5";
@@ -11,7 +11,7 @@ import { BiRightArrowAlt } from "react-icons/bi";
 import { usePathname } from "next/navigation";
 import { GrVisa } from "react-icons/gr";
 
-    
+
 
 const visaList = [
   { id: 1, title: "Canada PR Visa" },
@@ -23,11 +23,11 @@ const visaList = [
 ];
 
 const inputFields = [
-  { name: "name",     label: "Name",     type: "text",  icon: FaRegUserCircle,          placeholder: "John Doe" },
-  { name: "phone",    label: "Phone",    type: "tel",   icon: FiPhone,                  placeholder: "+1 (555) 000-0000" },
-  { name: "email",    label: "Email",    type: "email", icon: FiMail,                   placeholder: "john@example.com" },
-  { name: "location", label: "Location", type: "text",  icon: FaLocationArrow,          placeholder: "City, Country" },
-  { name: "subject",  label: "Subject",  type: "text",  icon: IoChatboxEllipsesOutline, placeholder: "How can we help?" },
+  { name: "name", label: "Name", type: "text", icon: FaRegUserCircle, placeholder: "John Doe" },
+  { name: "phone", label: "Phone", type: "tel", icon: FiPhone, placeholder: "+1 (555) 000-0000" },
+  { name: "email", label: "Email", type: "email", icon: FiMail, placeholder: "john@example.com" },
+  { name: "location", label: "Location", type: "text", icon: FaLocationArrow, placeholder: "City, Country" },
+  { name: "subject", label: "Subject", type: "text", icon: IoChatboxEllipsesOutline, placeholder: "How can we help?" },
 ];
 
 const createSlug = (title: string) =>
@@ -35,7 +35,7 @@ const createSlug = (title: string) =>
 
 
 export default function ServiceAside() {
-         const [activeItem, setActiveItem] = useState<string | null>(null);
+  const [activeItem, setActiveItem] = useState<string | null>(null);
 
   const pathname = usePathname();
 
@@ -45,19 +45,19 @@ export default function ServiceAside() {
 
     setActiveItem(path);
   }, [pathname]);
-  
-   const isHref = (title: string) => {
+
+  const isHref = (title: string) => {
     return createSlug(title) === activeItem;
   };
-  
+
   return (
     <div className="flex flex-col gap-4 md:gap-7">
 
       {/* ── 1. Inquiry Form ── */}
       <SideCard
         title="Quick Inquiry"
-        icon={<MdStickyNote2 size={14}/>
-}
+        icon={<MdStickyNote2 size={14} />
+        }
       >
         <form className="p-4 flex flex-col gap-3">
           {/* 2-col grid for first 4 */}
@@ -135,8 +135,8 @@ export default function ServiceAside() {
       {/* ── 2. Our Services ── */}
       <SideCard
         title="Our Services"
-        icon={<IoSettings size={14}/>
-}
+        icon={<IoSettings size={14} />
+        }
       >
         <div className="p-3 flex flex-col gap-1.5">
           {Servicedata.map((service: any, i: number) => {
@@ -148,7 +148,7 @@ export default function ServiceAside() {
                 href={`/services/${createSlug(service.title)}`}
                 className={`group flex items-center gap-2.5 px-3 py-2.5 rounded-[10px] border-[1.5px] transition-all duration-200
                   
-                  ${active 
+                  ${active
                     ? "bg-color2 border-color2 text-white"
                     : "border-slate-200 bg-slate-50 hover:border-color2 hover:bg-blue-50"
                   }
@@ -184,8 +184,8 @@ export default function ServiceAside() {
       {/* ── 3. Visas We Offer ── */}
       <SideCard
         title="Visas We Offer"
-        icon={<GrVisa 
-size={14} />}
+        icon={<GrVisa
+          size={14} />}
       >
         <div className="p-3 flex flex-col gap-1.5">
           {visaList.map((v) => (
@@ -208,7 +208,7 @@ size={14} />}
       {/* ── 4. Migrate ── */}
       <SideCard
         title="Migrate"
-        icon={<FaLocationArrow size={14}/>}
+        icon={<FaLocationArrow size={14} />}
       >
         <div className="p-3 flex flex-col gap-1.5">
           {visaList.map((v) => (
@@ -228,7 +228,7 @@ size={14} />}
         </div>
       </SideCard>
 
-     
+
 
       {/* ── 6. Download Brochure ── */}
       <button

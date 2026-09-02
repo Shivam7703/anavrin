@@ -4,7 +4,7 @@ import React from "react";
 import { bann } from "@/assets";
 import Banner from "@/components/global/banner";
 import Visadetails from "@/components/visa/visadetail";
-import { Servicedata } from "@/data/serviceData";
+import { Servicedata } from "@/data/servicedata";
 
 interface Pageprops {
     params: {
