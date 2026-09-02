@@ -176,7 +176,7 @@ export default function Footer({ footer }: any) {
             <div key={item.id}>
               <span className="font-bold">{item?.label}: </span>
               {item?.subNav?.map((navitem: any) => (
-                <React.Fragment key={navitem?.id}>
+                <div key={navitem?.id}>
                   <Link
                     title={navitem?.label}
                     className="text-zinc-700"
@@ -209,7 +209,7 @@ export default function Footer({ footer }: any) {
                       ))}
                     </>
                   ))}
-                </React.Fragment>
+                </div>
               ))}
             </div>
           ))}
