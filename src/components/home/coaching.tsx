@@ -145,8 +145,8 @@ export default function Coaching() {
         className={`${uniqueId}-next absolute z-30
           right-1 md:right-4 top-[62%] -translate-y-1/2
           w-9 h-9 sm:w-11 sm:h-11
-          border border-white/20 rounded-full bg-white/10 hover:bg-color1
-          flex items-center justify-center text-white shadow-lg
+           rounded-full  hover:bg-color1
+          flex items-center justify-center text-black hover:text-white shadow-lg shadow-black/40 
           transition-all duration-300 hover:scale-110 hover:border-color1`}
       >
         <FaArrowRightLong className="text-xs sm:text-sm" />
@@ -155,8 +155,8 @@ export default function Coaching() {
         className={`${uniqueId}-prev absolute z-30
           left-1 md:left-4 top-[62%] -translate-y-1/2
           w-9 h-9 sm:w-11 sm:h-11
-          border border-white/20 rounded-full bg-white/10 hover:bg-color1
-          flex items-center justify-center text-white shadow-lg
+           rounded-full hover:bg-color1
+          flex items-center justify-center text-black hover:text-white shadow-lg shadow-black/40 
           transition-all duration-300 hover:scale-110 hover:border-color1`}
       >
         <FaArrowLeftLong className="text-xs sm:text-sm" />
