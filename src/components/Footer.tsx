@@ -124,7 +124,7 @@ export default function Footer({ footer }: any) {
             </h4>
             <ul className="space-y-2">
               {footer?.list2?.links?.map((d: any, i: number) => (
-                <li key={i}>
+                <li key={d?.id || d?.href || i}>
                   <Link
                     href={d?.href}
                     className=" transition:all text-base text-zinc-600 duration-300 hover:text-green2 "
@@ -141,7 +141,7 @@ export default function Footer({ footer }: any) {
             </h4>
             <ul className="space-y-2">
               {footer?.list1?.links?.map((d: any, i: number) => (
-                <li key={i}>
+                <li key={d?.id || d?.href || i}>
                   <Link
                     href={d?.href}
                     className=" transition:all text-base text-zinc-600 duration-300 hover:text-green2 "
@@ -172,11 +172,11 @@ export default function Footer({ footer }: any) {
           </div>
         </div>
         <div className="text-black space-y-7  py-6 px-6 md:px-24 ">
-          {navigationMenu?.secondaryMenu?.map((item: any) => (
-            <div key={item.id}>
+          {navigationMenu?.secondaryMenu?.map((item: any, idx: number) => (
+            <div key={item?.id || idx}>
               <span className="font-bold">{item?.label}: </span>
-              {item?.subNav?.map((navitem: any) => (
-                <div key={navitem?.id}>
+              {item?.subNav?.map((navitem: any, navIdx: number) => (
+                <React.Fragment key={navitem?.id || navIdx}>
                   <Link
                     title={navitem?.label}
                     className="text-zinc-700"
@@ -185,37 +185,34 @@ export default function Footer({ footer }: any) {
                     {navitem?.label}
                     {"  "}&nbsp; | {"  "}&nbsp;
                   </Link>
-                  {navitem?.subNav?.map((subNavItem: any) => (
-                    <>
+                  {navitem?.subNav?.map((subNavItem: any, subNavIdx: number) => (
+                    <React.Fragment key={subNavItem?.id || subNavIdx}>
                       <Link
                         title={subNavItem?.label}
                         className="text-zinc-700"
-                        key={subNavItem?.id}
                         href={FormatHref(subNavItem.href)}
                       >
                         {subNavItem?.label}
                         {"  "}&nbsp; | {"  "}&nbsp;
                       </Link>
-                      {subNavItem?.subNavv?.map((data: any) => (
+                      {subNavItem?.subNavv?.map((data: any, dataIdx: number) => (
                         <Link
                           title={data?.label}
                           className="text-zinc-700"
-                          key={data?.id}
+                          key={data?.id || dataIdx}
                           href={FormatHref(data.href)}
                         >
                           {data?.label}
                           {"  "}&nbsp; | {"  "}&nbsp;
                         </Link>
                       ))}
-                    </>
+                    </React.Fragment>
                   ))}
-                </div>
+                </React.Fragment>
               ))}
             </div>
           ))}
         </div>
-        {/* footplane */}
-        {/* <Footplane /> */}
         {/* copyright  */}
         <div className="flex items-center justify-center bg-color1 text-white bg-color5 py-5 max-md:flex-col">
           <p className="text-center text-sm">
@@ -231,4 +228,3 @@ export default function Footer({ footer }: any) {
     </>
   );
 }
-
