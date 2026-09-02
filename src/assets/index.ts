@@ -85,7 +85,7 @@ import irelandWorkPermit from "@/assets/visa/Ireland Work Permit.webp";
 import manitoba from "@/assets/visa/manitoba.webp";
 import maltaWorkPermit from "@/assets/visa/Malta Work Permit.jpg";
 
-import novaScotia from "@/assets/visa/nova.webp";
+import novaScotia from "@/assets/visa/Nova.webp";
 import newBrunswickPnp from "@/assets/visa/New Brunswick PNP Program.webp";
 import ontario from "@/assets/visa/ontario.webp";
 import omanWorkVisa from "@/assets/visa/Oman Work Visa.webp";
