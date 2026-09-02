@@ -18,17 +18,10 @@ import Team from "@/components/global/team";
 export default function Home() {
   return (
     <>
-<div className="max-w-screen overflow-hidden  relative max-h-max">
-   <div
-  className="absolute -bottom-[3%]  rotate-[-35deg] -right-28 w-[800px] h-[300px] bg-color3 opacity-10 md:opacity-50"
-/>
- <div
-  className="absolute md:bottom-[37%] bottom-[40%] rotate-45 -right-48 w-[800px] h-[200px] bg-color3"
-/>
+
 <BannerSlider/>
 <Greenbox/>
 <AboutSection  data ={aboutdata} />
-</div>
 <VisaSlider/>
 <Canadapnp/>
 <CountDown />

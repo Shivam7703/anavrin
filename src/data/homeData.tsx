@@ -23,13 +23,14 @@ import {
 import { FiSettings } from "react-icons/fi";
 import { BsPassportFill } from "react-icons/bs";
 import { HiOutlineDocumentCheck } from "react-icons/hi2";
-import { FaChartLine, FaFileAlt, FaFileSignature, FaGlobe, FaGlobeAmericas, FaLanguage, FaPlaneDeparture, FaShieldAlt, FaStethoscope, FaUniversity, FaUserGraduate } from "react-icons/fa";
+import { FaChartLine, FaFacebook, FaFileAlt, FaFileSignature, FaGlobe, FaGlobeAmericas, FaLanguage, FaLinkedinIn, FaPlaneDeparture, FaShieldAlt, FaStethoscope, FaUniversity, FaUserGraduate } from "react-icons/fa";
 import { FaMapLocationDot } from "react-icons/fa6";
 import { HiOutlineFlag, HiOutlineLightBulb } from "react-icons/hi";
 import { IoSearch, IoSettingsOutline } from "react-icons/io5";
 import { MdAttachEmail, MdWifiCalling3 } from "react-icons/md";
 import { RiSpeedMiniFill, RiUserCommunityFill, RiUserFollowLine } from "react-icons/ri";
-import { TbTarget, TbBulb, TbDiamond } from "react-icons/tb";
+import { TbTarget, TbBulb, TbDiamond, TbBrandYoutubeFilled } from "react-icons/tb";
+import { AiFillInstagram } from "react-icons/ai";
 
 export const navigationMenu = {
   primaryMenu: [
@@ -417,7 +418,7 @@ export const navigationMenu = {
 
 export const sliderContent = [
   {
-    id: 1, 
+    id: 1,
     img: banner2,
     welcome: "Your Trusted Partner For Global Opportunities",
     title1: "Turn Your Overseas Dreams Into Reality ",
@@ -427,7 +428,7 @@ export const sliderContent = [
     href: "/contact-us",
   },
   {
-    id: 2, 
+    id: 2,
     img: banner,
     welcome: "Helping You Move Forward With Confidence",
     title1: "Expert Immigration Solutions For Every Journey ",
@@ -786,273 +787,6 @@ export const testimonialData = {
   ],
 };
 
-// export const offercountry = {
-//   title1: "Countries We Offer",
-//   title2:
-//     "Top global destinations with strong career and immigration opportunities",
-//    cards: [
-//     {
-//       id: 1,
-//       img: ontario,
-//       flag: canadaflag,
-//       cat: "abroad",
-//       heading: "Study in Canada",
-//       points: ["• High-Quality Education", "• Post-Study Work", "• PR Opportunities"],
-//       text: "High-quality education with post-study work and PR opportunities",
-//       link: "/canada-pnp",
-//     },
-//     {
-//       id: 2,
-//       img: bcPnpProgram,
-//       flag: canadaflag,
-//       cat: "abroad",
-//       heading: "Study in USA",
-//       points: ["• Top Universities", "• Diverse Courses", "• Global Career Opportunities"],
-//       text: "Top universities with diverse courses and global career opportunities",
-//       link: "/canada-pnp",
-//     },
-//     {
-//       id: 3,
-//       img: alberta,
-//       flag: canadaflag,
-//       cat: "abroad",
-//       heading: "Study in Australia",
-//       points: ["• Quality Education", "• Work Opportunities", "• Student-Friendly Environment"],
-//       text: "Quality education with work opportunities and a student-friendly environment",
-//       link: "/canada-pnp",
-//     },
-//     {
-//       id: 4,
-//       img: saskatchewanPnp,
-//       flag: canadaflag,
-//       cat: "abroad",
-//       heading: "Study in Dubai",
-//       points: ["• Modern Education Hub", "• Global Exposure", "• Tax-Free Benefits"],
-//       text: "Modern education hub with global exposure and tax-free benefits",
-//       link: "/canada-pnp",
-//     },
-//     {
-//       id: 5,
-//       img: manitoba,
-//       flag: canadaflag,
-//       cat: "abroad",
-//       heading: "Study in Italy",
-//       points: ["• Affordable Education", "• Rich Culture", "• European Degree"],
-//       text: "Affordable education with rich culture and European degree recognition",
-//       link: "/canada-pnp",
-//     },
-//     {
-//       id: 6,
-//       img: novaScotia,
-//       flag: canadaflag,
-//       cat: "abroad",
-//       heading: "Study in France",
-//       points: ["• Quality Education", "• Low Fees", "• Global Opportunities"],
-//       text: "Quality education with low fees and global career opportunities",
-//       link: "/canada-pnp",
-//     },
-//     {
-//       id: 7,
-//       img: manitoba,
-//       flag: canadaflag,
-//       cat: "abroad",
-//       heading: "Study in Malaysia",
-//       points: ["• Affordable", "• International Universities", "• Modern Infrastructure"],
-//       text: "Affordable education with international universities and modern infrastructure",
-//       link: "/canada-pnp",
-//     },
-//     {
-//       id: 8,
-//       img: novaScotia,
-//       flag: canadaflag,
-//       cat: "abroad",
-//       heading: "Study in New Zealand",
-//       points: ["• Safe Country", "• Quality Education", "• Post-Study Work"],
-//       text: "Safe country with quality education and post-study work options",
-//       link: "/canada-pnp",
-//     },
-//     {
-//       id: 9,
-//       img: manitoba,
-//       flag: canadaflag,
-//       cat: "abroad",
-//       heading: "Study in Ireland",
-//       points: ["• Strong Job Market", "• Excellent Education", "• Career Growth"],
-//       text: "Strong job market with excellent education and career growth",
-//       link: "/canada-pnp",
-//     },
-//     {
-//       id: 10,
-//       img: novaScotia,
-//       flag: canadaflag,
-//       cat: "abroad",
-//       heading: "Study in UK",
-//       points: ["• Globally Recognized", "• Short Duration", "• Flexible Courses"],
-//       text: "Globally recognized degrees with shorter course duration options",
-//       link: "/canada-pnp",
-//     },
-//     {
-//       id: 11,
-//       img: manitoba,
-//       flag: canadaflag,
-//       cat: "abroad",
-//       heading: "Study in Singapore",
-//       points: ["• World-Class Education", "• Industry Connections", "• Career Opportunities"],
-//       text: "World-class education with strong industry connections and career opportunities",
-//       link: "/canada-pnp",
-//     },
-//         {
-//       id: 1,
-//       img: ontario,
-//       flag: canadaflag,
-//       cat: "mbbs",
-//       heading: "MBBS in Philippines",
-//       points: ["• Affordable Fees", "• English Medium", "• Good Clinical Exposure"],
-//       text: "Affordable MBBS with English medium and good clinical exposure",
-//       link: "/canada-pnp",
-//     },
-//     {
-//       id: 2,
-//       img: bcPnpProgram,
-//       flag: canadaflag,
-//       cat: "mbbs",
-//       heading: "MBBS in Russia",
-//       points: ["• Globally Recognized", "• Affordable Fees", "• Quality Education"],
-//       text: "Globally recognized degrees with affordable fees and quality education",
-//       link: "/canada-pnp",
-//     },
-//     {
-//       id: 3,
-//       img: alberta,
-//       flag: canadaflag,
-//       cat: "mbbs",
-//       heading: "MBBS in Bangladesh",
-//       points: ["• Indian Syllabus", "• High FMGE Rate", "• Affordable Option"],
-//       text: "Similar syllabus to India with high FMGE passing rates",
-//       link: "/canada-pnp",
-//     },
-//     {
-//       id: 4,
-//       img: saskatchewanPnp,
-//       flag: canadaflag,
-//       cat: "mbbs",
-//       heading: "MBBS in Mauritius",
-//       points: ["• Safe Country", "• Multicultural Environment", "• Quality Education"],
-//       text: "Quality education in a safe and multicultural environment",
-//       link: "/canada-pnp",
-//     },
-//     {
-//       id: 5,
-//       img: manitoba,
-//       flag: canadaflag,
-//       cat: "mbbs",
-//       heading: "MBBS in Nepal",
-//       points: ["• Indian Curriculum", "• Easy Travel", "• Cultural Similarity"],
-//       text: "Indian-based curriculum with easy travel and cultural similarity",
-//       link: "/canada-pnp",
-//     },
-//     {
-//       id: 6,
-//       img: novaScotia,
-//       flag: canadaflag,
-//       cat: "mbbs",
-//       heading: "MBBS in Uzbekistan",
-//       points: ["• Affordable Fees", "• Modern Infrastructure", "• Experienced Faculty"],
-//       text: "Affordable fees with modern infrastructure and experienced faculty support",
-//       link: "/canada-pnp",
-//     },
-//     {
-//       id: 7,
-//       img: manitoba,
-//       flag: canadaflag,
-//       cat: "mbbs",
-//       heading: "MBBS in Kazakhstan",
-//       points: ["• Recognized Universities", "• Affordable", "• Good Facilities"],
-//       text: "Recognized universities with affordable education and good facilities",
-//       link: "/canada-pnp",
-//     },
-//     {
-//       id: 8,
-//       img: novaScotia,
-//       flag: canadaflag,
-//       cat: "mbbs",
-//       heading: "MBBS in Belarus",
-//       points: ["• High Quality Education", "• Advanced Labs", "• Strong Infrastructure"],
-//       text: "High-quality medical education with advanced labs and infrastructure",
-//       link: "/canada-pnp",
-//     },
-//     {
-//       id: 9,
-//       img: manitoba,
-//       flag: canadaflag,
-//       cat: "mbbs",
-//       heading: "MBBS in Georgia",
-//       points: ["• European Standard", "• English Medium", "• Recognized Degree"],
-//       text: "European standard education with English medium programs available",
-//       link: "/canada-pnp",
-//     },
-//     {
-//       id: 10,
-//       img: novaScotia,
-//       flag: canadaflag,
-//       cat: "mbbs",
-//       heading: "MBBS in Armenia",
-//       points: ["• Affordable", "• Safe Country", "• Quality Education"],
-//       text: "Affordable MBBS with quality education and a safe environment",
-//       link: "/canada-pnp",
-//     },
-//     {
-//       id: 11,
-//       img: manitoba,
-//       flag: canadaflag,
-//       cat: "mbbs",
-//       heading: "MBBS in China",
-//       points: ["• Top Universities", "• Advanced Technology", "• Global Recognition"],
-//       text: "Top universities with advanced technology and global recognition",
-//       link: "/canada-pnp",
-//     },
-//     {
-//       id: 12,
-//       img: novaScotia,
-//       flag: canadaflag,
-//       cat: "mbbs",
-//       heading: "MBBS in Poland",
-//       points: ["• European Degree", "• High Standards", "• Global Opportunities"],
-//       text: "European degree with high education standards and global opportunities",
-//       link: "/canada-pnp",
-//     },
-//     {
-//       id: 13,
-//       img: manitoba,
-//       flag: canadaflag,
-//       cat: "mbbs",
-//       heading: "MBBS in Germany",
-//       points: ["• Low Tuition Fees", "• Excellent Education", "• High Exposure"],
-//       text: "Low tuition fees with excellent medical education and exposure",
-//       link: "/canada-pnp",
-//     },
-//     {
-//       id: 14,
-//       img: novaScotia,
-//       flag: canadaflag,
-//       cat: "mbbs",
-//       heading: "MBBS in Malaysia",
-//       points: ["• Affordable", "• Modern Campus", "• International Recognition"],
-//       text: "Affordable education with modern campuses and international recognition",
-//       link: "/canada-pnp",
-//     },
-//     {
-//       id: 15,
-//       img: manitoba,
-//       flag: canadaflag,
-//       cat: "mbbs",
-//       heading: "MBBS in Kyrgyzstan",
-//       points: ["• Budget Friendly", "• Easy Admission", "• Good Training"],
-//       text: "Budget-friendly MBBS with a simple admission process and good training",
-//       link: "/canada-pnp",
-//     },
-//   ],
-// };
 
 
 export const HomefaqData = {
@@ -1123,16 +857,10 @@ export const coachingData = {
 export const footer = {
   logo: logo2,
   text:
-    "anavrinadvisercore is a trusted consulting firm delivering reliable immigration and visa solutions through expert guidance, transparent processes, and personalized support, helping individuals and families achieve their global aspirations with confidence.",
+    "anavrinadviser is a trusted consulting firm delivering reliable immigration and visa solutions through expert guidance.",
 
-  socials: {
-    facebook: "https://www.facebook.com/",
-    twitter: "https://twitter.com/",
-    instagram: "https://www.instagram.com//",
-    linkedin: "https://www.linkedin.com/school//",
-    youtube: "https://www.youtube.com/c/",
-  },
-  copyrightText: "Copyrights © 2026 . Designed and Manage by ",
+
+  copyrightText: "Copyright © 2026 . Designed and Manage by ",
   list1: {
     title: "Our Services",
     links: [
@@ -1175,6 +903,29 @@ export const footer = {
     title: "Contact Us",
   },
 };
+
+export const socialLinks = [
+  {
+    name: "Facebook",
+    icon: FaFacebook,
+    url: "https://www.facebook.com/anavrinadviser",
+  },
+  {
+    name: "Instagram",
+    icon: AiFillInstagram,
+    url: "https://www.instagram.com/anavrinadviser/",
+  },
+  {
+    name: "LinkedIn",
+    icon: FaLinkedinIn,
+    url: "https://www.linkedin.com/company/anavrinadviser-immigration/",
+  },
+  {
+    name: "YouTube",
+    icon: TbBrandYoutubeFilled,
+    url: "https://www.youtube.com/@anavrinadviser",
+  },
+];
 
 export let blogData = {
   title1: "Latest Blogs",
@@ -1230,27 +981,21 @@ export const mission = [
     title: "Mission",
     icon: TbTarget,
     body: "To provide reliable immigration solutions, professional guidance, and personalized support that help clients achieve their global goals with confidence and ease.",
-    bg: "bg-color1",
-    badge: "bg-color1 ",
-    iconColor: "#92400e",
+    iconColor: "text-color1",
   },
   {
     number: "02",
     title: "Vision",
     icon: TbBulb,
     body: "To become a preferred immigration partner known for trust, transparency, and successful outcomes for individuals and families worldwide.",
-    bg: "bg-color2",
-    badge: "bg-color2 ",
-    iconColor: "#1e40af",
+    iconColor: "text-color2",
   },
   {
     number: "03",
     title: "Values",
     icon: TbDiamond,
     body: "We believe in honesty, professionalism, accountability, and dedicated client service while maintaining the highest standards in every immigration process.",
-    bg: "bg-color3",
-    badge: "bg-color3 ",
-    iconColor: "#065f46",
+    iconColor: "text-blue-600",
   },
 ];
 

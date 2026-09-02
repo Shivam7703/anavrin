@@ -41,15 +41,14 @@ export default function Coaching() {
   };
 
   return (
-    <section className="ser-bg relative overflow-hidden
-      py-10 px-4
-      sm:py-12 sm:px-8
-      md:py-14 md:px-12
-      lg:py-16 lg:px-16
+    <section className="bg-white relative overflow-hidden
+      py-7 px-4
+      sm:p-12 
+       lg:p-16
       xl:px-20">
 
       {/* Decorative images */}
-      <Image
+      {/* <Image
         src={footerImage}
         alt="decoration"
         className="pointer-events-none z-0 absolute -bottom-2 right-[2%]
@@ -60,13 +59,13 @@ export default function Coaching() {
         alt="decoration"
         className="pointer-events-none z-0 absolute top-[6%] left-[1%]
           object-contain h-10 sm:h-20 md:h-28 w-auto animate-y opacity-80"
-      />
+      /> */}
 
       {/* ── HEADER ── */}
       <div className="relative z-10 text-center mb-8 sm:mb-10 md:mb-12">
         <p className="text-xs font-bold uppercase tracking-[0.22em] text-color1 mb-2 sm:mb-3">
 {data?.title1}        </p>
-        <h2 className="text-white font-bold leading-tight mx-auto
+        <h2 className="text-gray-900 font-bold leading-tight mx-auto
           text-2xl sm:text-3xl md:text-4xl lg:text-5xl
            md:max-w-3xl">
 {data?.title2}        </h2>
@@ -78,43 +77,43 @@ export default function Coaching() {
           {data?.cards?.map((item, index) => {
             // Last visible card gets red highlight (like screenshot)
             return (
-              <SwiperSlide key={item.title} className="!h-auto mt-5">
+              <SwiperSlide key={item.title} className="!h-auto my-5 shadow-lg">
                 <div
                   className={`group relative flex flex-col h-full 
                     transition-all duration-300
-                     border-white/15 
-                    p-5 sm:p-6 md:p-8 
-                    bg-zinc-700 hover:bg-color1 cursor-default`}
+                     border border-zinc-400 hover:border-color1 
+                    p-5 sm:p-6  mt-2 rounded-xl 
+                    bg-zinc-100  hover:bg-color1`}
                 >
                   {/* Icon circle */}
                   <div className={`absolute -top-5 right-4 mb-5 sm:mb-6
                     w-12 h-12 sm:w-14 sm:h-14 rounded-full
                     flex items-center justify-center
                     text-xl sm:text-2xl
-                    transition-all bg-color1 group-hover:bg-white group-hover:text-color1 text-white duration-300 group-hover:scale-110
+                    transition-all bg-color1 group-hover:bg-black text-white duration-300 group-hover:scale-110
                     `}>
                     {item.icon}
                   </div>
 
                   {/* Title */}
-                  <h3 className="text-white font-bold leading-snug mb-3
-                    text-[15px] sm:text-base md:text-lg">
+                  <h3 className="group-hover:text-white text-zinc-800 font-bold leading-snug mb-3
+                    text-[15px] sm:text-lg md:text-xl">
                     {item.title}
                   </h3>
 
                   {/* Description */}
-                  <p className={`text-xs sm:text-sm text-white leading-relaxed flex-1 mb-5
+                  <p className={`text-sm sm:text-base group-hover:text-white/90 text-zinc-600 leading-relaxed mb-5 line-clamp-3
                     `}>
                     {item.text}
                   </p>
 
                   {/* Divider */}
-                  <div className={`w-full h-px mb-4 bg-white/25`} />
+                  <div className={`w-full h-px mb-4 bg-zinc-300`} />
 
                   {/* Link */}
                   <Link
   href={`/${item.href}`}
-  className="inline-flex items-center overflow-hidden text-sm font-bold text-gray-300 group-hover:text-white transition-all duration-300"
+  className="inline-flex items-center overflow-hidden text-sm font-bold text-gray-700 group-hover:text-white transition-all duration-300"
 >
   {/* Text Slide */}
   <span

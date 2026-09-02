@@ -14,7 +14,7 @@ export default function AboutSection({ data }: any) {
 
  
       {/* Floating Circle */}
-      <motion.div
+      {/* <motion.div
         animate={{
           y: [0, 20, 0],
           x: [0, -10, 0],
@@ -25,7 +25,7 @@ export default function AboutSection({ data }: any) {
           ease: "easeInOut",
         }}
         className="absolute top-20 left-10 w-32 h-32 rounded-full bg-color1/10 blur-xl"
-      />
+      /> */}
 
      
 
@@ -37,7 +37,7 @@ export default function AboutSection({ data }: any) {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="flex-1 flex flex-col justify-center"
+          className=" flex flex-col justify-center lg:w-[48%] w-full"
         >
 
           {/* Badge */}
@@ -59,15 +59,13 @@ export default function AboutSection({ data }: any) {
             className="text-2xl md:text-4xl xl:text-5xl font-bold text-gray-900 leading-tight mb-5"
           >
             {data?.title2 || "Greetings to Experience"}{" "}
-            <span className="text-color1 relative inline-block">
+            <span className="text-color1">
               {data?.title3 || "Visa Consulting Firm."}
-
-             
             </span>
           </motion.h2>
 
           {/* Description */}
-          <p className="text-gray-600 text-sm md:text-base leading-relaxed mb-8 max-w-xl">
+          <p className="text-gray-600 text-sm md:text-base leading-relaxed mb-8">
             {data?.para ||
               "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium."}
           </p>
@@ -102,7 +100,7 @@ export default function AboutSection({ data }: any) {
           </div>
 
           {/* Checklist */}
-          <div className="flex flex-col sm:flex-row gap-6 mb-9">
+          <div className="flex flex-col sm:flex-row gap-6 -mb-5 max-md:mb-6">
 
             <div className="flex flex-col gap-3 sm:w-[45%]">
               {data?.checklist.map((item: any) => (
@@ -135,28 +133,16 @@ export default function AboutSection({ data }: any) {
           {/* CTA */}
           <Buttonmain
             href="/about"
-            text1="Read More"
-            text2="Learn More"
+            text2="Read More"
+            text1="Learn More"
           />
 
         </motion.div>
 
         {/* ─── RIGHT SIDE IMAGES ─── */}
-        <div className="lg:w-[48%] relative">
+        <div className="lg:w-[44%] relative">
           <div className="relative w-full min-h-[420px] md:min-h-[520px] h-full">
 
-            {/* animated line */}
-            <motion.div
-              animate={{
-                width: ["10%", "40%", "10%"],
-              }}
-              transition={{
-                duration: 5,
-                repeat: Infinity,
-                ease: "easeInOut",
-              }}
-              className="absolute top-10 right-0 h-[6px] bg-color1 z-[5] rounded-sm"
-            />
 
             {/* MAIN IMAGE */}
             {data?.img1 && (
@@ -165,11 +151,10 @@ export default function AboutSection({ data }: any) {
                 whileInView={{ opacity: 1, scale: 1 }}
                 whileHover={{
                   scale: 1.04,
-                  rotate: -1,
                 }}
                 transition={{ delay: 0.2 }}
                 viewport={{ once: true }}
-                className="group absolute top-[2%] left-0 w-[57%] h-[90%]
+                className="group absolute top-[2%] left-0 w-[90%] h-[90%] rounded-xl
                 overflow-hidden shadow-2xl"
                 
               >
@@ -177,7 +162,7 @@ export default function AboutSection({ data }: any) {
                   src={data.img1}
                   alt="immigration"
                   fill
-                  className="object-cover transition-transform duration-700 group-hover:scale-110"
+                  className="object-cover object-top transition-transform duration-700 group-hover:scale-110"
                 />
 
                 {/* overlay */}
@@ -196,7 +181,7 @@ export default function AboutSection({ data }: any) {
                 }}
                 transition={{ delay: 0.4 }}
                 viewport={{ once: true }}
-                className="group absolute top-[18%] right-0 w-[44%] h-[82%]
+                className="group absolute bottom-3 right-0 w-[44%] h-[42%] border-2 rounded-md border-white 
                 overflow-hidden shadow-2xl"
                 
               >

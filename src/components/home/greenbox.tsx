@@ -13,7 +13,7 @@ export default function Greenbox() {
  
 
   return (
-    <section className="w-full md:py-10 p-4 md:-mt-16">
+    <section className="w-full md:py-10 p-4 md:-mt-20">
 
       {/* Section Header */}
      
@@ -23,26 +23,20 @@ export default function Greenbox() {
         {data.map((card) => (
           <div
             key={card.id}
-            className="group relative bg-white   overflow-hidden cursor-pointer z-30
-              shadow-[0_4px_20px_rgba(0,0,0,0.4)]
+            className="group relative bg-white cursor-pointer z-30
+              shadow-lg rounded-xl 
               transition-all duration-500
               hover:-translate-y-2
               "
           >
 
-            {/* Decorative background blob */}
-            <div className="absolute -top-10 -right-10 w-32 h-32 rounded-full
-              bg-gradient-to-br from-color1 to-red-700 
-              opacity-10 group-hover:opacity-20
-              transition-opacity duration-500 blur-2xl" />
-
             {/* Icon circle — floats above top edge */}
-            <div className="px-6 pt-8 pb-6">
+            <div className="px-6 -mt-6 pb-6">
               <div
-                className="w-[64px] h-[64px] mb-6 rounded-full
-                  bg-gradient-to-br from-color1 to-orange-500
+                className="w-[64px] h-[64px] mb-6  rounded-full
+                  bg-gradient-to-br from-color3 to-blue-500
                   flex items-center justify-center text-[26px] text-zinc-50
-                  shadow-lg shadow-red-900/40
+                  shadow-lg shadow-red-900/30
                   transition-all duration-400
                   group-hover:scale-110 "
               >
@@ -50,27 +44,16 @@ export default function Greenbox() {
               </div>
 
               {/* Title */}
-              <h3 className="text-[18px] font-bold text-black mb-3 leading-snug">
+              <h3 className="text-lg md:text-xl  font-bold text-blue-800 mb-3 leading-snug">
                 {card.heading}
               </h3>
 
               {/* Para */}
-              <p className="text-[14px] text-gray-600 leading-[1.75] mb-6">
+              <p className="text-[14px] text-gray-800 leading-[1.75] mb-6">
                 {card.para}
               </p>
 
-              {/* Arrow link */}
-              <Link
-                href="#"
-                className="inline-flex items-center justify-center
-                  w-8 h-8 rounded-full
-                  border border-gray-600 text-gray-600
-                  transition-all duration-300
-                  group-hover:border-color1 group-hover:text-color1
-                  hover:bg-color1 hover:!text-white hover:!border-color1"
-              >
-                <MdArrowRightAlt className="text-[18px] transition-transform duration-300 group-hover:translate-x-0.5" />
-              </Link>
+              
             </div>
 
           </div>

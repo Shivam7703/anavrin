@@ -32,9 +32,8 @@ export const Button = ({ text11, text12 } :any) => {
     <div
         className="group relative flex items-center gap-3 px-8 py-4 rounded-lg
         text-white font-semibold text-[15px] tracking-wide overflow-hidden
-        transition-all bg-gradient-to-br from-orange-400 via-color1 to-orange-700 duration-300 hover:-translate-y-[2px] 
-        shadow-[0_6px_20px_rgba(203,0,0,0.45)]
-        hover:shadow-[0_12px_30px_rgba(203,0,0,0.65)]"
+        transition-all bg-color1 duration-300 hover:-translate-y-[2px] 
+        shadow-md hover:bg-blue-600"
        
       >
         {/* shimmer */}
@@ -45,7 +44,7 @@ export const Button = ({ text11, text12 } :any) => {
           <span className="block transition-transform duration-300 group-hover:-translate-y-full whitespace-nowrap">
 {text11 }         </span>
 
-          <span className="absolute top-0 left-0 block translate-y-full transition-transform duration-300 group-hover:translate-y-0 whitespace-nowrap">
+          <span className="absolute -top-0.5 left-0 block translate-y-full transition-transform duration-300 group-hover:translate-y-0 whitespace-nowrap">
 {text12}          </span>
         </span>
 

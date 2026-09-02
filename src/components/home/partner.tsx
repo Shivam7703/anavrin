@@ -8,7 +8,6 @@ const partners = [p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12];
 export default function Partners() {
   return (
     <section className="w-full bg-white py-7 sm:py-12 md:py-20 relative">
-                  <div className="absolute -z-0 -right-44 -translate-y-1/2 top-0 w-[350px] h-[350px] border-[26px] border-color3 rounded-full opacity-20 sm:opacity-80" />
 
       {/* Decorative background elements */}
       <div className="absolute inset-0 opacity-30">

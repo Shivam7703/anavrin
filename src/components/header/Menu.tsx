@@ -43,12 +43,12 @@ const Menu = ({ Isprimary, Items }: any) => {
             title={item?.label}
             href={item?.href || "#"}
             className={`px-4 py-3 flex justify-center items-center gap-1 text-sm font-semibold cursor-pointer
-              relative overflow-hidden transition-all duration-300 hover:bg-white/30 rounded-xl
+              relative overflow-hidden transition-all duration-300 hover:bg-white/30 rounded-lg
               ${
                 activeItem ===
                   (FormatHref(item.href).split("/").filter(Boolean).pop() ||
                     "home") && Isprimary
-                  ? "text-white bg-white/30"
+                  ? "text-white bg-black"
                   : Isprimary
                   ? "text-white"
                   : "text-zinc-700"

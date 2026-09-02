@@ -8,24 +8,10 @@ import { plane } from "@/assets";
 
 export default function Canadapnp() {
   return (
-    <section className="relative w-full overflow-hidden">
+    <section className="relative w-full overflow-hidden ">
  {/* Background image — darkened */}
-        <Image
-          src={plane}
-          alt="background"
-          
-          className="object-contain absolute top-[10%] left-10 w-32 h-max animate-y"
-        />
+     
       <div className="relative w-full">
-<div  className="absolute top-32 left-10 w-44 h-44 rounded-full bg-color1/10 blur-xl"/>
-
-
-<div  className="max-sm:hidden absolute -top-8 right-28 w-36 h-36 bg-color1/60 rotate-45"/>
-
-
-
-<div  className="max-sm:hidden absolute -top-8 -right-5 w-44 h-44  bg-color3 rotate-45"/>
-
 
        
 

@@ -13,7 +13,7 @@ import { FormatHref } from "./header/Menu";
 export default function Footer({ footer }: any) {
   return (
     <>
-      <footer className="border-t-2 border-gray-300 bg-white">
+      <footer className=" bg-zinc-100">
         {/* Footer links section  */}
         <div className="grid sm:p-8 p-6 md:px-24  w-full text-black bg-color5  grid-cols-3 sm:grid-cols-6 gap-6 lg:gap-10 lg:grid-cols-12">
           <div className="col-span-3 flex flex-col gap-y-2">
@@ -22,52 +22,98 @@ export default function Footer({ footer }: any) {
               alt="logo"
               className="max-w-56 w-[80vw] object-contain"
             />
-            {/* <p className=" w-full text-base mt-3  max-sm:mt-3">
+            <p className=" w-full text-base mt-3  max-sm:mt-3">
               {footer?.text}
-            </p> */}
+            </p>
             {/* Socials  */}
-            {footer?.socials && (
-              <div className="flex gap-2 md:gap-x-3 mt-3  text-4xl text-black">
-                {footer?.socials?.facebook && (
-                  <FaFacebook
-                    className=" hover:text-color1 p-2 bg-zinc-100 rounded-full duration-300 "
-                    onClick={() =>
-                      window.open(footer?.socials?.facebook, "_blank")
-                    }
+            {(
+              <div className="flex gap-3 mt-5">
+                {/* Facebook */}
+                <div
+                  className="group relative w-11 h-11 rounded-xl  
+                                    border-[1.5px]  flex items-center justify-center cursor-pointer
+                                       transition-all duration-300
+                                      hover:-translate-y-1 hover:scale-110 border-white marker:
+                                      hover:shadow-[0_10px_28px_rgba(0,0,0,0.25)]"
+                  onClick={() =>
+                    window.open(
+                      "https://www.facebook.com/anavrinadviser",
+                      "_blank"
+                    )
+                  }
+                >
+                  <span
+                    className="absolute inset-0 rounded-xl opacity-100  transition-opacity duration-300
+                    bg-gradient-to-br from-[#1877F2] to-[#0a5bb5]"
                   />
-                )}
-                {footer?.socials?.instagram && (
-                  <AiFillInstagram
-                    className="hover:text-color1 p-2 bg-zinc-100 rounded-full duration-300"
-                    onClick={() =>
-                      window.open(footer?.socials?.instagram, "_blank")
-                    }
+                  <FaFacebook className="text-xl text-white relative z-10 transition-colors duration-300" />
+                </div>
+
+                {/* Instagram */}
+                <div
+                  className="group relative w-11 h-11 rounded-xl  
+                    border-[1.5px]  flex items-center justify-center cursor-pointer
+                     transition-all duration-300
+                    hover:-translate-y-1 hover:scale-110 border-white marker:
+                    hover:shadow-[0_10px_28px_rgba(0,0,0,0.25)]"
+                  onClick={() =>
+                    window.open(
+                      "https://www.instagram.com/anavrinadviser/",
+                      "_blank"
+                    )
+                  }
+                >
+                  <span
+                    className="absolute inset-0 rounded-xl opacity-100  transition-opacity duration-300"
+                    style={{
+                      background:
+                        "linear-gradient(135deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888)",
+                    }}
                   />
-                )}
-                {footer?.socials?.linkedin && (
-                  <FaLinkedinIn
-                    className="hover:text-color1 p-2 bg-zinc-100 rounded-full duration-300"
-                    onClick={() =>
-                      window.open(footer?.socials?.linkedin, "_blank")
-                    }
+                  <AiFillInstagram className="text-2xl text-white relative z-10 transition-colors duration-300" />
+                </div>
+
+                {/* LinkedIn */}
+                <div
+                  className="group relative w-11 h-11 rounded-xl  
+                    border-[1.5px]  flex items-center justify-center cursor-pointer
+                     transition-all duration-300
+                    hover:-translate-y-1 hover:scale-110 border-white marker:
+                    hover:shadow-[0_10px_28px_rgba(0,0,0,0.25)]"
+                  onClick={() =>
+                    window.open(
+                      "https://www.linkedin.com/company/anavrinadviser-immigration/",
+                      "_blank"
+                    )
+                  }
+                >
+                  <span
+                    className="absolute inset-0 rounded-xl opacity-100  transition-opacity duration-300
+                    bg-gradient-to-br from-[#0A66C2] to-[#004182]"
                   />
-                )}
-                {footer?.socials?.youtube && (
-                  <TbBrandYoutubeFilled
-                    className="hover:text-color1 p-2 bg-zinc-100 rounded-full duration-300"
-                    onClick={() =>
-                      window.open(footer?.socials?.youtube, "_blank")
-                    }
+                  <FaLinkedinIn className="text-xl text-white relative z-10 transition-colors duration-300" />
+                </div>
+
+                {/* YouTube */}
+                <div
+                  className="group relative w-11 h-11 rounded-xl  
+                    border-[1.5px]  flex items-center justify-center cursor-pointer
+                     transition-all duration-300
+                    hover:-translate-y-1 hover:scale-110 border-white marker:
+                    hover:shadow-[0_10px_28px_rgba(0,0,0,0.25)]"
+                  onClick={() =>
+                    window.open(
+                      "https://www.youtube.com/@anavrinadviser",
+                      "_blank"
+                    )
+                  }
+                >
+                  <span
+                    className="absolute inset-0 rounded-xl  duration-300
+                    bg-gradient-to-br from-[#FF0000] to-[#cc0000]"
                   />
-                )}
-                {footer?.socials?.twitter && (
-                  <FaXTwitter
-                    className="hover:text-color1 p-2 bg-zinc-100 rounded-full duration-300"
-                    onClick={() =>
-                      window.open(footer?.socials?.twitter, "_blank")
-                    }
-                  />
-                )}
+                  <TbBrandYoutubeFilled className="text-xl text-white relative z-10 " />
+                </div>
               </div>
             )}
           </div>
@@ -171,10 +217,10 @@ export default function Footer({ footer }: any) {
         {/* footplane */}
         {/* <Footplane /> */}
         {/* copyright  */}
-        <div className="flex items-center justify-center border-t text-black bg-color5 py-5 max-md:flex-col">
+        <div className="flex items-center justify-center bg-color1 text-white bg-color5 py-5 max-md:flex-col">
           <p className="text-center text-sm">
             {footer?.copyrightText}{" "}
-            <span className="hover:text-main transition-all font-semibold cursor-pointer">
+            <span className="hover:text-black transition-all font-semibold cursor-pointer">
               <a href="https://skywarddigitalsolutions.com">
                 Skyward Digital Solutions
               </a>

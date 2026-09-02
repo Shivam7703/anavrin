@@ -19,7 +19,9 @@ import { AiFillInstagram } from "react-icons/ai";
 import { TbBrandYoutubeFilled } from "react-icons/tb";
 
 import { canadaflag, logo, logo2, ukflag, usflag } from "@/assets";
-import { navigationMenu } from "@/data/homeData";
+import { navigationMenu, socialLinks } from "@/data/homeData";
+import { FaEnvelope } from "react-icons/fa";
+import Marquee from "react-fast-marquee";
 
 
 const Header = ({ header }: any) => {
@@ -63,6 +65,7 @@ const Header = ({ header }: any) => {
       >
         {/* ================= DESKTOP HEADER ================= */}
         <div className="max-md:hidden shadow-md w-full">
+
           <div className="w-full flex relative items-stretch">
             {/* decorative gradient shapes */}
 
@@ -73,7 +76,7 @@ const Header = ({ header }: any) => {
             >
               <Image
                 src={logo}
-                alt="Globesway Immigration"
+                alt="anavrinadviser Immigration"
                 className="w-[70%] mx-auto object-contain hover:scale-105 transition"
               />
             </Link>
@@ -82,12 +85,13 @@ const Header = ({ header }: any) => {
 
 
               {/* NAV BAR */}
-              <div className="flex bg-color1  justify-between items-center w-full px-10 py-4 relative"><div
+              <div className="flex bg-color1   justify-between items-center w-full px-10 py-4 relative">
+                {/* <div
                 className="absolute bg-color3 h-[130%] w-1/2 scale-x-[-1]  -right-4 -top-2 z-0"
                 style={{
                   clipPath: "polygon( 100% 0, 80% 100%, 0 100%, 0 0)",
                 }}
-              />
+              /> */}
                 {/* MENU */}
                 <Menu
                   navItemsArray={navItems}
@@ -96,100 +100,58 @@ const Header = ({ header }: any) => {
                   onTop={isAtTop}
                 />
 
-                <div className="flex gap-3.5 text-xl">
-                  {/* Facebook */}
-                  <div
-                    className="group relative w-10 h-10 rounded-xl bg-white/80 backdrop-blur-sm
-                      border-[1.5px] border-white flex items-center justify-center cursor-pointer
-                        overflow-hidden transition-all duration-300
-                        hover:-translate-y-1 hover:scale-110 hover:border-transparent
-                        hover:shadow-[0_10px_28px_rgba(0,0,0,0.25)]"
-                    onClick={() =>
-                      window.open(
-                        "https://www.facebook.com/globeswayimmigration",
-                        "_blank"
-                      )
-                    }
-                  >
-                    <span
-                      className="absolute inset-0 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300
-      bg-gradient-to-br from-[#1877F2] to-[#0a5bb5]"
-                    />
-                    <FaFacebook className="text-base text-[#1877F2] group-hover:text-white relative z-10 transition-colors duration-300" />
-                  </div>
 
-                  {/* Instagram */}
-                  <div
-                    className="group relative w-10 h-10 rounded-xl bg-white/80 backdrop-blur-sm
-      border-[1.5px] border-white flex items-center justify-center cursor-pointer
-      overflow-hidden transition-all duration-300
-      hover:-translate-y-1 hover:scale-110 hover:border-transparent
-      hover:shadow-[0_10px_28px_rgba(0,0,0,0.25)]"
-                    onClick={() =>
-                      window.open(
-                        "https://www.instagram.com/globeswayimmigration/",
-                        "_blank"
-                      )
-                    }
-                  >
-                    <span
-                      className="absolute inset-0 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                      style={{
-                        background:
-                          "linear-gradient(135deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888)",
-                      }}
-                    />
-                    <AiFillInstagram className="text-lg text-rose-600 group-hover:text-white relative z-10 transition-colors duration-300" />
-                  </div>
 
-                  {/* LinkedIn */}
-                  <div
-                    className="group relative w-10 h-10 rounded-xl bg-white/80 backdrop-blur-sm
-      border-[1.5px] border-white flex items-center justify-center cursor-pointer
-      overflow-hidden transition-all duration-300
-      hover:-translate-y-1 hover:scale-110 hover:border-transparent
-      hover:shadow-[0_10px_28px_rgba(0,0,0,0.25)]"
-                    onClick={() =>
-                      window.open(
-                        "https://www.linkedin.com/company/globesway-immigration/",
-                        "_blank"
-                      )
-                    }
+                <div className="flex items-center  gap-6 max-lg:hidden">
+                  {/* Phone Link */}
+                  <a
+                    href="tel:+911234567890 z-10"
+                    className="group flex items-center gap-3 flex-shrink-0"
                   >
-                    <span
-                      className="absolute inset-0 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300
-      bg-gradient-to-br from-[#0A66C2] to-[#004182]"
-                    />
-                    <FaLinkedinIn className="text-lg text-[#0A66C2] group-hover:text-white relative z-10 transition-colors duration-300" />
-                  </div>
+                    <div className="relative flex-shrink-0 w-10 h-10 rounded-full bg-black flex items-center justify-center
+          
+          group-hover:shadow-[0_0_0_8px_rgba(0,0,0,0.4)]
+          transition-all duration-300">
+                      <span className="absolute inset-0 rounded-full bg-white animate-ping opacity-30" />
+                      <FaPhone className="text-white text-base relative z-10" />
+                    </div>
 
-                  {/* YouTube */}
-                  <div
-                    className="group relative w-10 h-10 rounded-xl bg-white/80 backdrop-blur-sm
-      border-[1.5px] border-white flex items-center justify-center cursor-pointer
-      overflow-hidden transition-all duration-300
-      hover:-translate-y-1 hover:scale-110 hover:border-transparent
-      hover:shadow-[0_10px_28px_rgba(0,0,0,0.25)]"
-                    onClick={() =>
-                      window.open(
-                        "https://www.youtube.com/@GlobeswayImmigration",
-                        "_blank"
-                      )
-                    }
+                    <div className="leading-tight z-10 sticky">
+                      <p className="text-xs text-white/90 font-medium tracking-wide uppercase">
+                        Support 24 X 7
+                      </p>
+                      <p className="text-sm text-white font-semibold tracking-wide">
+                        +91 1234567890
+                      </p>
+                    </div>
+                  </a>
+
+                  {/* Divider Line */}
+                  <span className="h-5 w-px bg-white" />
+
+                  {/* Email Link */}
+                  <a
+                    href="tel:+911234567890 z-10"
+                    className="group flex items-center gap-3 flex-shrink-0"
                   >
-                    <span
-                      className="absolute inset-0 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300
-      bg-gradient-to-br from-[#FF0000] to-[#cc0000]"
-                    />
-                    <TbBrandYoutubeFilled className="text-lg text-[#FF0000] group-hover:text-white relative z-10 transition-colors duration-300" />
-                  </div>
+                    <div className="relative flex-shrink-0 w-10 h-10 rounded-full bg-black flex items-center justify-center
+          
+          group-hover:shadow-[0_0_0_8px_rgba(0,0,0,0.3)]
+          transition-all duration-300">
+                      <FaEnvelope className="text-white text-base relative z-10" />
+                    </div>
+
+                    <div className="leading-tight z-10 sticky">
+                      <p className="text-xs text-white/90 font-medium tracking-wide uppercase">
+                        Mail Us on
+                      </p>
+                      <p className="text-sm text-white font-semibold tracking-wide">
+                        info@anavrinadviser.com
+                      </p>
+                    </div>
+                  </a>
                 </div>
 
-
-                {/* BUTTONS WRAPPER */}
-                <div className="flex items-center gap-5">
-                  <PaymentButton />
-                </div>
               </div>
               <div className=" bg-white w-full justify-between flex py-2.5 px-6 ">
                 <Menu
@@ -199,32 +161,27 @@ const Header = ({ header }: any) => {
                   onTop={isAtTop}
                 />
 
-                <div className="flex items-center  gap-6 max-lg:hidden">
-                  {/* Phone Link */}
-                  <a
-                    href="tel:+1234567890"
-                    className="group flex items-center gap-2.5 text-sm font-bold text-zinc-600 transition-colors duration-200 hover:text-color1"
-                  >
-                    <FaPhone className="text-lg text-color1 transition-colors duration-200 group-hover:text-zinc-600" />
-                    <span>+91 123 456 7890</span>
-                  </a>
+                <div className="flex my-auto gap-2">
+                  {socialLinks.map(({ name, icon: Icon, url }) => (
+                    <button
+                      key={name}
+                      onClick={() => window.open(url, "_blank")}
+                      aria-label={name}
+                      className="group w-10 h-10  border border-zinc-300 bg-white flex items-center justify-center cursor-pointer transition-all duration-300  hover:-translate-y-1 hover:scale-110 hover:shadow-lg"
+                    >
+                      <Icon className="text-xl text-color1 group-hover:text-black transition-colors duration-300" />
+                    </button>
+                  ))}
+                </div>
 
-                  {/* Divider Line */}
-                  <span className="h-4 w-px bg-zinc-200" />
-
-                  {/* Email Link */}
-                  <a
-                    href="mailto:info@anavrinadviser.com"
-                    className="group flex items-center gap-2.5 text-sm font-bold text-zinc-600 transition-colors duration-200 hover:text-color1"
-                  >
-                    <IoMail className="text-xl text-color1 transition-colors duration-200 group-hover:text-zinc-600" />
-                    <span>info@anavrinadviser.com</span>
-                  </a>
+                {/* BUTTONS WRAPPER */}
+                <div className="flex items-center gap-5">
+                  <PaymentButton />
                 </div>
               </div>
             </div>
           </div>
-
+          {/* <Marquee className="bg-black py-0.5 text-xs font-semibold text-white sm:text-sm"> <a href="#" className="mr-6">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>  <a href="#" className="mr-6">Placeat temporibus doloribus quam quo, ipsa perspiciatis repellat! Odit voluptatibus.</a> <a href="#" className="mr-6">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a> <a href="#" className="mr-6">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a> </Marquee> */}
         </div>
 
         {/* ================= MOBILE HEADER ================= */}
@@ -235,7 +192,7 @@ const Header = ({ header }: any) => {
           <Link href={header?.href || "/"}>
             <Image
               src={isAtTop ? logo2 : logo}
-              alt="Globesway Immigration"
+              alt="anavrinadviser Immigration"
               className="h-12 w-auto object-contain"
             />
           </Link>
@@ -277,27 +234,7 @@ function PaymentButton() {
     <div className="flex items-end gap-4 flex-shrink-0">
 
       {/* ── CALL ANYTIME (matches image: red circle icon + text) ── */}
-      {/* <a
-        href="tel:+911234567890 z-10"
-        className="group flex items-center gap-3 flex-shrink-0"
-      >
-        <div className="relative flex-shrink-0 w-11 h-11 rounded-full bg-red-600 flex items-center justify-center
-          
-          group-hover:shadow-[0_0_0_8px_rgba(203,0,0,0.2)]
-          transition-all duration-300">
-          <span className="absolute inset-0 rounded-full bg-red-500 animate-ping opacity-30" />
-          <FaPhone className="text-white text-base relative z-10" />
-        </div>
 
-        <div className="leading-tight z-10 sticky">
-          <p className="text-xs text-white/80 font-medium tracking-wide uppercase">
-            Support 24 X 7
-          </p>
-          <p className="text-base text-white font-bold tracking-wide">
-          +91 1234567890
-          </p>
-        </div>
-      </a> */}
 
 
 
@@ -305,10 +242,10 @@ function PaymentButton() {
       <Link
         href="/payment"
         className="group relative inline-flex items-center gap-3 overflow-hidden
-  rounded-xl bg-color1 px-6 py-4 hover:bg-zinc-700
+  rounded-lg bg-amber-500 px-6 py-3.5 hover:bg-black
   text-white font-semibold text-[14px] tracking-wide
-  shadow-lg shadow-blue-800/30
-  transition-all duration-300 hover:scale-[1.03] hover:shadow-color3/50"
+  shadow-sm
+  transition-all duration-300 hover:scale-[1.03] hover:shadow-color1/40"
       >
 
 
@@ -320,7 +257,7 @@ function PaymentButton() {
           <span className="block transition-transform duration-300 group-hover:-translate-y-full whitespace-nowrap">
             Pay Now    </span>
 
-          <span className="absolute left-0 top-0 block translate-y-full transition-transform duration-300 group-hover:translate-y-0 whitespace-nowrap">
+          <span className="absolute left-0 -top-0.5 block translate-y-full transition-transform duration-300 group-hover:translate-y-0 whitespace-nowrap">
             Pay Now
           </span>
         </span>

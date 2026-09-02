@@ -6,7 +6,7 @@ import box3 from "@/assets/home/box3.jpg";
 import visa1 from "@/assets/home/visa1.jpg";
 import process1 from "@/assets/home/process1.png";
 import footerImage from "@/assets/home/toronto.png";
-import para from "@/assets/home/para.webp";
+import para from "@/assets/home/ser-bg.png";
 
 import plane from "@/assets/home/plane.png";
 import patta from "@/assets/home/patta.png";

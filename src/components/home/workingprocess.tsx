@@ -6,7 +6,7 @@ import { workingprocess as data } from "@/data/homeData";
 
 export default function WorkProcessSlider() {
   return (
-    <div className="w-full bg-zinc-800 relative pt-9 p-6 sm:p-12 lg:p-20 xl:px-28">
+    <div className="w-full bg-zinc-200 relative pt-9 p-6 sm:p-12 lg:p-20 xl:px-28">
       
       <div className="max-w-[1500px] pt-14 mx-auto !relative flex flex-wrap justify-between gap-y-8 items-start">
         
@@ -17,18 +17,18 @@ export default function WorkProcessSlider() {
           {/* Small heading */}
           <div className="flex items-center gap-3 sm:mb-6 mb-4">
             <span className="w-10 h-[3px] bg-color1" />
-            <p className="text-xs font-bold uppercase tracking-[0.22em] text-white">
+            <p className="text-xs font-bold uppercase tracking-[0.22em] text-zinc-600">
               {data?.title1}
             </p>
           </div>
 
           {/* Main heading */}
-          <h2 className="text-white font-bold  !leading-snug  text-2xl md:text-4xl lg:text-5xl max-w-[700px]">
+          <h2 className="text-zinc-900 font-bold  !leading-snug  text-2xl md:text-4xl lg:text-5xl max-w-[700px]">
             {data?.title2}
           </h2>
 
           {/* Paragraph */}
-          <p className="text-gray-400 text-sm sm:text-base leading-7 mt-5 sm:mt-8 max-w-[520px]">
+          <p className="text-gray-700 text-sm sm:text-base leading-7 mt-5 sm:mt-8 max-w-[520px]">
            {data?.para}
           </p>
 
@@ -40,11 +40,11 @@ export default function WorkProcessSlider() {
               text2="Get Free Consulting"
             />
           </div>
-           <Image
+           {/* <Image
                   src={footerImage}
                   alt="immigration"
                   className="  object-contain w-max sm:h-56  scale-x-[-1] h-0  pointer-events-none"
-                />
+                /> */}
         </div>
 
         {/* RIGHT CARDS */}
@@ -60,20 +60,19 @@ export default function WorkProcessSlider() {
               <div className="absolute left-[-34px] top-8 hidden lg:block">
                 <div
                   className="w-0 h-0 border-t-[18px] border-b-[18px]
-                  border-r-[34px]
+                  border-r-[34px] 
                   border-t-transparent border-b-transparent
-                  border-r-[#161618]"
+                  border-r-white"
                 />
               </div>
 
               {/* Card */}
               <div
-                className="bg-[#161618]
-                
+                className="bg-white
+                shadow-md shadow-black/30
                 flex items-center
                 px-5 py-8  sm:p-8 md:p-12
-                border border-white/5
-                hover:border-[#ff003c]/30
+                            
                 transition-all duration-500"
               >
                 
@@ -91,7 +90,7 @@ export default function WorkProcessSlider() {
                   </h3>
 
                   <span
-                    className="uppercase text-[#ff003c]
+                    className="uppercase text-blue-600 
                     tracking-[3px]
                     text-xs sm:text-xs
                     font-semibold
@@ -104,7 +103,7 @@ export default function WorkProcessSlider() {
                 {/* CONTENT */}
                 <div className="max-w-[520px]">
                   
-                  <h3 className="text-white font-bold text-lg sm:text-2xl mb-3 md:mb-5 !leading-snug">
+                  <h3 className="text-zinc-800 font-bold text-lg sm:text-2xl mb-3 md:mb-5 !leading-snug">
                     {item.heading}
                   </h3>
 

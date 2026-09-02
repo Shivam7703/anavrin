@@ -39,9 +39,9 @@ export default function FaqSection() {
       initial="hidden"
       whileInView="show"
       viewport={{ once: true, amount: 0.2 }}
-      className="w-full bg-gradient-to-br from-gray-50 to-white py-8 md:py-20 relative overflow-hidden"
+      className="w-full bg-zinc-100 py-8 md:py-20 relative overflow-hidden"
     >
-      <Image src={plane} alt="Plane" className="absolute top-3 right-6 w-fit h-96 z-0 object-contain opacity-30" />
+      <Image src={plane} alt="Plane" className="absolute top-3 right-6 w-fit h-96 z-0 object-contain opacity-10" />
       <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-wrap lg:flex-nowrap gap-8 lg:gap-12">
           
@@ -50,7 +50,7 @@ export default function FaqSection() {
             variants={fadeIn("right", "tween", 0.3, 1)}
             className="w-full lg:w-1/2 z-10 "
           >
-            <div className="bg-white/40 backdrop-blur-sm rounded-2xl shadow-xl p-6 md:p-8 border border-gray-100">
+            <div className="bg-white/60 backdrop-blur-sm rounded-2xl shadow-xl p-6 md:p-8 border-2 border-white">
               {/* Header */}
               <div className="mb-6">
                 <span className="text-color1 font-bold uppercase text-xs tracking-[0.22em]">
@@ -157,12 +157,9 @@ HAVE ANY QUESTIONS?
                   </div>
                   <div className="flex items-center gap-2">
                     <FaEnvelope className="text-color1" />
-                    <span>info@consultancy.com</span>
+                    <span>info@anavrinadviser.com</span>
                   </div>
-                  <div className="flex items-center gap-2">
-                    <FaMapMarkerAlt className="text-color1" />
-                    <span>New York, USA</span>
-                  </div>
+                  
                 </div>
               </div>
             </div>

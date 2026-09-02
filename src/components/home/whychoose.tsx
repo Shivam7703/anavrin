@@ -16,8 +16,6 @@ export default function WhychooseSection() {
   return (
     <section className="w-full bg-white pb-6 sm:pb-10 relative">
 
-            <div className="absolute -z-0 -right-44 translate-y-1/2 bottom-0 w-[350px] h-[350px] border-[26px] border-color3 rounded-full opacity-20 sm:opacity-80" />
-
       <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
         
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16 xl:gap-20">
@@ -29,16 +27,16 @@ export default function WhychooseSection() {
             viewport={{ once: true }}
             className="w-full lg:w-[48%] flex justify-center"
           >
-            <div className="relative w-full max-w-[520px] h-[460px] sm:h-[500px] md:h-[540px]">
+            <div className="relative w-full max-w-[520px] h-[460px] sm:h-[500px] md:h-[590px]">
               
               {/* BIG LEFT IMAGE */}
               <motion.div
                 whileHover={{ scale: 1.03 }}
                 transition={{ duration: 0.4 }}
-                className="absolute left-0 top-0 w-[55%] h-[73%] rounded-2xl overflow-hidden shadow-2xl cursor-pointer z-[2]"
+                className="absolute left-0 top-0 w-[55%] h-[77%] rounded-2xl overflow-hidden shadow-2xl cursor-pointer z-[2]"
               >
                 <Image 
-                  src={data?.img || "/placeholder.jpg"} 
+                  src={data?.img } 
                   alt="immigration main" 
                   fill 
                   className="object-cover transition-transform duration-700 hover:scale-105" 
@@ -82,7 +80,7 @@ export default function WhychooseSection() {
                 animate={{ y: [0, -12, 0] }}
                 transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
                 whileHover={{ scale: 1.05 }}
-                className="absolute left-[12%] bottom-[5%] z-20 
+                className="absolute left-[12%] bottom-[2%] z-20 
                   bg-color1 backdrop-blur-sm 
                   w-[200px] xs:w-[220px] sm:w-[250px]
                   px-5 sm:px-6 py-5 sm:py-7
@@ -147,7 +145,7 @@ export default function WhychooseSection() {
                 className="block h-[3px] bg-color1 rounded-full"
                 style={{ width: "2rem" }}
               />
-              <p className="uppercase tracking-[0.22em] text-xs font-bold text-color1">
+              <p className="uppercase tracking-[0.22em] text-xs font-bold text-zinc-600">
                 Why Choose Us
               </p>
             </motion.div>
@@ -168,17 +166,6 @@ export default function WhychooseSection() {
               </span>
             </motion.h2>
 
-            {/* Paragraph */}
-            <motion.p
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ delay: 0.25 }}
-              viewport={{ once: true }}
-              className="text-gray-500 leading-relaxed text-base sm:text-lg mt-5 max-w-lg"
-            >
-              At vero eoset accusam etusto odio dignissimos ducimus qui
-              blanditiis praesentium voluptatum deleniti atque corrupti quose.
-            </motion.p>
 
             {/* Reasons List */}
             <div className="mt-10 space-y-6">

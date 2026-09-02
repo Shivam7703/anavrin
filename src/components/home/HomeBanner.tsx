@@ -75,7 +75,6 @@ export default function HomeBanner() {
                         transition={{ duration: 0.5, delay: 0.1 }}
                         className="inline-flex items-center gap-2 mb-5"
                       >
-                        <span className="w-8 h-[2px] bg-color4" />
                         <span className="text-color1 text-[13px] font-bold tracking-[0.2em] uppercase">
                           {item.welcome}
                         </span>
@@ -128,7 +127,7 @@ export default function HomeBanner() {
           max-md:hidden w-12 h-12 rounded-full
           bg-black/10 backdrop-blur-sm border-2 border-white/90
           flex items-center justify-center text-white text-xl
-          hover:bg-[#CB0000] hover:border-[#CB0000]
+          hover:bg-color1 hover:border-color1
           transition-all duration-300 hover:scale-110`}
       >
         <GrNext />
@@ -138,7 +137,7 @@ export default function HomeBanner() {
           max-md:hidden w-12 h-12 rounded-full
           bg-black/10 backdrop-blur-sm border-2 border-white/90
           flex items-center justify-center text-white text-xl
-          hover:bg-[#CB0000] hover:border-[#CB0000]
+          hover:bg-color1 hover:border-color1
           transition-all duration-300 hover:scale-110`}
       >
         <GrPrevious />
