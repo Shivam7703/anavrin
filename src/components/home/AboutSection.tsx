@@ -75,7 +75,6 @@ export default function AboutSection({ data }: any) {
             {data?.skillBars.map((bar: any, i: number) => (
               <motion.div
                 key={i}
-                whileHover={{ scale: 1.02 }}
               >
                 <div className="flex justify-between items-center mb-1">
                   <span className="text-sm font-bold text-gray-800">
@@ -109,7 +108,7 @@ export default function AboutSection({ data }: any) {
                   whileHover={{ x: 6 }}
                   className="flex items-center gap-2 group cursor-pointer"
                 >
-                  <FaCheckCircle className="text-color2 text-lg transition-all duration-300 group-hover:scale-125 group-hover:text-color1" />
+                  <FaCheckCircle className="text-color2 text-lg transition-all duration-300  group-hover:text-color1" />
                   <span className="text-sm font-semibold text-gray-800">
                     {item.label}
                   </span>

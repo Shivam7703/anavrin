@@ -57,7 +57,7 @@ const Header = ({ header }: any) => {
   return (
     <>
       {/* HEADER SPACER */}
-      <div className="h-20 md:h-36 bg-color5" />
+      <div className="h-20 md:h-36" />
 
       <header
         className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${isVisible ? "translate-y-0" : "-translate-y-full"
@@ -86,12 +86,7 @@ const Header = ({ header }: any) => {
 
               {/* NAV BAR */}
               <div className="flex bg-color1   justify-between items-center w-full px-10 py-4 relative">
-                {/* <div
-                className="absolute bg-color3 h-[130%] w-1/2 scale-x-[-1]  -right-4 -top-2 z-0"
-                style={{
-                  clipPath: "polygon( 100% 0, 80% 100%, 0 100%, 0 0)",
-                }}
-              /> */}
+               
                 {/* MENU */}
                 <Menu
                   navItemsArray={navItems}
@@ -108,12 +103,12 @@ const Header = ({ header }: any) => {
                     href="tel:+911234567890 z-10"
                     className="group flex items-center gap-3 flex-shrink-0"
                   >
-                    <div className="relative flex-shrink-0 w-10 h-10 rounded-full bg-black flex items-center justify-center
+                    <div className="relative flex-shrink-0 w-10 h-10 rounded-full bg-white flex items-center justify-center
           
           group-hover:shadow-[0_0_0_8px_rgba(0,0,0,0.4)]
           transition-all duration-300">
                       <span className="absolute inset-0 rounded-full bg-white animate-ping opacity-30" />
-                      <FaPhone className="text-white text-base relative z-10" />
+                      <FaPhone className="text-black text-base relative z-10" />
                     </div>
 
                     <div className="leading-tight z-10 sticky">
@@ -134,11 +129,11 @@ const Header = ({ header }: any) => {
                     href="tel:+911234567890 z-10"
                     className="group flex items-center gap-3 flex-shrink-0"
                   >
-                    <div className="relative flex-shrink-0 w-10 h-10 rounded-full bg-black flex items-center justify-center
+                    <div className="relative flex-shrink-0 w-10 h-10 rounded-full bg-white flex items-center justify-center
           
           group-hover:shadow-[0_0_0_8px_rgba(0,0,0,0.3)]
           transition-all duration-300">
-                      <FaEnvelope className="text-white text-base relative z-10" />
+                      <FaEnvelope className="text-black text-base relative z-10" />
                     </div>
 
                     <div className="leading-tight z-10 sticky">
@@ -233,11 +228,6 @@ function PaymentButton() {
   return (
     <div className="flex items-end gap-4 flex-shrink-0">
 
-      {/* ── CALL ANYTIME (matches image: red circle icon + text) ── */}
-
-
-
-
       {/* ── PAY NOW BUTTON ── */}
       <Link
         href="/payment"
@@ -247,7 +237,6 @@ function PaymentButton() {
   shadow-sm
   transition-all duration-300 hover:scale-[1.03] hover:shadow-color1/40"
       >
-
 
         {/* Shine Effect */}
         <span className="absolute -left-20 top-0 h-full w-16 rotate-12 bg-white/20 blur-md transition-all duration-700 group-hover:left-[120%]"></span>

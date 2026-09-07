@@ -47,19 +47,7 @@ export default function Coaching() {
        lg:p-16
       xl:px-20">
 
-      {/* Decorative images */}
-      {/* <Image
-        src={footerImage}
-        alt="decoration"
-        className="pointer-events-none z-0 absolute -bottom-2 right-[2%]
-          object-contain h-20 sm:h-40 md:h-52 w-auto opacity-60"
-      />
-      <Image
-        src={para}
-        alt="decoration"
-        className="pointer-events-none z-0 absolute top-[6%] left-[1%]
-          object-contain h-10 sm:h-20 md:h-28 w-auto animate-y opacity-80"
-      /> */}
+    
 
       {/* ── HEADER ── */}
       <div className="relative z-10 text-center mb-8 sm:mb-10 md:mb-12">
@@ -81,9 +69,9 @@ export default function Coaching() {
                 <div
                   className={`group relative flex flex-col h-full 
                     transition-all duration-300
-                     border border-zinc-400 hover:border-color1 
+                     border  hover:border-color1 
                     p-5 sm:p-6  mt-2 rounded-xl 
-                    bg-zinc-100  hover:bg-color1`}
+                    bg-white shadow-lg shadow-black/20  hover:bg-color1`}
                 >
                   {/* Icon circle */}
                   <div className={`absolute -top-5 right-4 mb-5 sm:mb-6

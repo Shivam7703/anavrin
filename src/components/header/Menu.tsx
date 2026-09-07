@@ -48,7 +48,7 @@ const Menu = ({ Isprimary, Items }: any) => {
                 activeItem ===
                   (FormatHref(item.href).split("/").filter(Boolean).pop() ||
                     "home") && Isprimary
-                  ? "text-white bg-black"
+                  ? "text-black bg-white"
                   : Isprimary
                   ? "text-white"
                   : "text-zinc-700"
