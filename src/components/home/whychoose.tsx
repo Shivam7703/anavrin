@@ -3,11 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import {
-  FaUserGraduate,
-  FaFileSignature,
-  FaShieldAlt,
-} from "react-icons/fa";
+
 import { Whychoose as data } from "@/data/homeData";
 import { cl1 } from "@/assets";
 

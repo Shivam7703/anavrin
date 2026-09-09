@@ -1,9 +1,7 @@
 "use client";
 import React from "react";
 import { canadapnp as data } from "@/data/homeData";
-import Image from "next/image";
 import Countryslider from "./countryslider";
-import { plane } from "@/assets";
 
 
 export default function Canadapnp() {

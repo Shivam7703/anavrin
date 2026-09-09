@@ -3,14 +3,12 @@ import { about2 } from "@/assets";
 import Link from "next/link";
 import React from "react";
 import Image from "next/image";
-import { MdArrowCircleRight, MdOutlineChat } from "react-icons/md";
+import { MdOutlineChat } from "react-icons/md";
 import { FaChevronRight } from "react-icons/fa6";
 import {blogData as latestBlogs} from "@/data/homeData";
 import { FaDownload, FaLocationArrow, FaRegUserCircle } from "react-icons/fa";
 import { FiMail, FiPhone } from "react-icons/fi";
 import { IoChatboxEllipsesOutline } from "react-icons/io5";
-import { motion } from "motion/react";
-import { BiRightArrowAlt } from "react-icons/bi";
 
 const data = [
   {

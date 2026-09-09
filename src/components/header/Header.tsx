@@ -7,7 +7,7 @@ import Menu from "./Menu";
 import MenuMobile from "./MenuMobile";
 
 import { VscChromeClose } from "react-icons/vsc";
-import { IoMail, IoMenu } from "react-icons/io5";
+import { IoMenu } from "react-icons/io5";
 import {
   FaCreditCard,
   FaFacebook,
@@ -18,7 +18,7 @@ import {
 import { AiFillInstagram } from "react-icons/ai";
 import { TbBrandYoutubeFilled } from "react-icons/tb";
 
-import { canadaflag, logo, logo2, ukflag, usflag } from "@/assets";
+import {  logo, logo2 } from "@/assets";
 import { navigationMenu, socialLinks } from "@/data/homeData";
 import { FaEnvelope } from "react-icons/fa";
 import Marquee from "react-fast-marquee";

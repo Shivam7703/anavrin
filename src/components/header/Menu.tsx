@@ -3,7 +3,6 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { IoIosArrowDown } from "react-icons/io";
-import { navigationMenu } from "@/data/homeData";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { usePathname } from "next/navigation";
 
