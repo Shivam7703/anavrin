@@ -9,6 +9,7 @@ import {
   FaShieldAlt,
 } from "react-icons/fa";
 import { Whychoose as data } from "@/data/homeData";
+import { cl1 } from "@/assets";
 
 
 
@@ -36,7 +37,7 @@ export default function WhychooseSection() {
                 className="absolute left-0 top-0 w-[55%] h-[77%] rounded-2xl overflow-hidden shadow-2xl cursor-pointer z-[2]"
               >
                 <Image 
-                  src={data?.img } 
+                  src={data?.img1 } 
                   alt="immigration main" 
                   fill 
                   className="object-cover transition-transform duration-700 hover:scale-105" 
@@ -51,7 +52,7 @@ export default function WhychooseSection() {
                 className="absolute right-0 top-0 w-[43%] h-[38%] rounded-2xl overflow-hidden shadow-2xl cursor-pointer z-[2]"
               >
                 <Image 
-                  src={data?.img || "/placeholder.jpg"} 
+                  src={data?.img2 || "/placeholder.jpg"} 
                   alt="immigration top right" 
                   fill 
                   className="object-cover transition-transform duration-700 hover:scale-105" 
@@ -66,7 +67,7 @@ export default function WhychooseSection() {
                 className="absolute right-0 bottom-0 w-[43%] h-[60%] rounded-2xl overflow-hidden shadow-2xl cursor-pointer z-[2]"
               >
                 <Image 
-                  src={data?.img || "/placeholder.jpg"} 
+                  src={data?.img3 || "/placeholder.jpg"} 
                   alt="immigration bottom right" 
                   fill 
                   className="object-cover transition-transform duration-700 hover:scale-105" 
@@ -101,7 +102,7 @@ export default function WhychooseSection() {
                         ${idx !== 0 ? '-ml-2' : ''}`}
                     >
                       <Image 
-                        src={data?.img || "/placeholder.jpg"} 
+                        src={cl1} 
                         alt={`avatar ${idx + 1}`}
                         width={36} 
                         height={36} 

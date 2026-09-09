@@ -16,16 +16,14 @@ export default function Visadetails({ data }: any) {
         <div className="md:w-[60%] w-full">
 
       {/* Hero Image */}
-      <div className="relative overflow-hidden rounded-2xl mb-10 group">
-        <div className="absolute inset-0 bg-gradient-to-t from-color3/80 via-transparent to-transparent z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-        <div className="relative aspect-[16/9] overflow-hidden">
+        
+        <div className="relative rounded-2xl mb-10 group aspect-[5/3] overflow-hidden">
           <Image
             src={data?.img}
             alt={data?.title}
             fill
             className="object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out"
           />
-        </div>
       </div>
 
       {/* Article */}

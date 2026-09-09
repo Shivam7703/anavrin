@@ -19,12 +19,12 @@ export default function Banner({title, para, slug}:any) {
         <AnimatePresence>
               <div className="w-full h-max relative">
                             <Image
-                  className="w-full h-[30vw] min-h-[440px] object-cover object-top"
+                  className="w-full h-[30vw] min-h-[440px] scale-x-100  object-cover object-left-bottom"
                   src={banner}
                   alt="sliding image"
                   loading="lazy"
                 />
-                <div className="overlay w-full h-full absolute top-0 left-0 bg-black bg-opacity-30 flex items-center text-white">
+                <div className="overlay w-full h-full absolute top-0 left-0 bg-black bg-opacity-20 flex items-center text-white">
                   <motion.div
                   
                 variants={sliderText} // Using the sliderText motion variants

@@ -8,7 +8,7 @@ import Link from "next/link";
 import { visaSliderdata as data } from "@/data/homeData";
 import { FaArrowLeftLong, FaArrowRightLong } from "react-icons/fa6";
 import { HiArrowUpRight } from "react-icons/hi2";
-import { footerImage, para, plane } from "@/assets";
+import {para} from "@/assets";
 
 export default function VisaSlider() {
   const uniqueId = "caseStudy123";

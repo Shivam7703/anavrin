@@ -4,7 +4,6 @@ import "./globals.css";
 import Header from "@/components/header/Header";
 import Footer from "@/components/Footer";
 import { footer } from "@/data/homeData";
-import { patta } from "@/assets";
 import Image from "next/image";
 
 /**
@@ -30,11 +29,7 @@ export default function RootLayout({
           fontFamily: "var(--font-sans), sans-serif",
         }}
       >
-        {/* <Image
-          src={patta}
-          alt="immigration"
-          className="fixed -left-7 animate-y opacity-40 -bottom-10 sm:w-[24vw] w-44 z-[-1]"
-        /> */}
+      
         <Header />
         {children}
         <Footer footer={footer} />

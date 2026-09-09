@@ -3,32 +3,26 @@ import {
   banner,
   banner2,
   box1,
-  box2,
-  box3,
-  cl1,
-
-  famvisa,
+  newflag,newimg,usa,usaimg,canada,canimg,aus,ausimg,euro,euroimg,gcc,gccimg, box3, cl1, famvisa,
   prvisa,
   business,
   touristvisa,
   logo2,
-  process1,
-  ukflag,
-  visa1,
-  canadaflag,
+  workvisa,
   back,
-  canadaPR,
+  choose1,
+  choose2,
+  choose4,
+  choose5,
 } from "@/assets";
 
-import { FiSettings } from "react-icons/fi";
 import { BsPassportFill } from "react-icons/bs";
 import { HiOutlineDocumentCheck } from "react-icons/hi2";
 import { FaChartLine, FaFacebook, FaFileAlt, FaFileSignature, FaGlobe, FaGlobeAmericas, FaLanguage, FaLinkedinIn, FaPlaneDeparture, FaShieldAlt, FaStethoscope, FaUniversity, FaUserGraduate } from "react-icons/fa";
 import { FaMapLocationDot } from "react-icons/fa6";
 import { HiOutlineFlag, HiOutlineLightBulb } from "react-icons/hi";
-import { IoSearch, IoSettingsOutline } from "react-icons/io5";
 import { MdAttachEmail, MdWifiCalling3 } from "react-icons/md";
-import { RiSpeedMiniFill, RiUserCommunityFill, RiUserFollowLine } from "react-icons/ri";
+import { RiSpeedMiniFill, RiUserCommunityFill } from "react-icons/ri";
 import { TbTarget, TbBulb, TbDiamond, TbBrandYoutubeFilled } from "react-icons/tb";
 import { AiFillInstagram } from "react-icons/ai";
 
@@ -469,8 +463,8 @@ export const boxdata = [
 
 
 export const aboutdata = {
-  img1: about2,
-  img2: canadaPR,
+  img1: choose2,
+  img2: about2,
   title1: "ABOUT US",
   title2: "Trusted Immigration Consultants For ",
   title3: " Your Global Goals",
@@ -522,7 +516,7 @@ export const visaSliderdata = {
   cards: [
     {
       id: 1,
-      img: visa1,
+      img: workvisa,
       heading: "Work Visa",
       text: "Helping professionals secure overseas employment opportunities through work visas.",
     },
@@ -553,56 +547,6 @@ export const visaSliderdata = {
   ],
 };
 
-// export const countrytomigrate = {
-//   title1: "Countries We Offer",
-//   title2: "We Provide Expert Immigration And Destinations.",
-
-//   cards: [
-//     {
-//       id: 1,
-//       img: canadaflag,
-//       heading: "United States",
-//       link: "country/us",
-//       points: [
-//         "4 Years Business Visa",
-//         "Visa Apply Online",
-//         "Student Admission Visa",
-//         "24/7 Support",
-//       ],
-//     },
-//     {
-//       id: 2,
-//       img: ukflag,
-//       heading: "United Kingdom",
-//       link: "country/uk",
-//       points: [
-//         "4 Years Business Visa",
-//         "Visa Apply Online",
-//         "Student Admission Visa",
-//         "24/7 Support",
-//       ],
-//     },
-//     {
-//       id: 3,
-//       img: canadaflag,
-//       heading: "Canada",
-//       link: "country/canada",
-//       points: ["PR Pathways", "Express Entry", "Student Visa", "24/7 Support"],
-//     },
-//     {
-//       id: 4,
-//       img: ukflag,
-//       heading: "Australia",
-//       link: "country/australia",
-//       points: [
-//         "Skilled Migration",
-//         "Work Visa",
-//         "Student Visa",
-//         "24/7 Support",
-//       ],
-//     },
-//   ],
-// };
 
 
 export const workingprocess = {
@@ -640,8 +584,8 @@ export const canadapnp = {
   cards: [
     {
       id: 1,
-      img: banner2,
-      flag: canadaflag,
+      img: usaimg,
+      flag: usa,
       cat: "abroad",
       heading: "USA",
       points: [
@@ -654,8 +598,8 @@ export const canadapnp = {
     },
     {
       id: 2,
-      img: banner2,
-      flag: canadaflag,
+      img: canimg,
+      flag: canada,
       cat: "mbbs",
       heading: "Canada",
       points: [
@@ -668,8 +612,8 @@ export const canadapnp = {
     },
     {
       id: 3,
-      img: banner2,
-      flag: canadaflag,
+      img: ausimg,
+      flag: aus,
       cat: "abroad",
       heading: "Australia",
       points: [
@@ -682,8 +626,8 @@ export const canadapnp = {
     },
     {
       id: 4,
-      img: banner2,
-      flag: canadaflag,
+      img: newimg,
+      flag: newflag,
       cat: "abroad",
       heading: "New Zealand",
       points: [
@@ -696,8 +640,8 @@ export const canadapnp = {
     },
     {
       id: 5,
-      img: banner2,
-      flag: canadaflag,
+      img: euroimg,
+      flag: euro,
       cat: "mbbs",
       heading: "Europe",
       points: [
@@ -710,8 +654,8 @@ export const canadapnp = {
     },
     {
       id: 6,
-      img: banner2,
-      flag: canadaflag,
+      img: gccimg,
+      flag: gcc,
       cat: "mbbs",
       heading: "GCC",
       points: [
@@ -726,8 +670,9 @@ export const canadapnp = {
 };
 
 export const Whychoose = {
-  img: box1,
-
+  img1: choose1,
+  img2: choose4,
+  img3: choose5,
   title1: "WHY CHOOSE US",
   title2: "Simple Solutions For Complex ",
   title3: "Immigration Processes",
@@ -756,6 +701,7 @@ export const Whychoose = {
     },
   ],
 };
+
 
 export const testimonialData = {
   title1: "TESTIMONIALS",

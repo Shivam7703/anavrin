@@ -8,14 +8,8 @@ import Link from "next/link";
 import {
   FaArrowLeftLong,
   FaArrowRightLong,
-  FaGlobe,
-  FaLanguage,
-  FaStethoscope,
 } from "react-icons/fa6";
 import { MdArrowRight } from "react-icons/md";
-import { footerImage, para } from "@/assets";
-import { FaUniversity, FaFileAlt } from "react-icons/fa";
-
 import {coachingData as data} from "@/data/homeData";
 
 

@@ -11,22 +11,6 @@ export default function AboutSection({ data }: any) {
   return (
 <section className="w-full py-12 px-4 md:px-12 lg:px-20 xl:px-24 relative">
       {/* ───────── DYNAMIC SHAPES ───────── */}
-
- 
-      {/* Floating Circle */}
-      {/* <motion.div
-        animate={{
-          y: [0, 20, 0],
-          x: [0, -10, 0],
-        }}
-        transition={{
-          duration: 7,
-          repeat: Infinity,
-          ease: "easeInOut",
-        }}
-        className="absolute top-20 left-10 w-32 h-32 rounded-full bg-color1/10 blur-xl"
-      /> */}
-
      
 
       <div className="flex flex-col lg:flex-row max-w-7xl mx-auto items-stretch justify-between gap-10 lg:gap-16 relative z-10">

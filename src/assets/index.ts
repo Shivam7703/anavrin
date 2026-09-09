@@ -3,14 +3,9 @@ import logo2 from "@/assets/logo.png";
 import box1 from "@/assets/home/box1.jpg";
 import box2 from "@/assets/home/box2.jpg";
 import box3 from "@/assets/home/box3.jpg";
-import visa1 from "@/assets/home/visa1.jpg";
-import process1 from "@/assets/home/process1.png";
-import footerImage from "@/assets/home/toronto.png";
 import para from "@/assets/home/ser-bg.png";
 
 import plane from "@/assets/home/plane.png";
-import patta from "@/assets/home/patta.png";
-import kangaroo from "@/assets/home/kangaroo.png";
 
 // partners
 import p1 from "@/assets/home/logo1.png";
@@ -28,15 +23,68 @@ import p12 from "@/assets/home/logo12.png";
 
 // visa
 import famvisa from "@/assets/home/family visa.jpg";
-import prvisa from "@/assets/home/prvisa.jpg";
+import prvisa from "@/assets/home/pr visa.jpg";
 import business from "@/assets/home/business.jpeg";
-import touristvisa from "@/assets/home/touristvisa.jpg";
+import touristvisa from "@/assets/home/tourist visa.jpg";
+import workvisa from "@/assets/home/work visa.jpg";
 
 
-// flag
-import usflag from "@/assets/flag/us.png";
-import ukflag from "@/assets/flag/uk.png";
-import canadaflag from "@/assets/flag/canada.jpg";
+// contry and flag
+import usa from "@/assets/flag/us.png";
+import uk from "@/assets/flag/uk.webp";
+import usaimg from "@/assets/flag/us-img.jpg";
+import canada from "@/assets/flag/canada.webp";
+import canimg from "@/assets/flag/cana-img.webp";
+import aus from "@/assets/flag/australia.webp";
+import ausimg from "@/assets/flag/aus-img.webp";
+import euro from "@/assets/flag/europe.webp";
+import euroimg from "@/assets/flag/euro-img.webp";
+import gcc from "@/assets/flag/GCC.jpg";
+import gccimg from "@/assets/flag/gcc-img.jpg";
+import newflag from "@/assets/flag/new.png";
+import newimg from "@/assets/flag/new-img.jpg";
+import dubai from "@/assets/flag/dubai.png";
+import dubaiimg from "@/assets/flag/dubai-img.webp";
+import italy from "@/assets/flag/italy.webp";
+import italyimg from "@/assets/flag/italy-img.webp";
+
+import armenia from "@/assets/flag/armenia.webp";
+import bangladesh from "@/assets/flag/bangladesh.webp";
+import belarus from "@/assets/flag/belarus.webp";
+import china from "@/assets/flag/china.webp";
+import germany from "@/assets/flag/germany.webp";
+import kazakhstan from "@/assets/flag/kazakhstan.webp";
+import kyrgyzstan from "@/assets/flag/kyrgysthan.webp";
+import malaysia from "@/assets/flag/malaysia.webp";
+import mauritius from "@/assets/flag/maritius.webp";
+import nepal from "@/assets/flag/nepal.webp";
+import philippines from "@/assets/flag/philipins.webp";
+import poland from "@/assets/flag/poland.webp";
+import russia from "@/assets/flag/russia.webp";
+import uzbekistan from "@/assets/flag/uzbekistan.webp";
+import france from "@/assets/flag/france.png";
+import ireland from "@/assets/flag/ireland.png";
+import singa from "@/assets/flag/singa.png";
+import singaimg from "@/assets/flag/sing-img.webp";
+import georg from "@/assets/flag/Georgia.png";
+import georgimg from "@/assets/flag/Georgia-img.jpg";
+import armeniaimg from "@/assets/flag/arm-img.webp";
+import bangladeshimg from "@/assets/flag/bangl-img.webp";
+import belarusimg from "@/assets/flag/belarus-img.webp";
+import chinaimg from "@/assets/flag/china-img.webp";
+import germanyimg from "@/assets/flag/ger-img.webp";
+import kazakhstanimg from "@/assets/flag/kaza-img.webp";
+import kyrgyzstanimg from "@/assets/flag/kry-img.webp";
+import malaysiaimg from "@/assets/flag/malay-img.webp";
+import mauritiusimg from "@/assets/flag/mari-img.webp";
+import nepalimg from "@/assets/flag/nepa-img.webp";
+import philippinesimg from "@/assets/flag/phili-img.webp";
+import polandimg from "@/assets/flag/pol-img.webp";
+import russiaimg from "@/assets/flag/russia-img.webp";
+import uzbekistanimg from "@/assets/flag/uzbe-img.webp";
+import franceimg from "@/assets/flag/franc-img.webp";
+import ireimg from "@/assets/flag/ire-img.jpg";
+
 
 
 import back from "@/assets/home/background-1.webp";
@@ -45,8 +93,15 @@ import banner from "@/assets/home/Bannner1.jpg";
 import banner2 from "@/assets/home/Bannner1.jpg";
 import banner3 from "@/assets/home/Banner3.jpeg";
 import bann from "@/assets/home/bann.webp";
+import about from "@/assets/home/about.jpg";
 import about2 from "@/assets/home/about2.jpg";
 import contat from "@/assets/home/contact.webp";
+import choose1 from "@/assets/home/choose1.jpg";
+import choose2 from "@/assets/home/choose2.jpg";
+import choose3 from "@/assets/home/choose3.jpg";
+import choose4 from "@/assets/home/choose4.jpg";
+import choose5 from "@/assets/home/choose5.jpg";
+
 
 import ceo from "@/assets/home/ceo.jpg";
 import cl1 from "@/assets/home/cl1.jpg";
@@ -139,11 +194,13 @@ import newZealandPointsCalculator from "@/assets/visa3/New Zealand Points Calcul
 
 
 
-export { p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12,
-  logo , logo2, banner,banner2,banner3 ,back, box1, box2, box3,visa1,process1,usflag, ukflag,canadaflag,  bann, about2,contat,cl1,cl2,cl3,cl4,cl5,cl6,cl7,cl8,cl9, famvisa, prvisa, business,touristvisa
- , footerImage, plane, patta, kangaroo,  
+export {
+  p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12,
+  logo, logo2, banner, banner2, banner3, back, box1, box2, box3, workvisa, newflag,newimg,usa,usaimg,canada,canimg,aus,ausimg,euro,euroimg,gcc, gccimg, 
+  bann, about2, contat, cl1, cl2, cl3, cl4, cl5, cl6, cl7, cl8, cl9, famvisa, prvisa, business, touristvisa,
+   plane, about, choose1, choose2, choose3, choose4, choose5,
   ceo,
-  immigration, Career, ielts, jobAssist, PostLanding ,profilemarketing, pte ,visaDocument,toefl,
+  immigration, Career, ielts, jobAssist, PostLanding, profilemarketing, pte, visaDocument, toefl,
   alberta, australiaPR,
   australiaSubclass491,
   australiaSubclass600,
@@ -198,5 +255,5 @@ export { p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12,
   greeceWorkVisa,
   dubaiWorkVisa,
   FamilySponser, IndemandOccupation, ruralCommunity, selfEmployed,
- }
+}
 

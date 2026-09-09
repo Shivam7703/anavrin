@@ -1,7 +1,5 @@
 import React from "react";
 import Buttonmain from "../global/button";
-import { footerImage } from "@/assets";
-import Image from "next/image";
 import { workingprocess as data } from "@/data/homeData";
 
 export default function WorkProcessSlider() {
@@ -40,11 +38,7 @@ export default function WorkProcessSlider() {
               text2="Get Free Consulting"
             />
           </div>
-           {/* <Image
-                  src={footerImage}
-                  alt="immigration"
-                  className="  object-contain w-max sm:h-56  scale-x-[-1] h-0  pointer-events-none"
-                /> */}
+          
         </div>
 
         {/* RIGHT CARDS */}
