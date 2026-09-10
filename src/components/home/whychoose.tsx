@@ -3,13 +3,11 @@
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-
-import { Whychoose as data } from "@/data/homeData";
-import { cl1 } from "@/assets";
+import { cl1, cl2, cl3, cl4, cl5 } from "@/assets";
 
 
 
-export default function WhychooseSection() {
+export default function WhychooseSection({data}:any) {
   return (
     <section className="w-full bg-white pb-6 sm:pb-10 relative">
 
@@ -90,15 +88,15 @@ export default function WhychooseSection() {
 
                 {/* AVATARS */}
                 <div className="flex items-center mt-4">
-                  {[1, 2, 3, 4, 5].map((item, idx) => (
+                  {[cl1, cl2, cl3, cl4, cl5].map((item, idx) => (
                     <div
-                      key={item}
+                      key={idx}
                       className={`w-8 h-8 sm:w-9 sm:h-9 rounded-full overflow-hidden
                         border-2 border-white shadow-md
                         ${idx !== 0 ? '-ml-2' : ''}`}
                     >
                       <Image 
-                        src={cl1} 
+                        src={item} 
                         alt={`avatar ${idx + 1}`}
                         width={36} 
                         height={36} 

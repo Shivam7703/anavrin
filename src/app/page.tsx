@@ -5,7 +5,7 @@ import CountDown from "@/components/home/Contdown";
 import Greenbox from "@/components/home/greenbox";
 import BannerSlider from "@/components/home/HomeBanner";
 import Testimonials from "@/components/home/testimonial";
-import { aboutdata} from "@/data/homeData";
+import { aboutdata, Whychoose} from "@/data/homeData";
 import FaqSection from "@/components/home/faq";
 import VisaSlider from "@/components/home/visaslider";
 import WorkProcessSlider from "@/components/home/workingprocess";
@@ -27,7 +27,7 @@ export default function Home() {
 <CountDown />
 <WorkProcessSlider/>
 <Testimonials/>
-<WhychooseSection/>
+<WhychooseSection data ={Whychoose}/>
 <Partners/>
 <FaqSection/>
 <Coaching/>

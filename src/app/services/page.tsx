@@ -5,6 +5,7 @@ import Testimonials from '@/components/home/testimonial'
 import VisaSlider from '@/components/home/visaslider'
 import WhychooseSection from '@/components/home/whychoose'
 import WorkProcessSlider from '@/components/home/workingprocess'
+import { Whychoose } from '@/data/homeData'
 import React from 'react'
 
 function page() {
@@ -22,7 +23,8 @@ function page() {
             <Canadapnp/>
             <WorkProcessSlider/>
             <Testimonials/>
-            <WhychooseSection/>
+<WhychooseSection data ={Whychoose}/>
+
             
     </div>
   )

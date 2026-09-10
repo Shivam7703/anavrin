@@ -5,7 +5,7 @@ import CountDown from '@/components/home/Contdown'
 import Partners from '@/components/home/partner'
 import VisaSlider from '@/components/home/visaslider'
 import WhychooseSection from '@/components/home/whychoose'
-import { aboutdata } from '@/data/homeData'
+import { aboutdata2, Whychoose2 } from '@/data/homeData'
 import React from 'react'
 
 function page() {
@@ -18,15 +18,13 @@ function page() {
         }
         slug={"about-us"}
       />
-      <AboutSection  data ={aboutdata} />
+      <AboutSection  data ={aboutdata2} />
       <MissionVisionValues/>
 <CountDown />
 
       <VisaSlider/>
       <Partners/>
-      
-      <WhychooseSection/>
-      
+<WhychooseSection data ={Whychoose2}/>
     </div>
   )
 }

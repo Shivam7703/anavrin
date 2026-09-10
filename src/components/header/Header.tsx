@@ -5,23 +5,15 @@ import Link from "next/link";
 import Image from "next/image";
 import Menu from "./Menu";
 import MenuMobile from "./MenuMobile";
-
 import { VscChromeClose } from "react-icons/vsc";
 import { IoMenu } from "react-icons/io5";
 import {
   FaCreditCard,
-  FaFacebook,
-  FaLinkedinIn,
   FaPhone,
-  FaSquarePhone,
 } from "react-icons/fa6";
-import { AiFillInstagram } from "react-icons/ai";
-import { TbBrandYoutubeFilled } from "react-icons/tb";
-
-import {  logo, logo2 } from "@/assets";
+import { logo, logo2 } from "@/assets";
 import { navigationMenu, socialLinks } from "@/data/homeData";
 import { FaEnvelope } from "react-icons/fa";
-import Marquee from "react-fast-marquee";
 
 
 const Header = ({ header }: any) => {
@@ -86,7 +78,7 @@ const Header = ({ header }: any) => {
 
               {/* NAV BAR */}
               <div className="flex bg-color1   justify-between items-center w-full px-10 py-4 relative">
-               
+
                 {/* MENU */}
                 <Menu
                   navItemsArray={navItems}
@@ -100,12 +92,12 @@ const Header = ({ header }: any) => {
                 <div className="flex items-center  gap-6 max-lg:hidden">
                   {/* Phone Link */}
                   <a
-                    href="tel:+911234567890 z-10"
+                    href="tel:+917289822078 z-10"
                     className="group flex items-center gap-3 flex-shrink-0"
                   >
                     <div className="relative flex-shrink-0 w-10 h-10 rounded-full bg-white flex items-center justify-center
           
-          group-hover:shadow-[0_0_0_8px_rgba(0,0,0,0.4)]
+          group-hover:shadow-[0_0_0_8px_rgba(190,190,190,0.4)]
           transition-all duration-300">
                       <span className="absolute inset-0 rounded-full bg-white animate-ping opacity-30" />
                       <FaPhone className="text-black text-base relative z-10" />
@@ -116,7 +108,7 @@ const Header = ({ header }: any) => {
                         Support 24 X 7
                       </p>
                       <p className="text-sm text-white font-semibold tracking-wide">
-                        +91 1234567890
+                        +91 7289822078
                       </p>
                     </div>
                   </a>
@@ -126,12 +118,12 @@ const Header = ({ header }: any) => {
 
                   {/* Email Link */}
                   <a
-                    href="tel:+911234567890 z-10"
+                    href="tel:+917289822078 z-10"
                     className="group flex items-center gap-3 flex-shrink-0"
                   >
                     <div className="relative flex-shrink-0 w-10 h-10 rounded-full bg-white flex items-center justify-center
           
-          group-hover:shadow-[0_0_0_8px_rgba(0,0,0,0.3)]
+          group-hover:shadow-[0_0_0_8px_rgba(190,190,190,0.4)]
           transition-all duration-300">
                       <FaEnvelope className="text-black text-base relative z-10" />
                     </div>

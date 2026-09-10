@@ -48,7 +48,6 @@ export default function Footer({ footer }: any) {
                   />
                   <FaFacebook className="text-xl text-white relative z-10 transition-colors duration-300" />
                 </div>
-
                 {/* Instagram */}
                 <div
                   className="group relative w-11 h-11 rounded-xl  
@@ -127,7 +126,7 @@ export default function Footer({ footer }: any) {
                 <li key={d?.id || d?.href || i}>
                   <Link
                     href={d?.href}
-                    className=" transition:all text-base text-zinc-600 duration-300 hover:text-green2 "
+                    className=" transition:all text-base text-zinc-600 duration-300 hover:text-color1 "
                   >
                     {"-"} {d?.label}
                   </Link>
@@ -144,7 +143,7 @@ export default function Footer({ footer }: any) {
                 <li key={d?.id || d?.href || i}>
                   <Link
                     href={d?.href}
-                    className=" transition:all text-base text-zinc-600 duration-300 hover:text-green2 "
+                    className=" transition:all text-base text-zinc-600 duration-300 hover:text-color1 "
                   >
                     {"-"} {d?.label}
                   </Link>
@@ -158,16 +157,16 @@ export default function Footer({ footer }: any) {
             <h4 className="my-2  text-xl font-semibold">
               {footer?.newLetter?.title}
             </h4>
-            <p className=" transition:all text-base text-zinc-600 duration-300 hover: hover:text-main ">
-              <strong>Phone: </strong>&nbsp;0679513203,0677066361
+            <p className=" transition:all text-base text-zinc-600 duration-300 hover:text-color1 ">
+              <strong>Phone: </strong>&nbsp;<a href="tel:+917289822078">+91 7289822078</a>, <a href="tel:011 44754635">011 44754635</a>
             </p>
-            <p className=" transition:all text-base text-zinc-600 duration-300 hover: hover:text-main ">
-              <strong>E-mail: </strong>&nbsp;info@anavrinadviser.com
+            <p className=" transition:all text-base text-zinc-600 duration-300 hover:text-color1">
+              <strong>E-mail: </strong>&nbsp;<a href="mailto:info@anavrinadviser.com">
+                info@anavrinadviser.com
+              </a>
             </p>
-            <p className=" transition:all text-base text-zinc-600 duration-300 hover: hover:text-main ">
-              <strong>Address: </strong>&nbsp;Lorem ipsum dolor, sit amet
-              consectetur adipisicing elit. Cum voluptate necessitatibus quod
-              beatae.
+            <p className="transition:all text-base text-zinc-600 duration-300 ">
+              <strong>Address: </strong>&nbsp;Suit No-1104, 11th Floor Hemkunt Chambers-89, Nehru Place, New Delhi
             </p>
           </div>
         </div>
@@ -179,7 +178,7 @@ export default function Footer({ footer }: any) {
                 <React.Fragment key={navitem?.id || navIdx}>
                   <Link
                     title={navitem?.label}
-                    className="text-zinc-700"
+                    className="text-zinc-700 hover:text-color1"
                     href={FormatHref(navitem.href)}
                   >
                     {navitem?.label}
@@ -189,7 +188,7 @@ export default function Footer({ footer }: any) {
                     <React.Fragment key={subNavItem?.id || subNavIdx}>
                       <Link
                         title={subNavItem?.label}
-                        className="text-zinc-700"
+                        className="text-zinc-700 hover:text-color1"
                         href={FormatHref(subNavItem.href)}
                       >
                         {subNavItem?.label}
@@ -198,7 +197,7 @@ export default function Footer({ footer }: any) {
                       {subNavItem?.subNavv?.map((data: any, dataIdx: number) => (
                         <Link
                           title={data?.label}
-                          className="text-zinc-700"
+                          className="text-zinc-700 hover:text-color1"
                           key={data?.id || dataIdx}
                           href={FormatHref(data.href)}
                         >

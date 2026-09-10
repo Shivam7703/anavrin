@@ -33,9 +33,9 @@ export default function WorkProcessSlider() {
           {/* Button */}
           <div className="mt-10">
             <Buttonmain
-              href="/contact-us"
+              href="/contact-us/"
               text1="Get Free Consulting"
-              text2="Get Free Consulting"
+              text2="Get The Details"
             />
           </div>
           

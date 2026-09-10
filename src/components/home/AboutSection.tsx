@@ -87,16 +87,15 @@ export default function AboutSection({ data }: any) {
 
             <div className="flex flex-col gap-3 sm:w-[45%]">
               {data?.checklist.map((item: any) => (
-                <motion.div
+                <div
                   key={item.id}
-                  whileHover={{ x: 6 }}
                   className="flex items-center gap-2 group cursor-pointer"
                 >
-                  <FaCheckCircle className="text-color2 text-lg transition-all duration-300  group-hover:text-color1" />
+                  <FaCheckCircle className="text-color2 text-lg transition-all duration-300  " />
                   <span className="text-sm font-semibold text-gray-800">
                     {item.label}
                   </span>
-                </motion.div>
+                </div>
               ))}
             </div>
 
@@ -115,7 +114,7 @@ export default function AboutSection({ data }: any) {
 
           {/* CTA */}
           <Buttonmain
-            href="/about"
+            href="/contact-us/"
             text2="Read More"
             text1="Learn More"
           />

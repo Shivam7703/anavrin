@@ -100,7 +100,7 @@ export default function Countryslider({ data, uniqueId }: any) {
 
                   {/* CTA Button */}
                   <Link
-                    href="/service"
+                    href={card.link ?? "/contact-us/"}
                     className="group/btn flex items-center justify-between
                       w-full px-4 py-2
                       bg-color3 text-white text-sm font-semibold

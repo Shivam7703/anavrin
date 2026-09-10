@@ -86,10 +86,11 @@ export default function VisaSlider() {
                   </div>
                   <div className="px-6 pt-5 pb-6 space-y-4 shadow-sm shadow-black/30 rounded-b-xl text-center bg-white">
                   {/* Title */}
-                  <h3 className="text-xl sm:text-2xl font-bold text-gray-900 leading-snug  sm:mb-2 
+                <Link
+                    href={card?.link || "/services/"}><h3 className="text-xl sm:text-2xl font-bold text-gray-900 leading-snug  sm:mb-2 
                     group-hover:text-color1 transition-colors duration-300">
                     {card?.heading}
-                  </h3>
+                  </h3></Link>
 
                   {/* Description */}
                   <p className="text-gray-700 leading-relaxed mb-3 line-clamp-2">
@@ -101,7 +102,7 @@ export default function VisaSlider() {
 
                   {/* Read More */}
                   <Link
-                    href="/services"
+                    href={card?.link || "/services/"}
                     className="inline-flex items-center justify-center gap-2
                       text-sm font-semibold text-color1
                       hover:gap-3 transition-all duration-300

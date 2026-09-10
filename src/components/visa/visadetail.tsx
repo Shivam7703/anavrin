@@ -1,13 +1,9 @@
-"use client";
 
-import React, { useState } from "react";
-import BlogAside from "../blog/side";
+import React from "react";
 import Image from "next/image";
-
-import { bann } from "@/assets";
-import { FaCheckCircle } from "react-icons/fa";
 import Faqs from "../global/faqs";
 import { MdCheckCircleOutline } from "react-icons/md";
+import ServiceAside from "../services/serviceside";
 
 export default function Visadetails({ data }: any) {
   return (
@@ -128,7 +124,7 @@ export default function Visadetails({ data }: any) {
 
         {/* Sidebar */}
         <div className="md:w-[33%] w-full md:sticky md:top-10 h-full space-y-5">
-          <BlogAside />
+          <ServiceAside />
         </div>
       </div>
     </div>

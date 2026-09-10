@@ -7,14 +7,14 @@ function ContactUsSection() {
   return (
     <section className="bg-white lg:px-20 md:p-14 sm:p-10 p-6 max-w-[1240px] mx-auto">
       <div className="grid lg:grid-cols-12 gap-12 lg:gap-16 items-start">
-        
+
         {/* ── LEFT SIDE: FORM WITH BORDER & PADDING ── */}
         <div className="lg:col-span-7 w-full rounded-[24px] bg-[#fcfdfe] p-6 sm:p-8 md:p-10 shadow-[0_8px_20px_rgba(0,0,0,0.32)]">
-          
+
           {/* Form Header */}
           <div className="mb-8">
             <h2 className="text-gray-900 font-bold text-3xl md:text-4xl tracking-tight">
-Reach Out To Us
+              Reach Out To Us
             </h2>
           </div>
 
@@ -69,7 +69,7 @@ Reach Out To Us
 
         {/* ── RIGHT SIDE: DETAILS PANEL ── */}
         <div className="lg:col-span-5 w-full lg:pt-4">
-          
+
           {/* Text Header */}
           <div className="mb-6">
             <div className="flex items-center gap-2 mb-2">
@@ -81,13 +81,13 @@ Reach Out To Us
               Get in touch with us
             </h2>
             <p className="text-gray-800 max-sm:text-sm leading-relaxed font-normal">
-Our team is here to provide clear guidance and prompt support for all your immigration queries. Whether you need consultation, service details, or application assistance, we’re ready to help you at every step of the way.
+              Our team is here to provide clear guidance and prompt support for all your immigration queries. Whether you need consultation, service details, or application assistance, we’re ready to help you at every step of the way.
             </p>
           </div>
 
           {/* Info Details List */}
           <div className="space-y-6 mt-8">
-            
+
             {/* Phone Card */}
             <div className="flex items-center gap-5 group">
               <div className="w-14 h-14 flex items-center justify-center rounded-xl bg-color1 text-white shadow-md shadow-zinc-700/40 group-hover:scale-105 transition duration-300 flex-shrink-0">
@@ -95,8 +95,8 @@ Our team is here to provide clear guidance and prompt support for all your immig
               </div>
               <div className="flex flex-col">
                 <span className="text-gray-900 font-bold text-base">Phone</span>
-                <a href="tel:+911234567890" className="text-gray-500 text-sm font-medium hover:text-color1 transition">
-                  +91 123 456 7890
+                <a href="tel:+917289822078" className="text-gray-500 text-sm font-medium hover:text-color1 transition">
+                  +91 7289822078
                 </a>
               </div>
             </div>
@@ -122,7 +122,7 @@ Our team is here to provide clear guidance and prompt support for all your immig
               <div className="flex flex-col">
                 <span className="text-gray-900 font-bold text-base">Address</span>
                 <span className="text-gray-500 text-sm font-medium">
-                 lorem ipsum dolor sit amet, consectetur adipiscing elit, .
+                  Suit No-1104, 11th Floor Hemkunt Chambers-89, Nehru Place, New Delhi
                 </span>
               </div>
             </div>

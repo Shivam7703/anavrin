@@ -144,7 +144,7 @@ export default function Testimonials() {
                       </h3>
 
                       <p className="text-zinc-500 group-hover:text-white text-sm">
-                        CEO & Founder
+                        Happy Customer
                       </p>
 
                       {/* STARS */}

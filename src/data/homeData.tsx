@@ -3,7 +3,7 @@ import {
   banner,
   banner2,
   box1,
-  newflag,newimg,usa,usaimg,canada,canimg,aus,ausimg,euro,euroimg,gcc,gccimg, box3, cl1, famvisa,
+  newflag, newimg, usa, usaimg, canada, canimg, aus, ausimg, euro, euroimg, gcc, gccimg, box3, cl1, famvisa,
   prvisa,
   business,
   touristvisa,
@@ -14,6 +14,11 @@ import {
   choose2,
   choose4,
   choose5,
+  about,
+  choose3,
+  cl4,
+  cl6,
+  cl2,
 } from "@/assets";
 
 import { BsPassportFill } from "react-icons/bs";
@@ -480,33 +485,23 @@ export const aboutdata = {
   sideNote: "Professional guidance and reliable support for successful immigration journeys.",
 };
 
-
-// export const aboutdata2 = {
-//   img1: about2,
-//   img2: box2,
-//   title1: "ABOUT US",
-//   title2: "Visa Consultants in ",
-//   title3: "Delhi",
-//   para:
-//     "Focused on accuracy and transparency, we are among the leading immigration consultants in Delhi, offering profile-based immigration guidance and complete visa support. Our expert team follows ethical practices and structured processes to help individuals and families achieve global opportunities with confidence.",
-
-//   pointer: [
-//     {
-//       id: 1,
-//       heading: "Trusted Immigration Consultancy",
-//       text:
-//         "Expert guidance and reliable support for your immigration journey.",
-//       icon: <FaPlaneDeparture />,
-//     },
-//     {
-//       id: 2,
-//       heading: "Immigration Solutions That Deliver",
-//       text:
-//         "Structured processes to help you move abroad with clarity and confidence.",
-//       icon: <IoSettingsOutline />,
-//     },
-//   ],
-// };
+export const aboutdata2 = {
+  img1: choose1,
+  img2: choose5,
+  title1: "ABOUT US",
+  title2: "Trusted Immigration Consultants For ",
+  title3: " Your Global Goals",
+  para: "We provide professional immigration and visa assistance to individuals, families, students, and skilled professionals looking to build opportunities abroad. With a client-focused approach, we guide you through every stage of the process, from profile assessment and documentation to application submission and follow-up support. Our team is committed to delivering transparent advice, reliable solutions, and personalized guidance that help make your immigration journey smoother, simpler, and more successful. We believe in building trust through honesty, expertise, and dedicated customer support.",
+  skillBars: [
+    { label: "Visa Assistance", percent: 95 },
+    { label: "Immigration Services", percent: 98 },
+  ],
+  checklist: [
+    { id: 1, label: "Visa Assistance" },
+    { id: 2, label: "Immigration Services" },
+  ],
+  sideNote: "Professional guidance and reliable support for successful immigration journeys.",
+};
 
 
 export const visaSliderdata = {
@@ -519,30 +514,35 @@ export const visaSliderdata = {
       img: workvisa,
       heading: "Work Visa",
       text: "Helping professionals secure overseas employment opportunities through work visas.",
+      link:"/visas/canada-work-permit-visa"
     },
     {
       id: 2,
       img: prvisa,
       heading: "PR Visa",
       text: "Supporting your journey towards permanent residency and long-term settlement.",
+      link:"/visas/canada-permanent-residency-visa"
     },
     {
       id: 3,
       img: famvisa,
       heading: "Family Sponsorship Visa",
       text: "Reuniting families through reliable family sponsorship and immigration assistance.",
+      link:"/visas/family-sponsorship-program-canada"
     },
     {
       id: 4,
       img: business,
       heading: "Business/Investor Visa",
       text: "Guiding entrepreneurs and investors towards global business expansion opportunities.",
+      link:"/visas/federal-skilled-traders-program"
     },
     {
       id: 5,
       img: touristvisa,
       heading: "Tourist/Visitor Visa",
       text: "Making international travel easier with smooth visitor visa assistance.",
+      link:"/visas/uk-tourist-visa"
     },
   ],
 };
@@ -594,7 +594,7 @@ export const canadapnp = {
         "• Access opportunities for work, education, and long-term settlement goals",
       ],
       text: "Access opportunities for work, education, and long-term settlement goals",
-      link: "/canada-pnp",
+      link: "/contact-us/",
     },
     {
       id: 2,
@@ -608,7 +608,7 @@ export const canadapnp = {
         "• Achieve your immigration goals through Canada's trusted visa pathways",
       ],
       text: "Achieve your immigration goals through Canada's trusted visa pathways",
-      link: "/canada-pnp",
+      link: "/visas/canada-work-permit-visa",
     },
     {
       id: 3,
@@ -622,7 +622,7 @@ export const canadapnp = {
         "• Build your future with Australia's skilled migration and visa programs",
       ],
       text: "Build your future with Australia's skilled migration and visa programs",
-      link: "/canada-pnp",
+      link: "/visas/subclass-489-skilled-regional-visa",
     },
     {
       id: 4,
@@ -636,7 +636,7 @@ export const canadapnp = {
         "• Take the next step toward living and working in New Zealand",
       ],
       text: "Take the next step toward living and working in New Zealand",
-      link: "/canada-pnp",
+      link: "/contact-us/",
     },
     {
       id: 5,
@@ -650,7 +650,7 @@ export const canadapnp = {
         "• Benefit from work, study, and residency opportunities across European countries",
       ],
       text: "Benefit from work, study, and residency opportunities across European countries",
-      link: "/canada-pnp",
+      link: "/visas/germany-tourist-visa",
     },
     {
       id: 6,
@@ -664,7 +664,7 @@ export const canadapnp = {
         "• Secure career opportunities in leading Gulf countries with professional support",
       ],
       text: "Secure career opportunities in leading Gulf countries with professional support",
-      link: "/canada-pnp",
+      link: "/visas/qatar-work-visa",
     },
   ],
 };
@@ -702,6 +702,38 @@ export const Whychoose = {
   ],
 };
 
+export const Whychoose2 = {
+  img1: about,
+  img2: about2,
+  img3: choose3,
+  title1: "WHY CHOOSE US",
+  title2: "Simple Solutions For Complex ",
+  title3: "Immigration Processes",
+  para: "We focus on providing reliable guidance, transparent communication, and personalized solutions to help clients achieve their immigration goals with confidence and peace of mind.",
+
+  reasons: [
+    {
+      icon: <FaShieldAlt />,
+      title: "Personalized Immigration Guidance",
+      text: "Every client has unique goals. We provide tailored solutions and expert advice based on your profile and immigration requirements.",
+    },
+    {
+      icon: <FaFileSignature />,
+      title: "Transparent & Honest Process",
+      text: "We keep you informed at every stage with clear communication, accurate information, and no hidden surprises.",
+    },
+    {
+      icon: <FaUserGraduate />,
+      title: "Quick & Hassle-Free Process",
+      text: "Our experienced team helps simplify procedures, ensuring your application process remains smooth and well-organized.",
+    },
+    {
+      icon: <FaChartLine />,
+      title: "Strong Success Record",
+      text: "With careful documentation support and professional guidance, we help clients move forward with confidence toward their immigration goals.",
+    },
+  ],
+};
 
 export const testimonialData = {
   title1: "TESTIMONIALS",
@@ -711,22 +743,22 @@ export const testimonialData = {
 
   testimonials: [
     {
-      title: "Suresh Dixit",
+      title: "Bhadra Kumar",
       text: "I had a great experience with Anavrin Adviser while applying for my work visa. The team guided me through every step, explained the requirements clearly, and ensured my documents were properly prepared. Their professionalism and constant support made the entire process smooth and successful.",
-      img: cl1,
+      img: cl4,
     },
     {
       title: "Mohan Rane",
       text: "Choosing Anavrin Adviser for my PR application was one of the best decisions I made. The consultants were knowledgeable, responsive, and always available to answer my questions. Their guidance helped me complete the process confidently, and I am extremely satisfied with their service.",
-      img: cl1,
+      img: cl2,
     },
     {
       title: "Manoj Saini",
       text: "Anavrin Adviser provided exceptional assistance for my family sponsorship application. The team carefully reviewed all documents and kept me informed throughout the process. Their dedication and attention to detail helped us achieve a positive outcome, and I highly recommend their services.",
-      img: cl1,
+      img: cl6,
     },
     {
-      title: "Sam Goyal",
+      title: "Shivani Singh",
       text: "I received excellent support from the Anavrin Adviser for my tourist visa application. The process was explained clearly, and the team helped me avoid common mistakes. Their prompt communication and a professional approach made everything simple, and my visa was approved without any issues.",
       img: cl1,
     },
@@ -770,31 +802,31 @@ export const coachingData = {
     {
       title: "IELTS",
       text: "Comprehensive preparation support to improve English skills and achieve your desired IELTS score.",
-      href: "visa/ielts",
+      href: "/services/ielts",
       icon: <FaUniversity />,
     },
     {
       title: "PTE",
       text: "Structured training designed to enhance communication skills and maximize performance in PTE exams.",
-      href: "visa/pte",
+      href: "/services/pte",
       icon: <FaFileAlt />,
     },
     {
       title: "TOEFL",
       text: "Expert guidance to strengthen English proficiency for academic and professional international requirements.",
-      href: "visa/toefl",
+      href: "/services/toefl",
       icon: <FaGlobe />,
     },
     {
       title: "OET",
       text: "Specialized preparation for healthcare professionals aiming to meet international English language standards.",
-      href: "visa/oet",
+      href: "/contact-us/",
       icon: <FaStethoscope />,
     },
     {
       title: "CELPIP",
       text: "Focused preparation to improve English proficiency and achieve strong results in CELPIP examinations.",
-      href: "visa/celpip",
+      href: "/contact-us/",
       icon: <FaLanguage />,
     },
   ],
@@ -807,7 +839,16 @@ export const footer = {
 
 
   copyrightText: "Copyright © 2026 . Designed and Manage by ",
-  list1: {
+   list1: {
+    title: "Quick Links",
+    links: [
+      { id: 1, label: "About Us", href: "/about-us" },
+      { id: 2, label: "Services", href: "/services" },
+      { id: 3, label: "Blogs", href: "/blogs" },
+      { id: 4, label: "Contact Us", href: "/contact-us" },
+    ],
+  },
+  list2: {
     title: "Our Services",
     links: [
       { id: 1, label: "IELTS", href: "/services/ielts-coaching-preparation" },
@@ -834,16 +875,7 @@ export const footer = {
     ],
   },
 
-  list2: {
-    title: "Our Services",
-    links: [
-      { id: 1, label: "IELTS", href: "about" },
-      { id: 2, label: "PTE Exam", href: "career" },
-      { id: 3, label: "Post Landing Assistance", href: "sustainability" },
-      { id: 4, label: "Job Assistance", href: "blogs" },
-      { id: 5, label: "Immigration Services", href: "contact-us" },
-    ],
-  },
+ 
 
   newLetter: {
     title: "Contact Us",
@@ -989,8 +1021,8 @@ export const contactdetail = [
   {
     icon: <MdWifiCalling3 />,
     title: "Call Us",
-    text: "+911234567890",
-    slug: "tel:+911234567890",
+    text: "+91 7289822078",
+    slug: "tel:+917289822078",
   },
   {
     icon: <MdAttachEmail />,

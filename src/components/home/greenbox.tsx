@@ -1,10 +1,6 @@
 "use client";
 import React from "react";
-import Link from "next/link";
-import { BsPassportFill } from "react-icons/bs";
-import { RiSpeedMiniFill, RiUserCommunityFill } from "react-icons/ri";
-import { MdArrowRightAlt } from "react-icons/md";
-import { HiOutlineDocumentCheck } from "react-icons/hi2";
+
 import {boxdata as data} from "@/data/homeData";
 
 
@@ -23,7 +19,7 @@ export default function Greenbox() {
         {data.map((card) => (
           <div
             key={card.id}
-            className="group relative bg-white cursor-pointer z-30
+            className="group relative bg-white cursor-default z-30
               shadow-lg rounded-xl 
               transition-all duration-500
               hover:-translate-y-2
