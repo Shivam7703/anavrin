@@ -34,14 +34,14 @@ export default function Banner({title, para, slug}:any) {
                   >
                   
                   
-                      <motion.h2 className="lg:text-6xl font-bold mb-8 text-4xl">
+                      <motion.h2 className="lg:text-6xl font-bold mb-8 md:text-4xl text-2xl md:line-clamp-2 line-clamp-3">
                         {title}
                       </motion.h2>
                  
                    <motion.p className="md:text-lg text-base max-w-2xl"> {para}
                    </motion.p>
 
-                   <motion.p className="py-3 w-max mt-7 bg-[#00000046] backdrop-blur-sm text-sm rounded-3xl px-6">Home &nbsp;/ &nbsp; <span className="text-green2 font-bold">{slug}</span>
+                   <motion.p className="py-3 w-max mt-7 bg-[#00000046] backdrop-blur-sm text-sm rounded-3xl px-6">Home &nbsp;/ &nbsp; <span className="text-green2 font-bold">{slug.slice(0, 30)}{slug.length > 30 ? '...' : ''}</span>
                    </motion.p>
                    
                   </motion.div>

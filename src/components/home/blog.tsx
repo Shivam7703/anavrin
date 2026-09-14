@@ -1,5 +1,5 @@
 import React from "react";
-import { blogData as data } from "@/data/homeData";
+import { Blogdata as data } from "@/data/blogData";
 import Image from "next/image";
 import { FaArrowRight } from "react-icons/fa6";
 import { BsFillPersonFill, BsChatDots } from "react-icons/bs";
@@ -23,7 +23,7 @@ export default function Blogs({ isHome }: any) {
           {/* Small label with red line */}
           <div className="flex items-center justify-center gap-3 mb-3">
             <p className="text-color1 font-bold uppercase text-xs tracking-[0.22em]">
-              {data?.title1 || "News & Blog"}
+              { "News & Blog"}
             </p>
           </div>
 
@@ -38,13 +38,13 @@ export default function Blogs({ isHome }: any) {
         className={`grid gap-6 sm:gap-7 mx-auto
           sm:grid-cols-2 lg:grid-cols-3`}
       >
-        {(isHome ? data?.blog?.slice(0, 3) : data?.blog)?.map(
+        {(isHome ? data?.slice(0, 3) : data)?.map(
           (blog: any, index: number) => (
             <div
               key={index}
               className="group bg-white w-full overflow-hidden
-                border border-gray-150 shadow-[0_2px_16px_rgba(0,0,0,0.07)]
-                hover:shadow-[0_12px_40px_rgba(0,0,0,0.13)]
+                border border-gray-150 shadow-[0_2px_16px_rgba(0,0,0,0.1)]
+                hover:shadow-[0_12px_40px_rgba(0,0,0,0.18)]
                 hover:-translate-y-1
                 transition-all duration-400"
             >
@@ -53,7 +53,7 @@ export default function Blogs({ isHome }: any) {
               <div className="relative h-56 sm:h-60 overflow-hidden">
                 <Image
                   src={blog?.img || box3}
-                  alt={blog.heading}
+                  alt={blog.title}
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-600"
                 />
@@ -67,7 +67,7 @@ export default function Blogs({ isHome }: any) {
                     bg-color1 text-white text-center
                     px-3 pt-2 pb-3 min-w-[58px]
                     shadow-lg z-10">
-                    <p className="text-2xl font-black leading-none">
+                    <p className="text-lg font-bold leading-none">
                       {blog.date.split(" ")[0]}
                     </p>
                     <p className="text-[10px] uppercase tracking-wider font-semibold mt-0.5 opacity-90">
@@ -84,11 +84,11 @@ export default function Blogs({ isHome }: any) {
                 <div className="flex items-center gap-4 text-xs text-gray-400 mb-3">
                   <span className="flex items-center gap-1.5">
                     <BsFillPersonFill className="text-color1 text-xs" />
-                    By {blog?.author || "Shivam"}
+                    By Admin
                   </span>
                   <span className="flex items-center gap-1.5">
                     <BsChatDots className="text-color1 text-xs" />
-                    {blog?.comments || "No Comments"}
+                    {"No Comments"}
                   </span>
                 </div>
 
@@ -96,26 +96,22 @@ export default function Blogs({ isHome }: any) {
                 <div className="w-full h-px bg-gray-100 mb-4" />
 
                 {/* Title */}
-                <Link href={`/blogs/${slugify(blog.heading)}`}>
+                <Link href={`/blogs/${slugify(blog.title)}`}>
                   <h2 className="text-[17px] sm:text-xl font-bold leading-snug
                     text-zinc-900 group-hover:text-color3
                     transition-colors duration-300 line-clamp-2 mb-3 cursor-pointer">
-                    {blog.heading}
+                    {blog.title}
                   </h2>
                 </Link>
 
-                {/* Description */}
-                <p className="text-gray-500 text-sm leading-relaxed line-clamp-2 mb-5">
-                  {blog?.para?.slice(0, 120) ||
-                    "These case are perfectly simple easy to distinguish free ho take trivial"}
-                </p>
+               
 
                 {/* Divider */}
                 <div className="w-full h-px bg-gray-100 mb-4" />
 
                 {/* Read More */}
                 <Link
-                  href={`/blogs/${slugify(blog.heading)}`}
+                  href={`/blogs/${slugify(blog.title)}`}
                   className="inline-flex items-center gap-2.5 text-xs font-bold
                     uppercase tracking-widest text-zinc-800
                     group-hover:text-color1 transition-colors duration-300

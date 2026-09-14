@@ -42,7 +42,6 @@ import gcc from "@/assets/flag/GCC.jpg";
 import gccimg from "@/assets/flag/gcc-img.jpg";
 import newflag from "@/assets/flag/new.png";
 import newimg from "@/assets/flag/new-img.jpg";
-
 import back from "@/assets/home/background-1.webp";
 
 import banner from "@/assets/home/Bannner1.jpg";

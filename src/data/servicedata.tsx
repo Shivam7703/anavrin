@@ -1130,6 +1130,4 @@ export const Servicedata = [
   ]
 },
 
-
-
 ]
