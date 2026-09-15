@@ -119,7 +119,7 @@ export default function Footer({ footer }: any) {
           <div className="col-span-1 flex flex-col gap-y-2 max-md:hidden"></div>
           <div className="col-span-2 flex flex-col gap-y-2 max-sm:mt-5">
             <h4 className="my-2 text-xl font-semibold">
-              {footer?.list2?.title}
+              {footer?.list1?.title}
             </h4>
             <ul className="space-y-2">
               {footer?.list2?.links?.map((d: any, i: number) => (
@@ -136,7 +136,7 @@ export default function Footer({ footer }: any) {
           </div>
           <div className="col-span-2 flex flex-col gap-y-2  max-sm:mt-5">
             <h4 className="my-2 text-xl font-semibold">
-              {footer?.list1?.title}
+              {footer?.list2?.title}
             </h4>
             <ul className="space-y-2">
               {footer?.list1?.links?.map((d: any, i: number) => (
