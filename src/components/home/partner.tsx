@@ -20,7 +20,7 @@ export default function Partners() {
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-zinc-800 mb-3">
           Trusted by{" "}
           <span className="text-color1">
-            500+ Companies
+            100+ Universities
           </span>
         </h2>
         <p className="text-gray-500 text-sm md:text-base max-w-2xl mx-auto px-4">
@@ -47,8 +47,7 @@ export default function Partners() {
                 w-[130px] sm:w-[150px] md:w-[170px] flex-shrink-0"
             >
               <div className="relative w-full h-12 sm:h-14 md:h-16
-                grayscale opacity-60
-                group-hover:grayscale-0 group-hover:opacity-100
+                
                 transition-all duration-500 ease-in-out
                 hover:scale-110 transform">
                 <Image
@@ -65,7 +64,7 @@ export default function Partners() {
       </div>
 
       {/* Optional: Second row with reverse direction for visual interest */}
-      <div className="relative z-10 mt-8 opacity-70">
+      <div className="relative z-10 mt-8 ">
         <Marquee
           speed={35}
           pauseOnHover={true}
@@ -83,8 +82,6 @@ export default function Partners() {
                 w-[130px] sm:w-[150px] md:w-[170px] flex-shrink-0"
             >
               <div className="relative w-full h-12 sm:h-14 md:h-16
-                grayscale opacity-70
-                group-hover:grayscale-0 group-hover:opacity-100
                 transition-all duration-500 ease-in-out
                 hover:scale-110 transform">
                 <Image

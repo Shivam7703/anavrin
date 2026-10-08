@@ -35,7 +35,7 @@ export default function HomeBanner() {
 
   return (
     <section
-      className="relative w-full overflow-hidden h-[70vh] md:h-screen max-h-[700px]"
+      className="relative w-full overflow-hidden h-[50vh] md:h-[80vh] min-h-96 max-h-[700px]"
     >
       {/* ── Swiper ── */}
       <Swiper {...swiperOptions} className="w-full h-full">

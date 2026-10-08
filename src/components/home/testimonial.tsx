@@ -100,82 +100,54 @@ export default function Testimonials() {
             {data?.testimonials?.map((cards: any, index: number) => (
               <SwiperSlide key={index} className="h-auto my-8">
                 
-                <div
-                  className="relative bg-zinc-100  hover:bg-color1 backdrop-blur-lg  group duration-300
-                  min-h-max rounded-2xl 
-                  shadow-lg border-black/5
-                  p-6 md:p-8"
-                >
-                  
-                  {/* TOP PROFILE SECTION */}
-                  <div className="flex items-start gap-7 relative z-10">
-                    
-                    {/* RED QUOTE SHAPE */}
-                    <div
-                      className="relative -mt-14  sm:-mt-16
-                      bg-color1 group-hover:bg-zinc-900 
-                      w-[100px]
-                      h-[170px]
-                      rounded-t-full
-                      rounded-b-full
-                      flex flex-col items-center"
-                    >
-                      
-                      {/* PROFILE IMAGE */}
-                      <div className="w-24 h-24 rounded-full overflow-hidden p-1.5   bg-white/30 mt-0.5">
-                        <Image
-                          src={cards.img}
-                          alt={cards.title}
-                          width={100}
-                          height={100}
-                          className="w-full h-full object-cover rounded-full "
-                        />
-                      </div>
+               <div className="group relative flex flex-col justify-between rounded-2xl bg-white p-6 md:p-8 border border-zinc-200/80 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-zinc-300">
+      
+      {/* TESTIMONIAL CONTENT */}
+      <div className="relative z-10 space-y-4">
+        {/* QUOTE ICON */}
+        <div className="flex items-center justify-between">
+          <div className="flex h-10 w-10 items-center justify-center rounded-full bg-blue-50 text-blue-600 transition-colors duration-300 group-hover:bg-blue-600 group-hover:text-white">
+            <FaQuoteLeft className="text-base" />
+          </div>
 
-                      {/* QUOTE ICON */}
-                      <FaQuoteLeft className="text-white text-5xl mt-0 opacity-95" />
-                    </div>
+          {/* RATING STARS */}
+          <div className="flex items-center gap-1" aria-label="5 star rating">
+            {[...Array(5)].map((_, i) => (
+              <FaStar key={i} className="text-amber-400 text-sm md:text-base" />
+            ))}
+          </div>
+        </div>
 
-                    {/* USER INFO */}
-                    <div className="">
-                      
-                      <h3 className="text-zinc-700 text-lg md:text-xl font-bold group-hover:text-white">
-                        {cards.title}
-                      </h3>
+        {/* QUOTE TEXT */}
+        <p className="text-zinc-600 text-sm md:text-base leading-relaxed font-normal pt-1">
+          &ldquo;{cards?.text}&rdquo;
+        </p>
+      </div>
 
-                      <p className="text-zinc-500 group-hover:text-white text-sm">
-                        Happy Customer
-                      </p>
+      {/* USER PROFILE FOOTER */}
+      <div className="mt-8 pt-6 border-t border-zinc-100 flex items-center gap-4">
+        {/* AVATAR */}
+        <div className="relative h-12 w-12 shrink-0 rounded-full overflow-hidden ring-2 ring-zinc-100">
+          <Image
+            src={cards?.img}
+            alt={cards?.title || "Customer Avatar"}
+            fill
+            sizes="48px"
+            className="object-cover"
+          />
+        </div>
 
-                      {/* STARS */}
-                      <div className="flex items-center gap-2 mt-1">
-                        {[...Array(5)].map((_, i) => (
-                          <FaStar
-                            key={i}
-                            className="text-color1 group-hover:text-white text-lg"
-                          />
-                        ))}
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* TESTIMONIAL TEXT */}
-                  <div className=" relative mt-3 z-10">
-                    <p
-                      className="text-zinc-600 group-hover:text-white
-                      leading-[2]
-                      text-sm md:text-base
-                      font-medium"
-                    >
-                      <span className="text-color1 text-5xl font-black mr-2 group-hover:text-white">
-                        “{" "}
-                      </span>
-                      {cards.text}
-                     
-                    </p>
-                  </div>
-                  
-                </div>
+        {/* USER DETAILS */}
+        <div className="min-w-0 flex-1">
+          <h3 className="text-zinc-900 font-semibold text-base truncate">
+            {cards?.title}
+          </h3>
+          <p className="text-zinc-500 text-xs md:text-sm truncate">
+            Verified Customer
+          </p>
+        </div>
+      </div>
+    </div>
               </SwiperSlide>
             ))}
           </Swiper>

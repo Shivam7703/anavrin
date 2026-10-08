@@ -45,9 +45,9 @@ import newimg from "@/assets/flag/new-img.jpg";
 import back from "@/assets/home/background-1.webp";
 
 import banner from "@/assets/home/Bannner1.jpg";
-import banner2 from "@/assets/home/Bannner1.jpg";
-import banner3 from "@/assets/home/Banner3.jpeg";
-import bann from "@/assets/home/bann.webp";
+import banner2 from "@/assets/home/banner.jpg";
+import banner3 from "@/assets/home/banner2.jpg";
+import bann from "@/assets/home/banner3.jpg";
 import about from "@/assets/home/about.jpg";
 import about2 from "@/assets/home/about2.jpg";
 import contat from "@/assets/home/contact.webp";
@@ -102,6 +102,16 @@ import qatarWorkVisa from "@/assets/visa/Qatar Work Visa.webp";
 import saskatchewanPnp from "@/assets/visa/Saskatchewan PNP.jpg";
 import swedenWorkPermit from "@/assets/visa/Sweden Work Permit Visa.jpeg";
 import yukonPnp from "@/assets/visa/yukon.webp";
+import studyincanada from "@/assets/visa/study in canada.jpg";
+import studyinaustralia from "@/assets/visa/study in australia.jpg";
+import studyinger from "@/assets/visa/study in ger.jpg";
+import studyinire from "@/assets/visa/study in ireland.jpg";
+import studyinital from "@/assets/visa/study in italy.jpg";
+import studyinuk from "@/assets/visa/study in uk.jpg";
+import pei from "@/assets/visa/pei.jpg";
+import aip from "@/assets/visa/aip.jpg";
+import nlpnp from "@/assets/visa/nlpnp.jpg";
+
 
 // visa2
 import australiaTouristVisa from "@/assets/visa2/Australia Tourist Visa.webp";
@@ -207,6 +217,6 @@ export {
   ukWorkVisa,
   greeceWorkVisa,
   dubaiWorkVisa,
-  FamilySponser, IndemandOccupation, ruralCommunity, selfEmployed,
+  FamilySponser, IndemandOccupation, ruralCommunity, selfEmployed, studyincanada, studyinaustralia, studyinger, studyinire, studyinital, studyinuk, nlpnp, aip, pei
 }
 

@@ -19,6 +19,8 @@ import {
   cl4,
   cl6,
   cl2,
+  bann,
+  banner3,
 } from "@/assets";
 
 import { BsPassportFill } from "react-icons/bs";
@@ -263,8 +265,40 @@ export const navigationMenu = {
 
     {
       id: 3,
-      label: "Study Visa",
-      href: "/study-visa",
+      label: "Study Abroad",
+       href: "#",
+      subNav: [
+        {
+          id: 1,
+          label: "Study in UK",
+          href: "/visas/study-in-uk",
+        },
+        {
+          id: 2,
+          label: "Study in Canada",
+          href: "/visas/study-in-canada",
+        },
+        {
+          id: 3,
+          label: "Study in Australia",
+          href: "/visas/study-in-australia",
+        },
+        {
+          id: 4,
+          label: "Study in Italy",
+          href: "/visas/study-in-italy",
+        },
+        {
+          id: 5,
+          label: "Study in Germany",
+          href: "/visas/study-in-germany",
+        },
+        {
+          id: 6,
+          label: "Study in Ireland",
+          href: "/visas/study-in-ireland",
+        },
+      ],
     },
 
     {
@@ -361,6 +395,21 @@ export const navigationMenu = {
           label: "New Brunswick PNP Program",
           href: "/visas/new-brunswick-pnp-program",
         },
+        {
+          id: 10,
+          label: "Atlantic Immigration Program",
+          href: "/visas/atlantic-immigration-program",
+        },
+        {
+          id: 11,
+          label: "PEI PNP Program",
+          href: "/visas/pei-pnp-program",
+        }, 
+        {
+          id: 12,
+          label: "NLPNP Program",
+          href: "/visas/nlpnp-program",
+        },
       ],
     },
 
@@ -418,7 +467,7 @@ export const navigationMenu = {
 export const sliderContent = [
   {
     id: 1,
-    img: banner2,
+    img: banner3,
     welcome: "Your Trusted Partner For Global Opportunities",
     title1: "Turn Your Overseas Dreams Into Reality ",
     title2: "",
@@ -428,7 +477,7 @@ export const sliderContent = [
   },
   {
     id: 2,
-    img: banner,
+    img: bann,
     welcome: "Helping You Move Forward With Confidence",
     title1: "Expert Immigration Solutions For Every Journey ",
     title2: "",
