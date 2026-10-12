@@ -49,9 +49,9 @@ export const navigationMenu = {
         { id: 2, label: "PTE", href: "/services/pte-preparation" },
         { id: 3, label: "TOEFL", href: "/services/toefl" },
         { id: 4, label: "Visa Documentation", href: "/services/visa-documentation" },
-        { id: 5, label: "Pre/Post Landing", href: "/services/pre-post-landing" },
+        { id: 5, label: "Pre/Post Landing", href: "/services/pre-post-landing-services" },
         { id: 6, label: "Profile Marketing", href: "/services/profile-marketing" },
-        { id: 7, label: "Immigration Service", href: "/services/immigration-service" },
+        { id: 7, label: "Immigration Service", href: "/services/immigration-services" },
       ],
     },
 
@@ -857,7 +857,7 @@ export const coachingData = {
     {
       title: "PTE",
       text: "Structured training designed to enhance communication skills and maximize performance in PTE exams.",
-      href: "/services/pte",
+      href: "/services/pte-preparation",
       icon: <FaFileAlt />,
     },
     {
@@ -904,22 +904,18 @@ export const footer = {
       {
         id: 2,
         label: "PTE Exam",
-        href: "/services/pte-exam-coaching-preparation",
+        href: "/services/pte-preparation",
       },
       {
         id: 3,
         label: "Post Landing Assistance",
-        href: "/services/post-landing-assistance",
+        href: "/services/pre-post-landing-services",
       },
-      {
-        id: 4,
-        label: "Job Assistance",
-        href: "/services/job-assistance",
-      },
+             { id: 4, label: "Profile Marketing", href: "/services/profile-marketing" },
       {
         id: 5,
         label: "Immigration Services",
-        href: "/services/immigration",
+        href: "/services/immigration-services",
       },
     ],
   },

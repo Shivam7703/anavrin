@@ -92,7 +92,7 @@ const Header = ({ header }: any) => {
                 <div className="flex items-center  gap-6 max-lg:hidden">
                   {/* Phone Link */}
                   <a
-                    href="tel:+917289822078 z-10"
+                    href="tel:+917289822078"
                     className="group flex items-center gap-3 flex-shrink-0"
                   >
                     <div className="relative flex-shrink-0 w-10 h-10 rounded-full bg-white flex items-center justify-center
@@ -118,7 +118,7 @@ const Header = ({ header }: any) => {
 
                   {/* Email Link */}
                   <a
-                    href="tel:+917289822078 z-10"
+                    href="mailto:info@anavrinadviser.com"
                     className="group flex items-center gap-3 flex-shrink-0"
                   >
                     <div className="relative flex-shrink-0 w-10 h-10 rounded-full bg-white flex items-center justify-center
@@ -168,7 +168,7 @@ const Header = ({ header }: any) => {
               </div>
             </div>
           </div>
-          {/* <Marquee className="bg-black py-0.5 text-xs font-semibold text-white sm:text-sm"> <a href="#" className="mr-6">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>  <a href="#" className="mr-6">Placeat temporibus doloribus quam quo, ipsa perspiciatis repellat! Odit voluptatibus.</a> <a href="#" className="mr-6">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a> <a href="#" className="mr-6">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a> </Marquee> */}
+        
         </div>
 
         {/* ================= MOBILE HEADER ================= */}

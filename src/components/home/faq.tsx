@@ -153,7 +153,7 @@ HAVE ANY QUESTIONS?
                 <div className="flex flex-col sm:flex-row justify-between gap-4 text-sm text-gray-600">
                   <div className="flex items-center gap-2">
                     <FaPhone className="text-color1" />
-                    <span>+1 234 567 890</span>
+                    <span>+91 7289822078</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <FaEnvelope className="text-color1" />

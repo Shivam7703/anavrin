@@ -94,7 +94,7 @@ export default function Coaching() {
 
                   {/* Link */}
                   <Link
-  href={`/${item.href}`}
+  href={`${item.href}`}
   className="inline-flex items-center overflow-hidden text-sm font-bold text-gray-700 group-hover:text-white transition-all duration-300"
 >
   {/* Text Slide */}
